@@ -23,6 +23,18 @@
             background:transparent;border:1px solid #e5e5e5;
             margin-left:5%;
         }
+          #Button1{
+              background-color:#00b4aa;
+     font-size:12pt;
+     border: 0px #93bee2 solid;
+     border-bottom: #93bee2 1px solid;
+     border-left: #93bee2 1px solid;
+     border-right: #93bee2 1px solid;
+     border-top: #93bee2 1px solid;
+    border-radius:5px;/*圆角按钮*/
+    margin-left:5%;
+
+          }
     </style>
 </head>
 <body>
@@ -95,6 +107,13 @@
                 
                 <br />
                 <asp:TextBox ID="TextBox3" runat="server" Height="30px" Width="180px" Font-Size="Medium"></asp:TextBox>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <asp:Button ID="Button1" ForeColor=" white" runat="server" Text="确认修改" Height="30px" Width="100px" />
         </asp:Panel>
             </asp:Panel>
     </form>
