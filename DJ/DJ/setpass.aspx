@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link href="sjxx.css" rel="stylesheet" />
+    <link  href="CSS/sjxx.css" rel="stylesheet" />
      <style type="text/css">
         #HyperLink3{
              color: #00b4aa;
@@ -46,7 +46,7 @@
         
         <asp:Panel ID="Panel3" runat="server" BackColor="#F0F0F0" Height="870px">
             <hr style=" color:#e5e5e5" />
-            <asp:Panel ID="Panel4" runat="server" Height="200px" Width="200px" BackColor="white">
+            <asp:Panel ID="Panel4" runat="server" Height="190px" Width="200px" BackColor="white">
                 <br />
                 <br />
                 <asp:HyperLink ID="HyperLink1"  runat="server">个人信息</asp:HyperLink>

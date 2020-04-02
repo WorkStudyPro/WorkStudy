@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link href="sjxx.css" rel="stylesheet" />
+    <link href="CSS/sjxx.css" rel="stylesheet" />
     <style type="text/css">
         #HyperLink2{
              color: #00b4aa;
@@ -34,15 +34,15 @@
         
         <asp:Panel ID="Panel3" runat="server" BackColor="#F0F0F0" Height="870px">
             <hr style=" color:#e5e5e5" />
-            <asp:Panel ID="Panel4" runat="server" Height="200px" Width="200px" BackColor="white">
+            <asp:Panel ID="Panel4" runat="server" Height="190px" Width="200px" BackColor="white">
                 <br />
                 <br />
                 <asp:HyperLink ID="HyperLink1"  runat="server">个人信息</asp:HyperLink>
                 <br />
                 <br />
                 <br />
-                <asp:HyperLink ID="HyperLink2" runat="server">我的公司</asp:HyperLink>
-        </asp:Panel>
+                <asp:HyperLink NavigateUrl="~/setpass.aspx" ID="HyperLink2" runat="server" Font-Underline="False">我的公司</asp:HyperLink>
+            </asp:Panel>
             <asp:Panel ID="Panel5" runat="server" Height="200px" Width="200px" BackColor="white">
                 <br />
                 <asp:HyperLink ID="HyperLink3" runat="server">修改密码</asp:HyperLink>
@@ -55,7 +55,7 @@
                 <br />
                 <br />
                 <asp:HyperLink ID="HyperLink6" runat="server">退出登录</asp:HyperLink>
-        </asp:Panel>
+            </asp:Panel>
             <asp:Panel ID="Panel6" runat="server" Height="500px" Width="800px" BackColor="white">
                 <br />
                 <asp:Label ID="Label8" runat="server" Text="我的公司" Font-Size="25px" ></asp:Label>
@@ -63,9 +63,8 @@
                 <br />
                 <br />
                 <br />
-               
-        </asp:Panel>
             </asp:Panel>
+        </asp:Panel>
     </form>
 </body>
 </html>
