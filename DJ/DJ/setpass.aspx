@@ -23,6 +23,18 @@
             background:transparent;border:1px solid #e5e5e5;
             margin-left:5%;
         }
+          #Button1{
+              background-color:#00b4aa;
+     font-size:12pt;
+     border: 0px #93bee2 solid;
+     border-bottom: #93bee2 1px solid;
+     border-left: #93bee2 1px solid;
+     border-right: #93bee2 1px solid;
+     border-top: #93bee2 1px solid;
+    border-radius:5px;/*圆角按钮*/
+    margin-left:5%;
+
+          }
     </style>
 </head>
 <body>
@@ -30,16 +42,17 @@
        <div>
             <asp:Panel ID="Panel1" runat="server" Height="73px">
                 <asp:Image ID="Image1" runat="server" Height="75px" ImageUrl="~/image/图片 3.png" Width="315px" ImageAlign="Middle" />
-                <asp:Label ID="Label1" runat="server" Text="首页" style="margin-left: 5%"></asp:Label>
-                <asp:Label ID="Label2" runat="server" Text="职位管理" style="margin-left: 5%"></asp:Label>
-                <asp:Label ID="Label3" runat="server" Text="简历管理" style="margin-left: 5%"></asp:Label>
-                <asp:Label ID="Label4" runat="server" Text="消息" style="margin-left: 5%"></asp:Label>
-                <asp:Label ID="Label5" runat="server" Text="招聘" style="margin-left: 5%"></asp:Label>
+                
+                <asp:HyperLink ID="HyperLink7" runat="server"  style="margin-left: 5%">首页</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink8" runat="server"  style="margin-left: 5%">职位管理</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink9" runat="server"  style="margin-left: 5%">简历管理</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink10" runat="server" ForeColor="Black" font-underline="false" NavigateUrl="~/mynews.aspx"  style="margin-left: 5%">消息</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink11" runat="server"  style="margin-left: 5%">招聘</asp:HyperLink>
                 <asp:Panel ID="Panel2" runat="server" Height="38px" style="margin-left: 5%" Width="196px" >
                     <asp:Image ID="Image2" runat="server" ImageUrl="~/image/账号.png" ImageAlign="Middle" Height="49px" Width="36px" />
                     <asp:Label ID="Label6" runat="server" Text="18582409158"></asp:Label>
                     &nbsp;&nbsp;
-                    <asp:Label ID="Label7" runat="server" Text="&gt;" Font-Bold="True" Font-Size="Larger"></asp:Label>
+                <asp:Image ID="Image4" runat="server" Height="34px" ImageAlign="Middle" ImageUrl="~/image/》.png" Width="39px" />
                 </asp:Panel>
             </asp:Panel>
         </div>
@@ -49,24 +62,24 @@
             <asp:Panel ID="Panel4" runat="server" Height="190px" Width="200px" BackColor="white">
                 <br />
                 <br />
-                <asp:HyperLink ID="HyperLink1"  runat="server">个人信息</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink1" ForeColor="Black" font-underline="false" NavigateUrl="~/myset.aspx"  runat="server">个人信息</asp:HyperLink>
                 <br />
                 <br />
                 <br />
-                <asp:HyperLink ID="HyperLink2" runat="server">我的公司</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" ForeColor="Black" font-underline="false" NavigateUrl="~/mygs.aspx" runat="server">我的公司</asp:HyperLink>
         </asp:Panel>
             <asp:Panel ID="Panel5" runat="server" Height="200px" Width="200px" BackColor="white">
                 <br />
-                <asp:HyperLink ID="HyperLink3" runat="server">修改密码</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink3" font-underline="false" NavigateUrl="~/setpass.aspx" runat="server">修改密码</asp:HyperLink>
                 <br />
                 <br />
-                <asp:HyperLink ID="HyperLink4" runat="server">修改头像</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink4" ForeColor="Black" font-underline="false" NavigateUrl="~/myphoto.aspx" runat="server">修改头像</asp:HyperLink>
                 <br />
                 <br />
-                <asp:HyperLink ID="HyperLink5" runat="server">消息通知</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink5" ForeColor="Black" font-underline="false" NavigateUrl="~/mynews.aspx" runat="server">消息通知</asp:HyperLink>
                 <br />
                 <br />
-                <asp:HyperLink ID="HyperLink6" runat="server">退出登录</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink6" ForeColor="Black" font-underline="false" NavigateUrl="~/login.aspx" runat="server">退出登录</asp:HyperLink>
         </asp:Panel>
             <asp:Panel ID="Panel6" runat="server" Height="500px" Width="800px" BackColor="white">
                 <br />
@@ -95,6 +108,13 @@
                 
                 <br />
                 <asp:TextBox ID="TextBox3" runat="server" Height="30px" Width="180px" Font-Size="Medium"></asp:TextBox>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <asp:Button ID="Button1" ForeColor=" white" runat="server" Text="确认修改" Height="30px" Width="100px" />
         </asp:Panel>
             </asp:Panel>
     </form>
