@@ -12,6 +12,7 @@
             
         }
         #Panel2{
+
                 width: 100%;
     height: 10%;
     background-color: #00b4aa;
