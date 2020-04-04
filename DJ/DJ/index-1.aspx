@@ -133,8 +133,10 @@
     font-size: larger;
     
          }
-         #Labelid{margin-left: 22%;
-    font-size: larger;
+        #Labelid {
+            margin-left: 22%;
+            font-size: larger;
+        }
         </style>
 </head>
 <body>
