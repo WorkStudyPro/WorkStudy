@@ -19,10 +19,10 @@
             <asp:Panel ID="Panel1" runat="server" Height="73px">
                 <asp:Image ID="Image1" runat="server" Height="75px" ImageUrl="~/image/图片 3.png" Width="315px" ImageAlign="Middle" />
                 
-                <asp:HyperLink ID="HyperLink7" runat="server"  style="margin-left: 5%">首页</asp:HyperLink>
-                 <asp:HyperLink ID="HyperLink8" runat="server"  style="margin-left: 5%">职位管理</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/index.aspx"  font-underline="false" ForeColor="Black"  style="margin-left: 5%" >首页</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/management.aspx" font-underline="false"  style="margin-left: 5%" ForeColor="Black">职位管理</asp:HyperLink>
                  <asp:HyperLink ID="HyperLink9" runat="server"  style="margin-left: 5%">简历管理</asp:HyperLink>
-                 <asp:HyperLink ID="HyperLink10" runat="server" ForeColor="Black" font-underline="false" NavigateUrl="~/mynews.aspx"  style="margin-left: 5%">消息</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink10" runat="server" ForeColor="Black"  font-underline="false" NavigateUrl="~/mynews.aspx"  style="margin-left: 5%">消息</asp:HyperLink>
                  <asp:HyperLink ID="HyperLink11" runat="server"  style="margin-left: 5%">招聘</asp:HyperLink>
                 <asp:Panel ID="Panel2" runat="server" Height="38px" style="margin-left: 5%" Width="196px" >
                     <asp:Image ID="Image2" runat="server" ImageUrl="~/image/账号.png" ImageAlign="Middle" Height="49px" Width="36px" />

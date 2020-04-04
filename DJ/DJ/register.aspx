@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="register.aspx.cs" Inherits="index" %>
 
 <!DOCTYPE html>
 
@@ -6,8 +6,8 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <style type="text/css">
-        body{
+     <style type="text/css">
+       body{
             background-image:url(/image/工院背景.png) ;
             
         }
@@ -26,17 +26,14 @@
     border: 1px solid;
     border-radius: 12px;
         }
-        #Image1{
-    margin-top:-2%;
-    margin-left:20%;
-        }
+       
           #TextBox1{
           margin-top:10%
     
         }
-           #Image2{
-    margin-top:-2%;
-    margin-left: 20%;
+          #TextBox1{
+          margin-top:10%
+    
         }
            #TextBox2{
                margin-top: 5%;
@@ -46,43 +43,50 @@
     margin-left: 30%;
     color: white;
            }
-           #HyperLink1{
-               float: right;
-    margin-right: 12%;
-}
+         
+
            #Button1{
                    margin-left: 37%;
     font-size: 20px;
         border: 1px solid;
     border-radius: 12px;
+    
            }
-           #HyperLink2{
-                   margin-left: 43%;
+           #Label2{
+               margin-left:20%;
+           }
+           #Label3{
+               margin-left:20%;
+           }
+           #Label4{
+               margin-left:16%;
            }
     </style>
 </head>
 <body>
-            <form id="form1" runat="server">
+         <form id="form1" runat="server">
                 
             <asp:Panel ID="Panel1" runat="server" Height="360px" Width="400px" BackColor="white">
                 <asp:Panel ID="Panel2" runat="server">
                     <asp:Label ID="Label1" runat="server"  Text="勤工助学系统"></asp:Label></asp:Panel>
-                    <asp:Image ID="Image1" runat="server" ImageUrl="~/image/账号.png" Height="30px" ImageAlign="Middle" />
+                <asp:Label ID="Label2" runat="server" Text="账号"></asp:Label>
                     <asp:TextBox ID="TextBox1" runat="server" Height="23px" ></asp:TextBox>
                     <br />
-                <asp:Image ID="Image2" runat="server" ImageUrl="~/image/密码.png" Height="30px" Width="30px" ImageAlign="Middle" />
+                <asp:Label ID="Label3" runat="server" Text="密码"></asp:Label>
                 <asp:TextBox ID="TextBox2" runat="server" Height="23px"></asp:TextBox>
+                <br />
+                <br />
+                <asp:Label ID="Label4" runat="server" Text="手机号"></asp:Label>
+                 <asp:TextBox ID="TextBox3" runat="server" Height="23px"></asp:TextBox>
+                <br />
+               
 
                 <br />
                 <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                <asp:CheckBox ID="CheckBox1" runat="server" Text="记住密码"  /><asp:HyperLink ID="HyperLink1" runat="server" ForeColor="#00b4aa">忘记密码？</asp:HyperLink>
-               <br />
-                <asp:Button ID="Button1" runat="server" Text="登陆" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" runat="server" Text="注册" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px"  />
                 <br />
                 <br />
-                <asp:HyperLink ID="HyperLink2" font-underline="false" NavigateUrl="~/register.aspx" runat="server" ForeColor="#00b4aa">注册账号</asp:HyperLink>
+                
 
             </asp:Panel>
             </form>
