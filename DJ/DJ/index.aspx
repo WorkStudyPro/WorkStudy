@@ -162,9 +162,8 @@
                 
                 <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/index.aspx" font-underline="false"  style="margin-left: 5%" ForeColor="#00b4aa">首页</asp:HyperLink>
                  <asp:HyperLink ID="HyperLink8" runat="server" ForeColor="Black"  font-underline="false" NavigateUrl="~/management.aspx" style="margin-left: 5%">职位管理</asp:HyperLink>
-                 <asp:HyperLink ID="HyperLink9" runat="server"  style="margin-left: 5%">简历管理</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Resume.aspx" font-underline="false" ForeColor="Black"  style="margin-left: 5%">简历管理</asp:HyperLink>
                  <asp:HyperLink ID="HyperLink10" runat="server" ForeColor="Black"  font-underline="false" NavigateUrl="~/mynews.aspx"  style="margin-left: 5%">消息</asp:HyperLink>
-                 <asp:HyperLink ID="HyperLink11" runat="server"  style="margin-left: 5%">招聘</asp:HyperLink>
                 <asp:Panel ID="Panel2" runat="server" Height="38px" style="margin-left: 5%" Width="196px" >
                     <asp:Image ID="Image2" runat="server" ImageUrl="~/image/账号.png" ImageAlign="Middle" Height="49px" Width="36px" />
                     <asp:Label ID="Label6" runat="server" Text="18582409158"></asp:Label>
@@ -181,7 +180,7 @@
             
         <div id="div0">
             <div id="div1">
-            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/image/新报名.png" ImageAlign="Middle" />
+            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/image/新报名.png" ImageAlign="Middle" OnClick="ImageButton1_Click" />
                 <div id="div2">
                 &nbsp;&nbsp;&nbsp;<asp:Label ID="Label1" runat="server" Text="0" Font-Bold="true" Font-Size="25px"></asp:Label>    
                <br /> 

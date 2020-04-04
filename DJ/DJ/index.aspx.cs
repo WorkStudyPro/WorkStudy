@@ -21,4 +21,9 @@ public partial class index : System.Web.UI.Page
     {
         Response.Redirect("http://localhost:56935/mynews.aspx");
     }
+
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("http://localhost:56935/Resume.aspx");
+    }
 }

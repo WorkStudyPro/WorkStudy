@@ -147,9 +147,8 @@
                 
                 <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/index.aspx" font-underline="false"   style="margin-left: 5%" ForeColor="#00b4aa">首页</asp:HyperLink>
                  <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/management.aspx" font-underline="false" ForeColor="Black"  style="margin-left: 5%">职位管理</asp:HyperLink>
-                 <asp:HyperLink ID="HyperLink9" runat="server"  style="margin-left: 5%">简历管理</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Resume.aspx" font-underline="false" ForeColor="Black"  style="margin-left: 5%">简历管理</asp:HyperLink>
                  <asp:HyperLink ID="HyperLink10" runat="server"  font-underline="false" NavigateUrl="~/mynews.aspx"  style="margin-left: 5%">消息</asp:HyperLink>
-                 <asp:HyperLink ID="HyperLink11" runat="server"  style="margin-left: 5%">招聘</asp:HyperLink>
                 <asp:Panel ID="Panel2" runat="server" Height="38px" style="margin-left: 5%" Width="196px" >
                     <asp:Image ID="Image2" runat="server" ImageUrl="~/image/账号.png" ImageAlign="Middle" Height="49px" Width="36px" />
                     <asp:Label ID="Label6" runat="server" Text="18582409158"></asp:Label>
@@ -166,7 +165,7 @@
             
         <div id="div0">
             <div id="div1">
-            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/image/新报名.png" ImageAlign="Middle" />
+            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/image/新报名.png" ImageAlign="Middle" OnClick="ImageButton1_Click1" />
                 <div id="div2">
                 &nbsp;&nbsp;&nbsp;<asp:Label ID="Label1" runat="server" Text="0" Font-Bold="true" Font-Size="25px"></asp:Label>    
                <br /> 
@@ -175,7 +174,7 @@
             </div>
             <div id="竖线" style="float:left;margin-top: 30px;width: 1px;height: 80px; background: darkgray;"></div> 
             <div id="div3">
-            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/image/在招职位.png" ImageAlign="Middle" />
+            <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/image/在招职位.png" ImageAlign="Middle" OnClick="ImageButton2_Click1" />
                 <div id="div4">
                 &nbsp;&nbsp;&nbsp;<asp:Label ID="Label3" runat="server" Text="0" Font-Bold="true" Font-Size="25px"></asp:Label>    
                <br /> 
@@ -184,7 +183,7 @@
             </div>
             <div id="shuxian" style="float:left;margin-top: 30px;width: 1px;height: 80px; background: darkgray;"></div> 
             <div id="div5">
-            <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/image/未读消息.png" ImageAlign="Middle" />
+            <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/image/未读消息.png" ImageAlign="Middle" OnClick="ImageButton3_Click1" />
                 <div id="div6">
                 &nbsp;&nbsp;&nbsp;<asp:Label ID="Label5" runat="server" Text="0" Font-Bold="true" Font-Size="25px"></asp:Label>    
                <br /> 

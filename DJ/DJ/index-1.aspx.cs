@@ -11,4 +11,19 @@ public partial class index_1 : System.Web.UI.Page
     {
 
     }
+
+    protected void ImageButton1_Click1(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("http://localhost:56935/Resume.aspx");
+    }
+
+    protected void ImageButton2_Click1(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("http://localhost:56935/management.aspx");
+    }
+
+    protected void ImageButton3_Click1(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("http://localhost:56935/mynews.aspx");
+    }
 }
