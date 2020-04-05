@@ -11,7 +11,7 @@
         #div0{
             width:1200px;
             height:700px;
-            margin-left:20%;
+            margin-left:10%;
             background-color:white;
         }
         #div1{
@@ -43,11 +43,11 @@
                  <asp:HyperLink ID="HyperLink8" runat="server" ForeColor="Black" font-underline="false" NavigateUrl="~/management.aspx"  style="margin-left: 5%">职位管理</asp:HyperLink>
                  <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Resume.aspx" font-underline="false" ForeColor="Black"  style="margin-left: 5%">简历管理</asp:HyperLink>
                  <asp:HyperLink ID="HyperLink10" runat="server" ForeColor="#00b4aa" font-underline="false" NavigateUrl="~/mynews.aspx"  style="margin-left: 5%">消息</asp:HyperLink>
-                <asp:Panel ID="Panel2" runat="server" Height="38px" style="margin-left: 5%" Width="196px" >
-                    <asp:Image ID="Image2" runat="server" ImageUrl="~/image/账号.png" ImageAlign="Middle" Height="49px" Width="36px" />
-                    <asp:Label ID="Label6" runat="server" Text="18582409158"></asp:Label>
+                <asp:Panel ID="Panel2" runat="server" Height="38px" style="margin-left: 80% ; margin-top:-4%" Width="196px" >
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/image/账号.png" ImageAlign="Middle" Height="35px" Width="35px" />
+                    <asp:Label ID="Label6" runat="server" Text="18582409158" style="vertical-align:sub"></asp:Label>
                     &nbsp;&nbsp;
-                <asp:Image ID="Image4" runat="server" Height="34px" ImageAlign="Middle" ImageUrl="~/image/》.png" Width="39px" />
+                <asp:Image ID="Image4" runat="server"  ImageAlign="Middle" ImageUrl="~/image/》.png" Width="35px" Height="35px" style="margin-left:75% ; margin-top:-35%" />
                 </asp:Panel>
             </asp:Panel>
         </div>

@@ -95,8 +95,8 @@
              background-color:white;
              width:245px;
              height:260px;
-             margin-left: 75%;
-    margin-top: -32%;
+             margin-left: 82%;
+    margin-top: -41%;
          }
          #Button发布兼职2{
              display: block;
@@ -149,11 +149,11 @@
                  <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/management.aspx" font-underline="false" ForeColor="Black"  style="margin-left: 5%">职位管理</asp:HyperLink>
                  <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Resume.aspx" font-underline="false" ForeColor="Black"  style="margin-left: 5%">简历管理</asp:HyperLink>
                  <asp:HyperLink ID="HyperLink10" runat="server"  font-underline="false" NavigateUrl="~/mynews.aspx"  style="margin-left: 5%">消息</asp:HyperLink>
-                <asp:Panel ID="Panel2" runat="server" Height="38px" style="margin-left: 5%" Width="196px" >
-                    <asp:Image ID="Image2" runat="server" ImageUrl="~/image/账号.png" ImageAlign="Middle" Height="49px" Width="36px" />
-                    <asp:Label ID="Label6" runat="server" Text="18582409158"></asp:Label>
+                <asp:Panel ID="Panel2" runat="server" Height="38px" style="margin-left: 80% ; margin-top:-4%" Width="196px" >
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/image/账号.png" ImageAlign="Middle" Height="35px" Width="35px" />
+                    <asp:Label ID="Label6" runat="server" Text="18582409158" style="vertical-align:sub"></asp:Label>
                     &nbsp;&nbsp;
-                <asp:Image ID="Image4" runat="server" Height="34px" ImageAlign="Middle" ImageUrl="~/image/》.png" Width="39px" />
+                <asp:Image ID="Image4" runat="server"  ImageAlign="Middle" ImageUrl="~/image/》.png" Width="35px" Height="35px" style="margin-left:75% ; margin-top:-35%" />
                 </asp:Panel>
             </asp:Panel>
         </div>
