@@ -23,9 +23,16 @@
             float: right;
     margin-right: 50px;
     margin-top: 120px;
-    border: 1px solid;
+   
     border-radius: 12px;
+    animation: mydh 0.5s;
         }
+       @keyframes mydh{
+				
+				from{
+					transform: translate(0px, 100%);
+				}
+			}
         #Image1{
     margin-top:-2%;
     margin-left:20%;
@@ -86,5 +93,6 @@
 
             </asp:Panel>
             </form>
+
 </body>
 </html>

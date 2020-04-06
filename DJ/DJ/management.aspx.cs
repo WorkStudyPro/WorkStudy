@@ -11,4 +11,9 @@ public partial class management : System.Web.UI.Page
     {
 
     }
+
+    protected void Button发布兼职_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("http://localhost:56935/Job.aspx");
+    }
 }

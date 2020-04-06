@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="management2.aspx.cs" Inherits="management2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Job.aspx.cs" Inherits="Job" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-   <title></title>
+    <title></title>
      <link href="CSS/sjxx.css" rel="stylesheet" />
     <style type="text/css">
 
@@ -20,46 +20,77 @@
         #divv{
            height:870px;
             background-color:#F0F0F0;
-           
+            
+        }    
+        #Label发布职位{
+          margin-left: 46%;
+    font-size: 25px;
         }
-
-        #HyperLinks{
-            margin-left:28%;
+        #divss{
+            background-color:white;
+            width:580px;
+            margin-left:160px;
+            height:600px;
         }
-         #HyperLinkss{
-            margin-left:2%;
+        #L1{
+            margin-top:20px;
         }
-          #HyperLinksss{
-            margin-left:2%;
+        #L2{
+            margin-left:21px;
         }
-           #HyperLinkssss{
-            margin-left:2%;
+         #L3{
+            margin-left:21px;
         }
-         #Image发布兼职{
-                 margin-left: 41%;
-    margin-top: 32%;
-    margin-bottom: 6%;
-         }
-         #Button发布兼职{
+          #L4{
+            margin-left:21px;
+        }
+           #L5{
+            margin-left:21px;
+        }
+           #L6{
+            margin-left:21px;
+        }
+           #L7{
+            margin-left:21px;
+        }
+           #box1{
+               background:transparent;border:1px solid #e5e5e5;
+           }
+           #box2{
+               background:transparent;border:1px solid #e5e5e5;
+           }
+           #box3{
+               background:transparent;border:1px solid #e5e5e5;
+           }
+           #box4{
+               background:transparent;border:1px solid #e5e5e5;
+           }
+           #box5{
+               background:transparent;border:1px solid #e5e5e5;
+           }
+           #box6{
+                background:transparent;border:1px solid #e5e5e5;
+           }
+            #Button发布兼职{
       width: 132px;
     height: 40px;
     line-height: 40px;
-    margin-left: 20%;
+    margin-left: 35%;
     background-color: #1ecdb9;
     border-radius: 6px;
     color: #fff;
     cursor: pointer;
          }
-         *{
-             list-style:none;
-         }
-                  #second {
+            *{
+                list-style:none;
+            }
+            #second {
     color: black;
     display: none;
     margin-left: 87%;
     z-index: 999;
-    width: 130px;
     position:relative;
+    width: 130px;
     background: #fff;
     overflow-y: scroll;
     box-shadow: -5px 0 10px rgba(0,0,0,.1), 0 0 0 rgba(0,0,0,.1), 0 5px 10px rgba(0,0,0,.1), 5px 0 10px rgba(0,0,0,.1);
@@ -101,22 +132,53 @@
         <div id="divv">
             <hr />
             <br />
-            <br />
-            <br />
-            <asp:HyperLink ID="HyperLinks" runat="server" ForeColor="Black" NavigateUrl="~/management.aspx" font-underline="false" >招聘中</asp:HyperLink>
-            <asp:HyperLink ID="HyperLinkss" runat="server" ForeColor="#00b4aa">已结束</asp:HyperLink>
-            <asp:HyperLink ID="HyperLinksss" runat="server" ForeColor="Black" NavigateUrl="~/management3.aspx" font-underline="false" >审核中</asp:HyperLink>
-            <asp:HyperLink ID="HyperLinkssss" runat="server" ForeColor="Black" NavigateUrl="~/management4.aspx" font-underline="false">审核驳回</asp:HyperLink>
-             <asp:Button ID="Button发布兼职" runat="server" Text="发布兼职" OnClick="Button发布兼职_Click"  />
+            
+            <asp:Label ID="Label发布职位" runat="server" Text="发布职位"></asp:Label>
+            
             <hr style="width:860px" />
             <br />
             <%--中间菜单--%>
             <div id="divs">
-             <asp:Image ID="Image发布兼职" runat="server" ImageUrl="~/image/发布兼职logo.png" />        
+                <br />
+                <br />
+                <div id="divss">
+                <div id="信息" style="width:580px; height:20px;">
+            <div id="竖线" style="float:left;width: 5px;height: 25px; background:#1ecdb9;"></div>
+            &nbsp;&nbsp; <asp:Label ID="L1" runat="server" Text="基本信息"></asp:Label>
+                    </div>
+                    <br /><br />
+                <asp:Label ID="L2" runat="server" Text="岗位名称" ></asp:Label>
+           &nbsp;&nbsp;   &nbsp;&nbsp;  <asp:TextBox ID="box1" runat="server" Height="40px" Width="450px"></asp:TextBox>
+
+                    <br /><br />
+                <asp:Label ID="L3" runat="server" Text="岗位介绍" ></asp:Label>
+           &nbsp;&nbsp;   &nbsp;&nbsp;  <asp:TextBox ID="box2" runat="server"  Height="150px" Width="450px"></asp:TextBox>
+
+                    <br /><br />
+                <asp:Label ID="L4" runat="server" Text="工作时间" ></asp:Label>
+           &nbsp;&nbsp;   &nbsp;&nbsp;  <asp:TextBox ID="box3" runat="server" Height="40px" Width="450px"></asp:TextBox>
+
+                    <br /><br />
+                <asp:Label ID="L5" runat="server" Text="需求人数" ></asp:Label>
+           &nbsp;&nbsp;   &nbsp;&nbsp;  <asp:TextBox ID="box4" runat="server" Height="40px" Width="450px"></asp:TextBox>
+                    
+
+                <br /><br />
+                <asp:Label ID="L6" runat="server" Text="工资详情" ></asp:Label>
+           &nbsp;&nbsp;   &nbsp;&nbsp;  <asp:TextBox ID="box5" runat="server" Height="40px" Width="450px"></asp:TextBox>
+                    
+
+            <br /><br />
+                <asp:Label ID="L7" runat="server" Text="工作地点" ></asp:Label>
+           &nbsp;&nbsp;   &nbsp;&nbsp;  <asp:TextBox ID="box6" runat="server" Height="40px" Width="450px"></asp:TextBox>
+                   <br /><br /> <asp:Button ID="Button发布兼职" runat="server" Text="发布兼职"  />
+                    </div>
+               </div> 
             </div>
-          </div>
+            
+
     </form>
-       <script src="js/jquery-3.4.1.min.js"></script>
+     <script src="js/jquery-3.4.1.min.js"></script>
 	  
 	  <script>
           $(function () {
