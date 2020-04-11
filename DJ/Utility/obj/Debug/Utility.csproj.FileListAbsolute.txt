@@ -1,0 +1,6 @@
+C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\Utility\obj\Debug\Utility.csprojAssemblyReference.cache
+C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
+C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\Utility\bin\Debug\Utility.dll
+C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\Utility\bin\Debug\Utility.pdb
+C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\Utility\obj\Debug\Utility.dll
+C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\Utility\obj\Debug\Utility.pdb
