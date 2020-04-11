@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Resume2.aspx.cs" Inherits="Resume2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Job.aspx.cs" Inherits="Job" %>
 
 <!DOCTYPE html>
 
@@ -8,48 +8,86 @@
     <title></title>
      <link href="CSS/sjxx.css" rel="stylesheet" />
     <style type="text/css">
-
+         body{
+            margin:0;
+	overflow: hidden;
+        }
         #divs{
             width:900px;
             height:680px;
             margin-left:26%;
-            background-color:white;
+            background: white;
             border-radius:5px;
         }
       
         #divv{
            height: 870px;
-    background-color: rgba(0,0,0,0);
+    background: rgba(0,0,0,0);
            
         }
-
-        #HyperLinks{
-            margin-left:28%;
+        #Label发布职位{
+          margin-left: 46%;
+    font-size: 25px;
         }
-         #HyperLinkss{
-            margin-left:2%;
+        #divss{
+            background: rgba(0,0,0,0);
+            width:580px;
+            margin-left:160px;
+            height:600px;
         }
-  
-         #Image发布兼职{
-                 margin-left: 41%;
-    margin-top: 32%;
-    margin-bottom: 6%;
+        #L1{
+            margin-top:20px;
+        }
+        #L2{
+            margin-left:21px;
+        }
+         #L3{
+            margin-left:21px;
+        }
+          #L4{
+            margin-left:21px;
+        }
+           #L5{
+            margin-left:21px;
+        }
+           #L6{
+            margin-left:21px;
+        }
+           #L7{
+            margin-left:21px;
+        }
+           #box1{
+               background:transparent;border:1px solid #e5e5e5;
+           }
+           #box2{
+               background:transparent;border:1px solid #e5e5e5;
+           }
+           #box3{
+               background:transparent;border:1px solid #e5e5e5;
+           }
+           #box4{
+               background:transparent;border:1px solid #e5e5e5;
+           }
+           #box5{
+               background:transparent;border:1px solid #e5e5e5;
+           }
+           #box6{
+                background:transparent;border:1px solid #e5e5e5;
+           }
+            #Button发布兼职{
+      width: 132px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 35%;
+    background-color: #1ecdb9;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
          }
-       #second {
-    color: black;
-    display: none;
-    margin-left: 87%;
-    z-index: 999;
-    width: 130px;
-    position:relative;
-    background: #fff;
-    overflow-y: scroll;
-    box-shadow: -5px 0 10px rgba(0,0,0,.1), 0 0 0 rgba(0,0,0,.1), 0 5px 10px rgba(0,0,0,.1), 5px 0 10px rgba(0,0,0,.1);
-}
-         *{
-             list-style:none;
-         }
-         #second {
+            *{
+                list-style:none;
+            }
+             #second {
     color: black;
     display: none;
     margin-left: 87%;
@@ -60,24 +98,20 @@
     overflow-y: scroll;
     box-shadow: -5px 0 10px rgba(0,0,0,.1), 0 0 0 rgba(0,0,0,.1), 0 5px 10px rgba(0,0,0,.1), 5px 0 10px rgba(0,0,0,.1);
 }
-            canvas {
+             canvas {
             width: 100%;
             height: 100%;
            position:absolute;
            z-index:-1;
         }
-            body{
-            margin:0;
-	overflow: hidden;
-        }
         </style>
 </head>
 <body>
     <form id="form1" runat="server">
-       <canvas id="triangle-lost-in-space" resize="true"></canvas>
+         <canvas id="triangle-lost-in-space" resize="true"></canvas>
        <div>
            <br /><br />
-            <asp:Panel ID="Panel1" runat="server" Height="73px">
+             <asp:Panel ID="Panel1" runat="server" Height="73px">
                 <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/index.aspx"  font-underline="false" ForeColor="white"   style="margin-left: 5%" >首页</asp:HyperLink>
                  <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/management.aspx" font-underline="false"  style="margin-left: 5%" ForeColor="white" >职位管理</asp:HyperLink>
                  <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Resume.aspx" font-underline="false" ForeColor="white"  style="margin-left: 5%">简历管理</asp:HyperLink>
@@ -98,25 +132,62 @@
                    <asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/login.aspx" ForeColor="white" font-underline="false">退出</asp:HyperLink><br /><br />
               </ul>
 			 </li>
-                 </ul>
+                        </ul>
                 </asp:Panel>
+            
         </div>
+        
+        
             <hr style="border:0;height:1px;background-color:aquamarine;"/>
-        <div id="divv">
-           
             <br />
-            <asp:HyperLink ID="HyperLinks" runat="server" ForeColor="white" font-underline="false" NavigateUrl="~/Resume.aspx" >待录取</asp:HyperLink>
-            <asp:HyperLink ID="HyperLinkss" runat="server"  ForeColor="#00b4aa" NavigateUrl="~/Resume2.aspx" font-underline="false">已完成</asp:HyperLink>
+            
+            
+            <asp:Label ID="Label发布职位" ForeColor="White" runat="server" Text="发布职位"></asp:Label>
+            
             <hr style="border:0;height:1px;width:880px;margin-left:508px;background-color:aquamarine;"/>
             <br />
             <%--中间菜单--%>
             <div id="divs">
-             <asp:Image ID="Image发布兼职" runat="server" ImageUrl="~/image/发布兼职logo.png" />        
+                <br />
+                <br />
+                <div id="divss">
+                <div id="信息" style="width:580px; height:20px;">
+            <div id="竖线" style="float:left;width: 5px;height: 25px; background:#1ecdb9;"></div>
+            &nbsp;&nbsp; <asp:Label ID="L1" runat="server" Text="基本信息"></asp:Label>
+                    </div>
+                    <br /><br />
+                <asp:Label ID="L2" runat="server" Text="岗位名称" ></asp:Label>
+           &nbsp;&nbsp;   &nbsp;&nbsp;  <asp:TextBox ID="box1" runat="server" Height="40px" Width="450px"></asp:TextBox>
+
+                    <br /><br />
+                <asp:Label ID="L3" runat="server" Text="岗位介绍" ></asp:Label>
+           &nbsp;&nbsp;   &nbsp;&nbsp;  <asp:TextBox ID="box2" runat="server"  Height="150px" Width="450px"></asp:TextBox>
+
+                    <br /><br />
+                <asp:Label ID="L4" runat="server" Text="工作时间" ></asp:Label>
+           &nbsp;&nbsp;   &nbsp;&nbsp;  <asp:TextBox ID="box3" runat="server" Height="40px" Width="450px"></asp:TextBox>
+
+                    <br /><br />
+                <asp:Label ID="L5" runat="server" Text="需求人数" ></asp:Label>
+           &nbsp;&nbsp;   &nbsp;&nbsp;  <asp:TextBox ID="box4" runat="server" Height="40px" Width="450px"></asp:TextBox>
+                    
+
+                <br /><br />
+                <asp:Label ID="L6" runat="server" Text="工资详情" ></asp:Label>
+           &nbsp;&nbsp;   &nbsp;&nbsp;  <asp:TextBox ID="box5" runat="server" Height="40px" Width="450px"></asp:TextBox>
+                    
+
+            <br /><br />
+                <asp:Label ID="L7" runat="server" Text="工作地点" ></asp:Label>
+           &nbsp;&nbsp;   &nbsp;&nbsp;  <asp:TextBox ID="box6" runat="server" Height="40px" Width="450px"></asp:TextBox>
+                   <br /><br /> <asp:Button ID="Button发布兼职" runat="server" Text="发布兼职"  />
+                    </div>
+               </div> 
             </div>
-          </div>
+            
+
     </form>
-    <script src="js/jquery-3.4.1.min.js"></script>
-	  
+     <script src="js/jquery-3.4.1.min.js"></script>
 	  <script src="js/index.js"></script>
 	  <script>
           $(function () {

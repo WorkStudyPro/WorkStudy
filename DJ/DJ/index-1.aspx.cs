@@ -26,4 +26,14 @@ public partial class index_1 : System.Web.UI.Page
     {
         Response.Redirect("http://localhost:56935/mynews.aspx");
     }
+
+    protected void Button发布兼职2_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("http://localhost:56935/Job.aspx");
+    }
+
+    protected void Button我的信息_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("http://localhost:56935/myset.aspx");
+    }
 }
