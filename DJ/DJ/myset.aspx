@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link rel="stylesheet" href="sjxx.css" />
+    <link rel="stylesheet" href="CSS/sjxx.css" />
  <style type="text/css">
         #HyperLink1{
              color: #00b4aa;
