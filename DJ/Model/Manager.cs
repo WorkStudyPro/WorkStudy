@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Model
 {
     //商家实体类
-    class Manager
+    public class Manager
     {
         public string Account { get; set; }
         public string Password { get; set; }

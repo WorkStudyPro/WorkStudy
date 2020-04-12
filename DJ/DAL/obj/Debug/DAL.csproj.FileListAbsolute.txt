@@ -4,3 +4,6 @@ C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\DAL\obj\Debug\DAL.cspr
 C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\DAL\obj\Debug\DAL.dll
 C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\DAL\obj\Debug\DAL.pdb
+C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\DAL\bin\Debug\Model.dll
+C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\DAL\bin\Debug\Model.pdb
+C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\DAL\obj\Debug\DAL.csproj.CopyComplete

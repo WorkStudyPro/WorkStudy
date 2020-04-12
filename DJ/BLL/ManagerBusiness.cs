@@ -1,4 +1,6 @@
-﻿namespace BLL
+﻿using Model;
+
+namespace BLL
 {
     /// <summary>
     /// 商家业务层
@@ -16,15 +18,15 @@
             return DAL.ManagerDAL.ManagerLogin(admin, password);
         }
 
-        //public static bool AddManager(Manager manager)
-        //{
-        //    //判断账号是否存在？
-        //    if (ManagerDAL.ManagerIsExist(manager.Account))
-        //    {
-        //        return false;
-        //    }
-        //    else
-        //        return DAL.ManagerDAL.AddManager(manager);
-        //}
+        public static bool AddManager(Manager manager)
+        {
+            //判断账号是否存在？
+            if (DAL.ManagerDAL.ManagerIsExist(manager.Account))
+            {
+                return false;
+            }
+            else
+                return DAL.ManagerDAL.AddManager(manager);
+        }
     }
 }

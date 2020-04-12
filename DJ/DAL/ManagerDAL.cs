@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using Model;
 
 namespace DAL
 {
@@ -26,39 +27,39 @@ namespace DAL
 
             return i > 0;
         }
-        ///// <summary>
-        ///// 增，注册商家账号，传递实参
-        ///// </summary>
-        ///// <param name="manager"></param>
-        ///// <returns></returns>
-        //public static bool AddManager(Manager manager)
-        //{
-        //    SqlParameter[] p = new SqlParameter[]
-        //    {
-        //        new SqlParameter("@Account",manager.Account),
-        //        new SqlParameter("@Password",manager.Password)
-        //    };
-        //    int i = Convert.ToInt32(SQLHelper.ExecuteNonQuery("AddManager", CommandType.StoredProcedure, p));
+        /// <summary>
+        /// 增，注册商家账号，传递实参
+        /// </summary>
+        /// <param name="manager"></param>
+        /// <returns></returns>
+        public static bool AddManager(Manager manager)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@Account",manager.Account),
+                new SqlParameter("@Password",manager.Password)
+            };
+            int i = Convert.ToInt32(SQLHelper.ExecuteNonQuery("AddManager", CommandType.StoredProcedure, p));
 
-        //    return i > 0;
-        //}
+            return i > 0;
+        }
 
-        ///// <summary>
-        ///// 统计，判断商家账号是否存在
-        ///// </summary>
-        ///// <param name="account"></param>
-        ///// <returns></returns>
-        //public static bool ManagerIsExist(string account)
-        //{
-        //    SqlParameter[] p = new SqlParameter[]
-        //    {
-        //        new SqlParameter("@Account",account)
+        /// <summary>
+        /// 统计，判断商家账号是否存在
+        /// </summary>
+        /// <param name="account"></param>
+        /// <returns></returns>
+        public static bool ManagerIsExist(string account)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@Account",account)
 
-        //    };
-        //    int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ManagerIsExist", CommandType.StoredProcedure, p));
+            };
+            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ManagerIsExist", CommandType.StoredProcedure, p));
 
-        //    return i > 0;
-        //}
+            return i > 0;
+        }
 
     }
 }
