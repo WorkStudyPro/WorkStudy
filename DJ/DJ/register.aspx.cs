@@ -1,5 +1,9 @@
-﻿using Model;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
 public partial class index : System.Web.UI.Page
 {
@@ -8,19 +12,8 @@ public partial class index : System.Web.UI.Page
 
     }
 
-    protected void Button1_Click(object sender, EventArgs e)
+    protected void Button2_Click(object sender, EventArgs e)
     {
-        Manager zs = new Manager();
-        zs.Account = "zsss";//
-        zs.Password = "123";
-
-        if (BLL.ManagerBusiness.AddManager(zs))
-        {
-            ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script>alert('ok')</script>");
-        }
-        else
-        {
-            ClientScript.RegisterStartupScript(this.GetType(), "msg", "<script>alert('NOO')</script>");
-        }
+        Response.Redirect("http://localhost:56935/login.aspx");
     }
 }
