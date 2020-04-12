@@ -83,7 +83,14 @@
          
 
            #Button1{
-                   margin-left: 37%;
+                   margin-left: 19%;
+    font-size: 20px;
+        border: 1px solid;
+    border-radius: 12px;
+    
+           }
+           #Button2{
+                  
     font-size: 20px;
         border: 1px solid;
     border-radius: 12px;
@@ -106,12 +113,12 @@
             <asp:Panel ID="Panel1" runat="server" Height="360px" Width="400px">
                 <asp:Panel ID="Panel2" runat="server">
                     <asp:Label ID="Label1" runat="server"  Text="勤工助学系统"></asp:Label></asp:Panel>
-                <asp:Label ID="Label2" runat="server" ForeColor="White" Text="账号"></asp:Label>
-                    <asp:TextBox ID="TextBox1" runat="server" Height="23px" ></asp:TextBox>
-                    <br />
+               
+                    <br /><br />
+                    
                 <asp:Label ID="Label3" runat="server" ForeColor="White" Text="密码"></asp:Label>
                 <asp:TextBox ID="TextBox2" runat="server" Height="23px"></asp:TextBox>
-                <br />
+                <br /><br />
                 <br />
                 <asp:Label ID="Label4" runat="server" ForeColor="White" Text="手机号"></asp:Label>
                  <asp:TextBox ID="TextBox3" runat="server" Height="23px"></asp:TextBox>
@@ -121,6 +128,8 @@
                 <br />
                 <br />
                 <asp:Button ID="Button1" runat="server" Text="注册" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px"  />
+              &nbsp; &nbsp;&nbsp; <asp:Button ID="Button2" runat="server" Text="取消" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px" OnClick="Button2_Click"  />
+
                 <br />
                 <br />
                 

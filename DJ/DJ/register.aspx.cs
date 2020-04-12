@@ -11,4 +11,9 @@ public partial class index : System.Web.UI.Page
     {
 
     }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("http://localhost:56935/login.aspx");
+    }
 }
