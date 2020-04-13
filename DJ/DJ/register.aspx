@@ -55,7 +55,8 @@
     margin-top: 127px;
     border-radius: 12px;
     animation: mydh 0.5s;
-    margin-left: 39%;     background-color:rgba(0,0,0,0);
+    margin-left: 39%;
+     background-color:rgba(0,0,0,0);
                border:solid 1px #00b4aa;
         }
            @keyframes mydh{
