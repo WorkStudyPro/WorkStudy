@@ -36,10 +36,11 @@ namespace DAL
         {
             SqlParameter[] p = new SqlParameter[]
             {
-                new SqlParameter("@Account",manager.Account),
-                new SqlParameter("@Password",manager.Password)
+                new SqlParameter("@Account",manager.Tel),
+                new SqlParameter("@Password",manager.Password),
+                new SqlParameter("@Tel",manager.Tel)
             };
-            int i = Convert.ToInt32(SQLHelper.ExecuteNonQuery("AddManager", CommandType.StoredProcedure, p));
+            int i = Convert.ToInt32(SQLHelper.ExecuteNonQuery("ManagerRegister", CommandType.StoredProcedure, p));
 
             return i > 0;
         }

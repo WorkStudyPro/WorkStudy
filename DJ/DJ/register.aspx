@@ -55,7 +55,8 @@
     margin-top: 127px;
     border-radius: 12px;
     animation: mydh 0.5s;
-    margin-left: 39%;     background-color:rgba(0,0,0,0);
+    margin-left: 39%;
+     background-color:rgba(0,0,0,0);
                border:solid 1px #00b4aa;
         }
            @keyframes mydh{
@@ -127,7 +128,7 @@
 
                 <br />
                 <br />
-                <asp:Button ID="Button1" runat="server" Text="注册" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px"  />
+                <asp:Button ID="Button1" runat="server" Text="注册" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px" OnClick="Button1_Click"  />
               &nbsp; &nbsp;&nbsp; <asp:Button ID="Button2" runat="server" Text="取消" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px" OnClick="Button2_Click"  />
 
                 <br />
