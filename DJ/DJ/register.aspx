@@ -55,8 +55,7 @@
     margin-top: 127px;
     border-radius: 12px;
     animation: mydh 0.5s;
-    margin-left: 39%;
-     background-color:rgba(0,0,0,0);
+    margin-left: 39%;     background-color:rgba(0,0,0,0);
                border:solid 1px #00b4aa;
         }
            @keyframes mydh{
@@ -116,12 +115,12 @@
                     <asp:Label ID="Label1" runat="server"  Text="勤工助学系统"></asp:Label></asp:Panel>
                
                     <br /><br />
-                    
-                <asp:Label ID="Label3" runat="server" ForeColor="White" Text="密码"></asp:Label>
+                    <asp:Label ID="Label4" runat="server" ForeColor="White" Text="手机号"></asp:Label>
+               
                 <asp:TextBox ID="TextBox2" runat="server" Height="23px"></asp:TextBox>
                 <br /><br />
                 <br />
-                <asp:Label ID="Label4" runat="server" ForeColor="White" Text="手机号"></asp:Label>
+                 <asp:Label ID="Label3" runat="server" ForeColor="White" Text="密码"></asp:Label>
                  <asp:TextBox ID="TextBox3" runat="server" Height="23px"></asp:TextBox>
                 <br />
                
