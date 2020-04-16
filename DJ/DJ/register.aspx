@@ -106,6 +106,9 @@
            #Label4{
                margin-left:16%;
            }
+           #ID{
+               margin-left:21%;
+           }
     </style>
 </head>
 <body><div class="stars"></div>
@@ -114,12 +117,13 @@
             <asp:Panel ID="Panel1" runat="server" Height="360px" Width="400px">
                 <asp:Panel ID="Panel2" runat="server">
                     <asp:Label ID="Label1" runat="server"  Text="勤工助学系统"></asp:Label></asp:Panel>
-               
-                    <br /><br />
+                <br /><asp:Label ID="ID" runat="server" Text="ID：" ForeColor="White"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="ID2" runat="server" Text="Label" ForeColor="White"></asp:Label>
+                    <br />
                     <asp:Label ID="Label4" runat="server" ForeColor="White" Text="手机号"></asp:Label>
                
                 <asp:TextBox ID="TextBox2" runat="server" Height="23px"></asp:TextBox>
-                <br /><br />
+                <br />
                 <br />
                  <asp:Label ID="Label3" runat="server" ForeColor="White" Text="密码"></asp:Label>
                  <asp:TextBox ID="TextBox3" runat="server" Height="23px"></asp:TextBox>
@@ -129,7 +133,7 @@
                 <br />
                 <br />
                 <asp:Button ID="Button1" runat="server" Text="注册" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px" OnClick="Button1_Click"  />
-              &nbsp; &nbsp;&nbsp; <asp:Button ID="Button2" runat="server" Text="取消" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px" OnClick="Button2_Click"  />
+              &nbsp; &nbsp;&nbsp; <asp:Button ID="Button2" runat="server" Text="返回" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px" OnClick="Button2_Click"  />
 
                 <br />
                 <br />
