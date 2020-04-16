@@ -26,9 +26,7 @@ namespace BLL
         {
             //判断账号是否存在？
             if (DAL.ManagerDAL.ManagerIsExist(manager.Account))
-            {
                 return false;
-            }
             else
                 return DAL.ManagerDAL.AddManager(manager);
         }

@@ -36,7 +36,7 @@ namespace DAL
         {
             SqlParameter[] p = new SqlParameter[]
             {
-                new SqlParameter("@Account",manager.Tel),
+                new SqlParameter("@Account",manager.Account),
                 new SqlParameter("@Password",manager.Password),
                 new SqlParameter("@Tel",manager.Tel)
             };
@@ -55,7 +55,6 @@ namespace DAL
             SqlParameter[] p = new SqlParameter[]
             {
                 new SqlParameter("@Account",account)
-
             };
             int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ManagerIsExist", CommandType.StoredProcedure, p));
 
