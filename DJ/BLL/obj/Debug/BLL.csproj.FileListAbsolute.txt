@@ -9,3 +9,14 @@ C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\BLL\obj\Debug\BLL.cspr
 C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\BLL\obj\Debug\BLL.dll
 C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\BLL\obj\Debug\BLL.pdb
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\BLL\bin\Debug\BLL.dll
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\BLL\bin\Debug\BLL.pdb
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\BLL\bin\Debug\DAL.dll
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\BLL\bin\Debug\Model.dll
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\BLL\bin\Debug\DAL.pdb
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\BLL\bin\Debug\Model.pdb
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\BLL\obj\Debug\BLL.dll
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\BLL\obj\Debug\BLL.pdb

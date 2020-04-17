@@ -7,3 +7,12 @@ C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\DAL\obj\Debug\DAL.pdb
 C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\DAL\bin\Debug\Model.dll
 C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\DAL\bin\Debug\Model.pdb
 C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\DAL\bin\Debug\DAL.dll
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\DAL\bin\Debug\DAL.pdb
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\DAL\bin\Debug\Model.dll
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\DAL\bin\Debug\Model.pdb
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\DAL\obj\Debug\DAL.dll
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\DAL\obj\Debug\DAL.pdb
