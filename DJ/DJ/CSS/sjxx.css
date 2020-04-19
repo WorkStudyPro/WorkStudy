@@ -16,12 +16,10 @@
         border-bottom: none;
     }
 
-
-
-    #second > li {
-        border-bottom: 1px solid blue;
-        z-index: 999;
-    }
+#second > li {
+    border-bottom: 1px solid blue;
+    z-index: 999;
+}
 
 #span1{
     width: 15px;

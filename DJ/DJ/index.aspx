@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link href="CSS/sjxx.css" rel="stylesheet" />
+    <link href="CSS/sjxx.css" rel="stylesheet" type="text/css" />
     
     <style type="text/css">
         #div0{
