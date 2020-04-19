@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 public partial class miss : System.Web.UI.Page
 {
@@ -14,8 +9,12 @@ public partial class miss : System.Web.UI.Page
     
     protected void Button1_Click(object sender, EventArgs e)
     {
-
-        if(TextBox3.Text == Request.Cookies["CheckCode"].Value)
+        if (DAL.ManagerDAL.ManagerIsExist(TextBox1.Text))
+        {
+            if (DAL.ManagerDAL.IdMatchTel(TextBox1.Text) == TextBox2.Text)
+                Response.Write("ok");
+        }
+        if (TextBox3.Text == Request.Cookies["CheckCode"].Value)
         {
             Response.Redirect("http://localhost:56935/miss2.aspx");
         }
@@ -24,7 +23,6 @@ public partial class miss : System.Web.UI.Page
 
     protected void Yzm1_Click(object sender, EventArgs e)
     {
-        
         yzm1.ImageUrl = "ValidateCode.aspx";
     }
 }

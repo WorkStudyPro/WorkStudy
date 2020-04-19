@@ -61,5 +61,21 @@ namespace DAL
             return i > 0;
         }
 
+        /// <summary>
+        /// Id匹配tel
+        /// </summary>
+        /// <param name="account"></param>
+        /// <returns></returns>
+        public static string IdMatchTel(string account)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@Account" ,account)
+            };
+
+            string str = SQLHelper.ExecuteDataSet("IdMatchTel", CommandType.StoredProcedure, p).Tables.ToString();
+            return str;
+        }
+
     }
 }

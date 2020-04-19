@@ -53,7 +53,6 @@ public partial class _Default : System.Web.UI.Page
         {
             Response.Cookies["check"].Value = "true";
             Request.Cookies["check"].Expires = DateTime.Now.AddMonths(3);
-            
         }
         else
             Response.Cookies["check"].Value = "false";
