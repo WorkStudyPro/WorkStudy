@@ -72,9 +72,10 @@ namespace DAL
             {
                 new SqlParameter("@Account" ,account)
             };
-
-            string str = SQLHelper.ExecuteDataSet("IdMatchTel", CommandType.StoredProcedure, p).Tables.ToString();
-            return str;
+            SqlDataReader reader = SQLHelper.ExecuteReader("IdMatchTel", CommandType.StoredProcedure, p);
+            if (reader.Read())
+                return reader.GetString(0);
+            return "";
         }
 
     }

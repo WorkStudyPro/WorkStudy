@@ -18,23 +18,20 @@ public partial class index : System.Web.UI.Page
     {
         manager.Tel = TextBox2.Text;
         manager.Password = TextBox3.Text;
+        manager.Account = new Random().Next(9999, 99999999).ToString();
         if (manager.Tel != string.Empty && manager.Password != string.Empty)
-            if (BLL.ManagerBusiness.AddManager(manager))
+            //if (BLL.ManagerBusiness.AddManager(manager))
             {
-                //登录成功，数据存入session中
-                Session["tel"] =manager.Tel;
-                Session["ID"] = manager.Account;
-                //Utility.JavaScript.JavaScriptLocationHref("http://localhost:56935/login.aspx", this);
+                ////登录成功，数据存入session中
+                //Session["tel"] =manager.Tel;
+                //Session["ID"] = manager.Account;
+                ////Utility.JavaScript.JavaScriptLocationHref("http://localhost:56935/login.aspx", this);
 
                 //弹窗
                 string scriptstrs = "";
-                scriptstrs += "{swal('这是您的ID！请务必牢记！'," + Button1.Text + ", 'success');}";
+                scriptstrs += "{swal('这是您的ID！请务必牢记！','13246547987', 'success');}";
                 if (!Page.ClientScript.IsClientScriptBlockRegistered(this.GetType(), "keys"))
-                {
                     Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "keys", scriptstrs, true);
-                }
-
-
                 Utility.JavaScript.AlertAndRedirect("注册成功，点击确定跳转至登录页", "http://localhost:56935/login.aspx", this);
             }
             else

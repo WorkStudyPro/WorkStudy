@@ -6,7 +6,9 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link href="js/sweetalert.css" rel="stylesheet" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/sweetalert-dev.js"></script>
+    <link href="CSS/sweetalert.css" rel="stylesheet" />
      <style type="text/css">
 
       body {
@@ -110,6 +112,7 @@
            }
 
     </style>
+    
 </head>
 <body><div class="stars"></div>
          <form id="form1" runat="server">
@@ -120,7 +123,7 @@
                     <br />
                     <asp:Label ID="Label4" runat="server" ForeColor="White" Text="手机号"></asp:Label>
                
-                <asp:TextBox ID="TextBox2" runat="server" Height="23px"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" Height="23px" AutoCompleteType="Disabled"></asp:TextBox>
                 <br />
                 <br />
                  <asp:Label ID="Label3" runat="server" ForeColor="White" Text="密码"></asp:Label>
@@ -139,8 +142,7 @@
 
             </asp:Panel>
             </form>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/sweetalert-dev.js"></script>
+    
     <script>
 $(document).ready(function(){
   var stars=1200;
