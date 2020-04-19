@@ -6,191 +6,25 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link href="CSS/sjxx.css" rel="stylesheet" type="text/css" />
-    
+   <link href="CSS/cssc.css" rel="stylesheet" />
+    <link href="CSS/index.css" rel="stylesheet" />
     <style type="text/css">
-        #div0{
-            width:900px;
-            height:140px;
-            margin-left:20%;
-            background: rgba(0,0,0,0);
-            border-radius:5px;
-        }
-        #divs{
-            width:900px;
-            height:400px;
-            margin-left:20%;
-            background-color:white;
-            border-radius:5px;
-        }
-      
-       #divv{
-           height: 870px;
-    background: rgba(0,0,0,0);
-           
-        }
-        #Image3{
-            margin-left: 10%;
-    margin-top: -2%;
-        }
-        #Image0{
-   margin-top: -3%;
-    margin-left: 30%;
-        }
-
-       #ImageButton1 {
-            margin-top: 12%;
-            margin-left: 22%;
-          border-radius: 60px;
-        }
-        #ImageButton2 {
-            margin-top: 12%;
-            margin-left: 22%;
-           border-radius: 60px;
-        }
-     #ImageButton3{
-            margin-top: 12%;
-    margin-left: 22%;
-    border-radius: 60px;
-        }
-         #div1{
-           width:30%;
-           height:140px;
-          margin-left: 2%;
-           float:left;
-        }
-        #div2{
-                margin-left: 60%;
-    margin-top: -23%;
-        }
-        #div3{
-           width:30%;
-           height:140px;
-          float:left;
-          margin-left: 4%;
-
-        }
-        #div4{
-                margin-left: 60%;
-    margin-top: -23%;
-        }
-        #div5{
-           width:30%;
-           height:140px;
-          
-             float:left;
-             margin-left: 2%;
-
-        }
-        #div6{
-                margin-left: 60%;
-    margin-top: -23%;
-        }
-        #Label8{
-            float:left;
-            font-size:25px;
-        }
-        #HyperLinks{
-            margin-left:21%;
-        }
-         #HyperLinkss{
-            margin-left:2%;
-        }
          #Image发布兼职{
-                 margin-left: 41%;
-    margin-top: 11%;
-    margin-bottom: 6%;
-         }
+            margin-left: 41%;
+            margin-top: 11%;
+            margin-bottom: 6%;
+                        }
          #Button发布兼职{
-      width: 132px;
-    height: 40px;
-    line-height: 40px;
-    margin-left: -17%;
-    background-color: #1ecdb9;
-    border-radius: 6px;
-    color: #fff;
-    cursor: pointer;
-         }
-         #right{
-            background: rgba(0,0,0,0);
-             width:245px;
-             height:260px;
-             border:1px solid #1ecdb9;
-             margin-left: 75%;
-             border-radius: 6px;
-    margin-top: -32%;
-         }
-         #Button发布兼职2{
-             display: block;
-    width: 200px;
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-    border-radius: 6px;
-    border: 1px solid #1ecdb9;
-    font-size: 14px;
-    color: #1ecdb9;
-    margin-bottom: 25px;
-    cursor: pointer;
-    background: rgba(0,0,0,0);
-    margin-left: 9%;
-         }
-         #Button我的信息{
-             display: block;
-    width: 200px;
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-    border-radius: 6px;
-    border: 1px solid #1ecdb9;
-    font-size: 14px;
-    color: #1ecdb9;
-    margin-bottom: 8px;
-    cursor: pointer;
-    background: rgba(0,0,0,0);
-    margin-left: 9%;
-         }
+            width: 132px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: -17%;
+            background-color: #1ecdb9;
+            border-radius: 6px;
+            color: #fff;
+            cursor: pointer;
+                           }
         
-         *{
-             list-style:none;
-            
-         }
-         body{
-            margin:0;
-	overflow: hidden;
-        }
-         
-          canvas {
-            width: 100%;
-            height: 100%;
-           position:absolute;
-           z-index:-1;
-        }
-          #second {
-    color: black;
-    display: none;
-    margin-left: 87%;
-    z-index: 999;
-    position: relative;
-    width: 130px;
-    background: rgba(0,0,0,0.3);
-    box-shadow: -5px 0 10px rgba(0,0,0,.1), 0 0 0 rgba(0,0,0,.1), 0 5px 10px rgba(0,0,0,.1), 5px 0 10px rgba(0,0,0,.1);
-}
-#kong {
-    float: right;
-    margin-right: 21%;
-    margin-top: -1%;
-    font-size: x-large;
-    color: white;
-}
-#Labelmy {
-    margin-left: 20%;
-    font-size: larger;
-}
-
-#Labelid {
-    font-size: larger;
-}
     </style>
 </head>
 <body>

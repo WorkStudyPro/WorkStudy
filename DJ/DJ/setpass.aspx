@@ -6,28 +6,14 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    
-    <link href="CSS/sjxx.css" rel="stylesheet" />
+   <link href="CSS/cssc.css" rel="stylesheet" />
      <style type="text/css">
         #HyperLink3{
              color: #00b4aa;
         }
-        #second {
-    color: black;
-    display: none;
-    margin-left: 87%;
-    z-index: 999;
-    position: relative;
-    width: 130px;
-    background: rgba(0,0,0,0.3);
-    box-shadow: -5px 0 10px rgba(0,0,0,.1), 0 0 0 rgba(0,0,0,.1), 0 5px 10px rgba(0,0,0,.1), 5px 0 10px rgba(0,0,0,.1);
-}
-#kong {
-    float: right;
-    margin-right: 21%;
-    margin-top: -1%;
-    font-size: x-large;
-    color: white;
+        #Panel3 {
+    height: 870px;
+    background: rgba(0,0,0,0);
 }
         #TextBox1{
             background:transparent;border:1px solid #e5e5e5;
@@ -42,33 +28,18 @@
             margin-left:5%;
         }
           #Button1{
-              background-color:#00b4aa;
-     font-size:12pt;
-     border: 0px #93bee2 solid;
-     border-bottom: #93bee2 1px solid;
-     border-left: #93bee2 1px solid;
-     border-right: #93bee2 1px solid;
-     border-top: #93bee2 1px solid;
-    border-radius:5px;/*圆角按钮*/
-    margin-left:5%;
+            background-color:#00b4aa;
+            font-size:12pt;
+            border: 0px #93bee2 solid;
+            border-bottom: #93bee2 1px solid;
+            border-left: #93bee2 1px solid;
+            border-right: #93bee2 1px solid;
+            border-top: #93bee2 1px solid;
+            border-radius:5px;/*圆角按钮*/
+            margin-left:5%;
 
           }
-          body{
-            margin:0;
-	overflow: hidden;
-        }
-          *{list-style:none;}
-               
-        #Panel3 {
-    height: 870px;
-    background-color: rgba(0,0,0,0);
-}
-         canvas {
-            width: 100%;
-            height: 100%;
-           position:absolute;
-           z-index:-1;
-        }
+
     </style>
 </head>
 <body>

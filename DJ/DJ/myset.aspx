@@ -6,45 +6,15 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-   <link href="CSS/sjxx.css" rel="stylesheet" />
+  <link href="CSS/cssc.css" rel="stylesheet" />
  <style type="text/css">
         #HyperLink1{
              color: #00b4aa;
         }
-         *{
-             list-style:none;
-         }
-          body{
-            margin:0;
-	overflow: hidden;
-        }
-          #second {
-    color: black;
-    display: none;
-    margin-left: 87%;
-    z-index: 999;
-    position: relative;
-    width: 130px;
-    background: rgba(0,0,0,0.3);
-    box-shadow: -5px 0 10px rgba(0,0,0,.1), 0 0 0 rgba(0,0,0,.1), 0 5px 10px rgba(0,0,0,.1), 5px 0 10px rgba(0,0,0,.1);
-}
-#kong {
-    float: right;
-    margin-right: 21%;
-    margin-top: -1%;
-    font-size: x-large;
-    color: white;
-}
         #Panel3 {
     height: 870px;
-    background-color: rgba(0,0,0,0);
+    background: rgba(0,0,0,0);
 }
-        canvas {
-            width: 100%;
-            height: 100%;
-           position:absolute;
-           z-index:-1;
-        }
     </style>
 </head>
 <body style="height: 84px">

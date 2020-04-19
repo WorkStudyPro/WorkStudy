@@ -6,78 +6,8 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-     
-    <link href="CSS/sjxx.css" rel="stylesheet" />
-    <style type="text/css">
-
-        #divs{
-            width:900px;
-            height:680px;
-            margin-left:26%;
-            background-color:white;
-            border-radius:5px;
-        }
-      #second {
-    color: black;
-    display: none;
-    margin-left: 87%;
-    z-index: 999;
-    position: relative;
-    width: 130px;
-    background: rgba(0,0,0,0.3);
-    box-shadow: -5px 0 10px rgba(0,0,0,.1), 0 0 0 rgba(0,0,0,.1), 0 5px 10px rgba(0,0,0,.1), 5px 0 10px rgba(0,0,0,.1);
-}
-#kong {
-    float: right;
-    margin-right: 21%;
-    margin-top: -1%;
-    font-size: x-large;
-    color: white;
-}
-        #divv{
-           height: 870px;
-    background-color: rgba(0,0,0,0);
-           
-        }
-
-        #HyperLinks{
-            margin-left:28%;
-        }
-         #HyperLinkss{
-            margin-left:2%;
-        }
-  
-         #Image发布兼职{
-                 margin-left: 41%;
-    margin-top: 32%;
-    margin-bottom: 6%;
-         }
-       
-         *{
-             list-style:none;
-         }
-         #second {
-    color: black;
-    display: none;
-    margin-left: 87%;
-    position:relative;
-    z-index: 999;
-    width: 130px;
-    background: rgba(0,0,0,0.3);
-    overflow-y: scroll;
-    box-shadow: -5px 0 10px rgba(0,0,0,.1), 0 0 0 rgba(0,0,0,.1), 0 5px 10px rgba(0,0,0,.1), 5px 0 10px rgba(0,0,0,.1);
-}
-            canvas {
-            width: 100%;
-            height: 100%;
-           position:absolute;
-           z-index:-1;
-        }
-            body{
-            margin:0;
-	overflow: hidden;
-        }
-        </style>
+   <link href="CSS/cssc.css" rel="stylesheet" />
+ <link href="CSS/resu.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
