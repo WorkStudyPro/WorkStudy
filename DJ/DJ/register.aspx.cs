@@ -25,6 +25,16 @@ public partial class index : System.Web.UI.Page
                 Session["tel"] =manager.Tel;
                 Session["ID"] = manager.Account;
                 //Utility.JavaScript.JavaScriptLocationHref("http://localhost:56935/login.aspx", this);
+
+                //弹窗
+                string scriptstrs = "";
+                scriptstrs += "{swal('这是您的ID！请务必牢记！'," + Button1.Text + ", 'success');}";
+                if (!Page.ClientScript.IsClientScriptBlockRegistered(this.GetType(), "keys"))
+                {
+                    Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "keys", scriptstrs, true);
+                }
+
+
                 Utility.JavaScript.AlertAndRedirect("注册成功，点击确定跳转至登录页", "http://localhost:56935/login.aspx", this);
             }
             else

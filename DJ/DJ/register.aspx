@@ -6,7 +6,9 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="js/sweetalert.css" rel="stylesheet" />
      <style type="text/css">
+
       body {
   background: radial-gradient(200% 100% at bottom center, #f7f7b6, #e96f92, #75517d, #1b2947);
   background: radial-gradient(220% 105% at top center, #1b2947 10%, #75517d 40%, #e96f92 65%, #f7f7b6);
@@ -138,6 +140,7 @@
             </asp:Panel>
             </form>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/sweetalert-dev.js"></script>
     <script>
 $(document).ready(function(){
   var stars=1200;
