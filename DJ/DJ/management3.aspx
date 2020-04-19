@@ -22,7 +22,23 @@
     background: rgba(0,0,0,0);
            
         }
-
+        #second {
+    color: black;
+    display: none;
+    margin-left: 87%;
+    z-index: 999;
+    position: relative;
+    width: 130px;
+    background: rgba(0,0,0,0.3);
+    box-shadow: -5px 0 10px rgba(0,0,0,.1), 0 0 0 rgba(0,0,0,.1), 0 5px 10px rgba(0,0,0,.1), 5px 0 10px rgba(0,0,0,.1);
+}
+#kong {
+    float: right;
+    margin-right: 21%;
+    margin-top: -1%;
+    font-size: x-large;
+    color: white;
+}
         #HyperLinks{
             margin-left:28%;
         }
@@ -53,17 +69,7 @@
          *{
              list-style:none;
          }
-                 #second {
-    color: black;
-    display: none;
-    margin-left: 87%;
-    position:relative;
-    z-index: 999;
-    width: 130px;
-    background: rgba(0,0,0,0.3);
-    overflow-y: scroll;
-    box-shadow: -5px 0 10px rgba(0,0,0,.1), 0 0 0 rgba(0,0,0,.1), 0 5px 10px rgba(0,0,0,.1), 5px 0 10px rgba(0,0,0,.1);
-}
+                
             canvas {
             width: 100%;
             height: 100%;
@@ -91,8 +97,8 @@
 				<span></span>
                         <asp:Panel ID="Panel2" runat="server" >
                     <asp:Image ID="Image2" runat="server" ImageUrl="~/image/账号.png" ImageAlign="Middle" Height="49px" Width="36px" />
-                    <asp:Label ID="Label6" runat="server" ForeColor="white" Text="18582409158"></asp:Label>
-                    &nbsp;&nbsp;
+                    <asp:Label ID="Label6" runat="server" ForeColor="white" Text="66666666"></asp:Label>
+                    
                             <asp:Label ID="kong" runat="server" Text=">"></asp:Label>
                       </asp:Panel>
 			   <ul id="second"><br />

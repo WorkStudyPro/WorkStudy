@@ -6,7 +6,6 @@ C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\Model\obj\Debug\Model.
 C:\Users\吴远财\source\repos\WorkStudyPro\WorkStudy\DJ\Model\obj\Debug\Model.pdb
 C:\Users\VULCAN\source\repos\WorkStudy\DJ\Model\bin\Debug\Model.dll
 C:\Users\VULCAN\source\repos\WorkStudy\DJ\Model\bin\Debug\Model.pdb
-C:\Users\VULCAN\source\repos\WorkStudy\DJ\Model\obj\Debug\Model.csprojAssemblyReference.cache
 C:\Users\VULCAN\source\repos\WorkStudy\DJ\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\VULCAN\source\repos\WorkStudy\DJ\Model\obj\Debug\Model.dll
 C:\Users\VULCAN\source\repos\WorkStudy\DJ\Model\obj\Debug\Model.pdb

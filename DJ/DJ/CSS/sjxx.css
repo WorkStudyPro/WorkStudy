@@ -16,16 +16,7 @@
         border-bottom: none;
     }
 
-  #second {
-    color: black;
-    display: none;
-    margin-left: 86%;
-    z-index: 999;
-    width: 208px;
-    background: #fff;
-    overflow-y: scroll;
-    box-shadow: -5px 0 10px rgba(0,0,0,.1), 0 0 0 rgba(0,0,0,.1), 0 5px 10px rgba(0,0,0,.1), 5px 0 10px rgba(0,0,0,.1);
-}
+
 
     #second > li {
         border-bottom: 1px solid blue;
@@ -45,12 +36,7 @@
 
 
 
-#kong {
-    float: right;
-    margin-top: -1%;
-    font-size: x-large;
-    color: white;
-}
+
 #Image2 {
     margin-top: -7%;
 }
