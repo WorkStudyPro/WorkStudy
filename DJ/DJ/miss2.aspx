@@ -6,6 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="CSS/Login.css" rel="stylesheet" />
     <style type="text/css">
        #Button1{
                 margin-left: 35%;
