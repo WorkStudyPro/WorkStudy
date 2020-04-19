@@ -23,7 +23,7 @@ public partial class index : System.Web.UI.Page
             {
                 //登录成功，数据存入session中
                 Session["tel"] =manager.Tel;
-                Session["ID"] = ID2.Text;
+                Session["ID"] = manager.Account;
                 //Utility.JavaScript.JavaScriptLocationHref("http://localhost:56935/login.aspx", this);
                 Utility.JavaScript.AlertAndRedirect("注册成功，点击确定跳转至登录页", "http://localhost:56935/login.aspx", this);
             }

@@ -106,9 +106,7 @@
            #Label4{
                margin-left:16%;
            }
-           #ID{
-               margin-left:20%;
-           }
+
     </style>
 </head>
 <body><div class="stars"></div>
@@ -117,8 +115,6 @@
             <asp:Panel ID="Panel1" runat="server" Height="360px" Width="400px">
                 <asp:Panel ID="Panel2" runat="server">
                     <asp:Label ID="Label1" runat="server"  Text="勤工助学系统"></asp:Label></asp:Panel>
-                <br /><asp:Label ID="ID" runat="server" Text="ID：" ForeColor="White"></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="ID2" runat="server" Text="Label" ForeColor="White"></asp:Label>
                     <br />
                     <asp:Label ID="Label4" runat="server" ForeColor="White" Text="手机号"></asp:Label>
                
