@@ -16,11 +16,11 @@ namespace DAL
         /// <param name="account"></param>
         /// <param name="password"></param>
         /// <returns></returns>
-        public static bool ManagerLogin(string admin, string password)
+        public static bool ManagerLogin(string account, string password)
         {
             SqlParameter[] p = new SqlParameter[]
             {
-                new SqlParameter("@Account",admin),
+                new SqlParameter("@Account",account),
                 new SqlParameter("@Password",password)
             };
             int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ManagerLogin", CommandType.StoredProcedure, p));
@@ -75,7 +75,21 @@ namespace DAL
             SqlDataReader reader = SQLHelper.ExecuteReader("IdMatchTel", CommandType.StoredProcedure, p);
             if (reader.Read())
                 return reader.GetString(0);
+
             return "";
+        }
+
+        public static int SelectId(string tel)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@tel" ,tel)
+            };
+            SqlDataReader reader = SQLHelper.ExecuteReader("selectId", CommandType.StoredProcedure, p);
+            if (reader.Read())
+                return reader.GetInt32(0);
+
+            return -1;
         }
 
     }

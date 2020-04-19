@@ -13,7 +13,6 @@
               background-attachment: fixed;
               overflow: hidden;
         }
-
         @keyframes rotate {
               0% {
                 transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);

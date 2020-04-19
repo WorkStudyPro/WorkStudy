@@ -6,6 +6,9 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/sweetalert-dev.js"></script>
+    <link href="CSS/sweetalert.css" rel="stylesheet" />
     <style type="text/css">
         body {
   background: radial-gradient(200% 100% at bottom center, #f7f7b6, #e96f92, #75517d, #1b2947);
