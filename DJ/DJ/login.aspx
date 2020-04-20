@@ -10,6 +10,9 @@
     <script src="js/sweetalert-dev.js"></script>
     <link href="CSS/sweetalert.css" rel="stylesheet" />
     <link href="CSS/Login.css" rel="stylesheet" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/sweetalert-dev.js"></script>
+    <link href="CSS/sweetalert.css" rel="stylesheet" />
     <style type="text/css">
         #Button1{
               margin-left: 35%;
