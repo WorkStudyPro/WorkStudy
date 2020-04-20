@@ -2,7 +2,7 @@
 
 namespace Utility
 {
-    public class JavaScript
+    public class JavaScript : System.Web.UI.Page
     {
         #region 新版本
         /// <summary>
@@ -22,6 +22,14 @@ namespace Utility
             #endregion
         }
 
+        public static void ErrorAlert(string title,string text,Page page)
+        {
+            string scriptstrs = "";
+            scriptstrs += "{swal({title:'" + title + "',text: '" + text + "',confirmButtonText: '确认!',confirmButtonColor: '#00b4aa',closeOnConfirm: false,});}";
+            if (!page.ClientScript.IsClientScriptBlockRegistered(page.GetType(), "key"))
+                page.ClientScript.RegisterClientScriptBlock(page.GetType(), "key", scriptstrs, true);
+        }
+
         /// <summary>
         /// 弹出消息框并且转向到新的URL
         /// </summary>
@@ -38,6 +46,15 @@ namespace Utility
             }
             #endregion
         }
+
+        public static void FormAndRedirect(string title,string text,string Url,Page page)
+        {
+            string scriptstrs = "";
+            scriptstrs += "{swal({title: '" + title + "',text: '" + text + "',confirmButtonText: '确认!',confirmButtonColor: '#00b4aa',closeOnConfirm: false,},function(isConfirm) {if (isConfirm){location.href ='" + Url + "'; } });}";
+            if (!page.ClientScript.IsClientScriptBlockRegistered(page.GetType(), "key"))
+                page.ClientScript.RegisterClientScriptBlock(page.GetType(), "key", scriptstrs, true);
+        }
+
 
         /// <summary>
         /// 回到历史页面

@@ -1,10 +1,5 @@
-﻿using Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System;
 using System.Web.UI;
-using System.Web.UI.WebControls;
 
 public partial class miss2 : System.Web.UI.Page
 {

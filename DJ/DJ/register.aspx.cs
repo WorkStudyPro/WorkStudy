@@ -26,10 +26,8 @@ public partial class index : System.Web.UI.Page
                 Session["tel"] = manager.Tel;
                 Session["ID"] = manager.Account;
                 //弹窗
-                string scriptstrs = "";
-                scriptstrs += "{swal({title: '这是您的ID！',text: " + DAL.ManagerDAL.SelectId(manager.Tel) + ",confirmButtonText: '确认!',confirmButtonColor: '#00b4aa',closeOnConfirm: false,},function(isConfirm) {if (isConfirm){location.href = 'http://localhost:56935/login.aspx'; } });}";
-                if (!Page.ClientScript.IsClientScriptBlockRegistered(this.GetType(), "key"))
-                    Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "key", scriptstrs, true);
+                
+                Utility.JavaScript.FormAndRedirect("这是您的ID！如遗忘，将无法找回！",DAL.ManagerDAL.SelectId(manager.Tel).ToString(), "http://localhost:56935/login.aspx", this);
             }
             else
             {

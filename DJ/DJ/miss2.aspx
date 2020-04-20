@@ -37,7 +37,7 @@
             <asp:Panel ID="Panel1" runat="server" Height="360px" Width="400px">
                 <asp:Panel ID="Panel2" runat="server">
                     <asp:Label ID="Label1" runat="server"  Text="勤工助学系统"></asp:Label></asp:Panel>
-                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="id" runat="server" Text="新的密码:" ForeColor="white"></asp:Label>
+                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Lable2" runat="server" Text="新的密码:" ForeColor="white"></asp:Label>
                     <asp:TextBox ID="TextBox1" runat="server" Height="23px" ></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="TextBox1" Text="*" ForeColor="Red"></asp:RequiredFieldValidator>
                     <br /><br />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="iphone" runat="server" ForeColor="white" Text="确认密码:"></asp:Label>         

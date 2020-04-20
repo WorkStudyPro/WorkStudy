@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="Login" %>
 
 <!DOCTYPE html>
 
@@ -6,6 +6,9 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/sweetalert-dev.js"></script>
+    <link href="CSS/sweetalert.css" rel="stylesheet" />
     <link href="CSS/Login.css" rel="stylesheet" />
     <style type="text/css">
         #Button1{
@@ -27,18 +30,14 @@
                         <br />
                     <asp:Image ID="Image2" runat="server" ImageUrl="~/image/密码1.png" Height="24px" Width="22px" ImageAlign="Middle" />
                     <asp:TextBox ID="TextBox2" runat="server" Height="23px"></asp:TextBox>
-                    <br />
-                    <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:CheckBox ID="CheckBox1" ForeColor="White" runat="server" Text="记住密码" OnCheckedChanged="CheckBox1_CheckedChanged"  /><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/miss.aspx" font-underline="false"  ForeColor="#00b4aa">忘记密码？</asp:HyperLink>
-                   <br />
+                    <br />
                     <asp:Button ID="Button1" runat="server" Text="登录" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px" OnClick="Button1_Click" />
-                    <br />
-                    <br />
+                    <br /><br />
                     <asp:HyperLink ID="HyperLink2" font-underline="false" NavigateUrl="~/register.aspx" runat="server" ForeColor="#00b4aa">注册账号</asp:HyperLink>
                 </asp:Panel>
             </form>
-    <script src="js/jquery-3.4.1.min.js"></script>
     <script>
         $(document).ready(function(){
               var stars=1200;
