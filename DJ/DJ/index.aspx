@@ -13,7 +13,7 @@
             margin-left: 41%;
             margin-top: 11%;
             margin-bottom: 6%;
-                        }
+         }
          #Button发布兼职{
             width: 132px;
             height: 40px;
@@ -23,8 +23,7 @@
             border-radius: 6px;
             color: #fff;
             cursor: pointer;
-                           }
-        
+         }
     </style>
 </head>
 <body>

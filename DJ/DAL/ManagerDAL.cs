@@ -78,7 +78,11 @@ namespace DAL
 
             return "";
         }
-
+        /// <summary>
+        /// 根据tel查询ID
+        /// </summary>
+        /// <param name="tel"></param>
+        /// <returns></returns>
         public static int SelectId(string tel)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -90,6 +94,18 @@ namespace DAL
                 return reader.GetInt32(0);
 
             return -1;
+        }
+
+        public static bool ManagerChangePwd(string account,string pwd)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@Account",account),
+                new SqlParameter("@Password",pwd)
+            }; 
+            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ManagerNewPassword", CommandType.StoredProcedure, p));
+
+            return i > 0;
         }
 
     }
