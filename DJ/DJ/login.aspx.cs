@@ -39,8 +39,10 @@ public partial class _Default : System.Web.UI.Page
                 //登录成功，数据存入session中
                 Session["account"] = TextBox1.Text;
                 Session["logintime"] = DateTime.Now.ToString();
-                //Utility.JavaScript.JavaScriptLocationHref("http://localhost:56935/index.aspx", this);
-                Utility.JavaScript.AlertAndRedirect("登录成功，点击确定跳转至首页", "http://localhost:56935/index.aspx", this);
+                string scriptstrs = "";
+                scriptstrs += "{swal({title: '登陆成功！',text:'点击确认跳转至首页！',confirmButtonText: '确认!',confirmButtonColor: '#00b4aa',closeOnConfirm: false,},function(isConfirm) {if (isConfirm){location.href = 'http://localhost:56935/index.aspx'; } });}";
+                if (!Page.ClientScript.IsClientScriptBlockRegistered(this.GetType(), "key"))
+                    Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "key", scriptstrs, true);
             }
             else
                 Utility.JavaScript.Alert("账号或密码不正确，请重试", this);
