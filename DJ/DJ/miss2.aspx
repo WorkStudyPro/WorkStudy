@@ -6,6 +6,10 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+
+    <script src="js/paper-full.min.js"></script>
+    <script src="js/sweetalert-dev.js"></script>
+    <link href="CSS/sweetalert.css" rel="stylesheet" />
     <link href="CSS/Login.css" rel="stylesheet" />
     <style type="text/css">
        #Button1{
