@@ -31,16 +31,7 @@
     margin-bottom: 6%;
 }
 
-#Button发布兼职 {
-    width: 132px;
-    height: 40px;
-    line-height: 40px;
-    margin-left: 20%;
-    background-color: #1ecdb9;
-    border-radius: 6px;
-    color: #fff;
-    cursor: pointer;
-}
+
 #Label发布职位 {
     margin-left: 46%;
     font-size: 25px;
@@ -113,7 +104,7 @@
     width: 132px;
     height: 40px;
     line-height: 40px;
-    margin-left: 35%;
+    margin-left: 20%;
     background-color: #1ecdb9;
     border-radius: 6px;
     color: #fff;
