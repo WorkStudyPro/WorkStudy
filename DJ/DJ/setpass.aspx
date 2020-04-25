@@ -130,7 +130,7 @@
                 <br />
                 <br />
                 <br />
-                <asp:Button ID="Button1" ForeColor=" white" runat="server" Text="确认修改" Height="30px" Width="100px" />
+                <asp:Button ID="Button1" ForeColor=" white" runat="server" Text="确认修改" Height="30px" Width="100px" OnClick="Button1_Click" />
         </asp:Panel>
             </asp:Panel>
     </form>

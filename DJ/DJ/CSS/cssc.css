@@ -5,7 +5,6 @@
     margin-top: -2%;
     margin-right: 3%;
 }
-
 #first > li {
     text-indent: 10px;
     line-height: 30px;
@@ -145,10 +144,7 @@ canvas {
     margin-left: 10%;
 }
 
-#Label13 {
-    float: right;
-    margin-right: 5%;
-}
+
 
 #Label14 {
     margin-left: 5%;
@@ -158,10 +154,6 @@ canvas {
     margin-left: 10%;
 }
 
-#Label16 {
-    float: right;
-    margin-right: 5%;
-}
 
 #Label17 {
     margin-left: 5%;
@@ -171,10 +163,6 @@ canvas {
     margin-left: 5%;
 }
 
-#Label19 {
-    float: right;
-    margin-right: 5%;
-}
 
 #Label20 {
     margin-left: 5%;
@@ -184,10 +172,6 @@ canvas {
     margin-left: 8%;
 }
 
-#Label22 {
-    float: right;
-    margin-right: 5%;
-}
 
 #Label23 {
     margin-left: 5%;
@@ -195,11 +179,6 @@ canvas {
 
 #Label24 {
     margin-left: 5%;
-}
-
-#Label25 {
-    float: right;
-    margin-right: 5%;
 }
 
 #Label26 {
@@ -210,10 +189,6 @@ canvas {
     margin-left: 5%;
 }
 
-#Label28 {
-    float: right;
-    margin-right: 5%;
-}
 
 #Label29 {
     margin-left: 5%;
