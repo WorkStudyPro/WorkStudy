@@ -9,7 +9,8 @@ public partial class index_1 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Label6.Text = Session["PrincipalName"].ToString();
+        Labelid.Text = Session["account"].ToString();
     }
 
     protected void ImageButton1_Click1(object sender, ImageClickEventArgs e)

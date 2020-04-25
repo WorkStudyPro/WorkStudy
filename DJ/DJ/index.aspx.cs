@@ -5,7 +5,10 @@ public partial class index : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Labelid.Text = Session["account"].ToString();
+        Label6.Text = DAL.ManagerDAL.SelectPrincpleName(Labelid.Text);
+        Session["PrincipalName"] = Label6.Text;
+        
     }
 
     protected void ImageButton2_Click(object sender, ImageClickEventArgs e)

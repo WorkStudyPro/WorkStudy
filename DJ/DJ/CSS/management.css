@@ -10,21 +10,15 @@
     height: 870px;
     background: rgba(0,0,0,0);
 }
+
 #HyperLinks {
     margin-left: 28%;
 }
 
-#HyperLinkss {
+#HyperLinkss, #HyperLinksss, #HyperLinkssss {
     margin-left: 2%;
 }
 
-#HyperLinksss {
-    margin-left: 2%;
-}
-
-#HyperLinkssss {
-    margin-left: 2%;
-}
 #Image发布兼职 {
     margin-left: 41%;
     margin-top: 32%;
@@ -41,10 +35,12 @@
     color: #fff;
     cursor: pointer;
 }
+
 #Label发布职位 {
     margin-left: 46%;
     font-size: 25px;
 }
+
 #divss {
     background: rgba(0,0,0,0);
     width: 580px;
@@ -56,66 +52,12 @@
     margin-top: 20px;
 }
 
-#L2 {
+#L2, #L3, #L4, #L5, #L6, #L7 {
     margin-left: 21px;
 }
 
-#L3 {
-    margin-left: 21px;
-}
 
-#L4 {
-    margin-left: 21px;
-}
-
-#L5 {
-    margin-left: 21px;
-}
-
-#L6 {
-    margin-left: 21px;
-}
-
-#L7 {
-    margin-left: 21px;
-}
-
-#box1 {
+#box1, #box2, #box3, #box4, #box5, #box6 {
     background: transparent;
     border: 1px solid #e5e5e5;
-}
-
-#box2 {
-    background: transparent;
-    border: 1px solid #e5e5e5;
-}
-
-#box3 {
-    background: transparent;
-    border: 1px solid #e5e5e5;
-}
-
-#box4 {
-    background: transparent;
-    border: 1px solid #e5e5e5;
-}
-
-#box5 {
-    background: transparent;
-    border: 1px solid #e5e5e5;
-}
-
-#box6 {
-    background: transparent;
-    border: 1px solid #e5e5e5;
-}
-#Button发布兼职 {
-    width: 132px;
-    height: 40px;
-    line-height: 40px;
-    margin-left: 35%;
-    background-color: #1ecdb9;
-    border-radius: 6px;
-    color: #fff;
-    cursor: pointer;
 }

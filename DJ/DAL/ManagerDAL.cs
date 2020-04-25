@@ -95,6 +95,12 @@ namespace DAL
 
             return -1;
         }
+        /// <summary>
+        /// 修改密码
+        /// </summary>
+        /// <param name="account">ID</param>
+        /// <param name="pwd">新密码</param>
+        /// <returns></returns>
 
         public static bool ManagerChangePwd(string account,string pwd)
         {
@@ -106,6 +112,19 @@ namespace DAL
             int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ManagerNewPassword", CommandType.StoredProcedure, p));
 
             return i > 0;
+        }
+
+        public static string SelectPrincpleName(string Account)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@Account" ,Account)
+            };
+            SqlDataReader reader = SQLHelper.ExecuteReader("SelectName", CommandType.StoredProcedure, p);
+            if (reader.Read())
+                return reader.GetString(0);
+
+            return "";
         }
 
     }

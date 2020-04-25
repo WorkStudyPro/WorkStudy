@@ -10,9 +10,6 @@
     <script src="js/sweetalert-dev.js"></script>
     <link href="CSS/sweetalert.css" rel="stylesheet" />
     <link href="CSS/Login.css" rel="stylesheet" />
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/sweetalert-dev.js"></script>
-    <link href="CSS/sweetalert.css" rel="stylesheet" />
     <style type="text/css">
         #Button1{
               margin-left: 35%;
@@ -24,7 +21,7 @@
 </head>
 <body>
     <div class="stars"></div>
-            <form id="form1" runat="server">
+            <form id="form1" runat="server" defaultbutton="Button1">
                 <asp:Panel ID="Panel1" runat="server" Height="360px" Width="400px">
                     <asp:Panel ID="Panel2" runat="server">
                         <asp:Label ID="Label1" runat="server"  Text="勤工助学系统"></asp:Label></asp:Panel>
