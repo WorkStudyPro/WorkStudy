@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link href="CSS/cssc.css" rel="stylesheet" />
-<link href="CSS/mana.css" rel="stylesheet" />
+<link href="CSS/management.css" rel="stylesheet" />
 </head>
 <body>
    <form id="form1" runat="server">
