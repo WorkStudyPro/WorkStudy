@@ -86,16 +86,16 @@
         </asp:Panel>
             <asp:Panel ID="Panel5" runat="server" Height="200px" Width="200px" BackColor="white">
                 <br />
-                <asp:HyperLink ID="HyperLink3" font-underline="false" NavigateUrl="~/setpass.aspx" runat="server">修改密码</asp:HyperLink>
+                <br />
+                <asp:HyperLink ID="HyperLink3" ForeColor="#00b4aa" font-underline="false" runat="server" NavigateUrl="~/setpass.aspx">修改密码</asp:HyperLink>
+                
                 <br />
                 <br />
-                <asp:HyperLink ID="HyperLink4" ForeColor="Black" font-underline="false" NavigateUrl="~/myphoto.aspx" runat="server">修改头像</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink5" ForeColor="Black" font-underline="false" runat="server" NavigateUrl="~/mynews.aspx">消息通知</asp:HyperLink>
                 <br />
                 <br />
-                <asp:HyperLink ID="HyperLink5" ForeColor="Black" font-underline="false" NavigateUrl="~/mynews.aspx" runat="server">消息通知</asp:HyperLink>
-                <br />
-                <br />
-                <asp:HyperLink ID="HyperLink6" ForeColor="Black" font-underline="false" NavigateUrl="~/login.aspx" runat="server">退出登录</asp:HyperLink>
+                
+                <asp:HyperLink ID="HyperLink6" ForeColor="Black" font-underline="false" runat="server" NavigateUrl="~/login.aspx">退出登录</asp:HyperLink>
         </asp:Panel>
             <asp:Panel ID="Panel6" runat="server" Height="500px" Width="800px" BackColor="white">
                 <br />

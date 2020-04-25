@@ -10,7 +10,8 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/sweetalert-dev.js"></script>
     <link href="CSS/sweetalert.css" rel="stylesheet" />
- <style type="text/css">
+
+        <style type="text/css">
         #HyperLink1{
              color: #00b4aa;
         }
@@ -18,7 +19,7 @@
     height: 870px;
     background: rgba(0,0,0,0);
 }
-        #GG,#GG2,#GG3,#GG4,#GG5,#GG6{
+        #GG,#GG2,#GG3,#GG5,#GG6{
              background-color: Transparent; 
             border-style: none;    
             outline: none; 
@@ -26,7 +27,7 @@
             float: right;
             margin-right: 5%;
         }
-        #Button1,#Button2,#Button3,#Button4,#Button5,#Button6{
+        #Button1,#Button2,#Button3,#Button5,#Button6{
             background-color: Transparent; 
             border-style: none;    
             outline: none; 
@@ -34,7 +35,7 @@
             float: right;
             margin-right: 5%;
         }
-        #cancel,#cancel2,#cancel3,#cancel4,#cancel5,#cancel6{
+        #cancel,#cancel2,#cancel3,#cancel5,#cancel6{
             background-color: Transparent; 
             border-style: none;    
             outline: none; 
@@ -48,10 +49,9 @@
         #Tel,#Mail,#Home{
             margin-left:38px;
         }
-        #Vx{
-            margin-left:56px;
-        }
     </style>
+
+    
 </head>
 <body style="height: 84px">
     <form id="form1" runat="server">
@@ -95,17 +95,17 @@
                 <br />
                 <asp:HyperLink ID="HyperLink2" ForeColor="Black"  font-underline="false" runat="server" NavigateUrl="~/mygs.aspx">我的公司</asp:HyperLink>
         </asp:Panel>
-            <asp:Panel ID="Panel5" runat="server" Height="200px" Width="200px" BackColor="white">
+           <asp:Panel ID="Panel5" runat="server" Height="200px" Width="200px" BackColor="white">
+                <br />
                 <br />
                 <asp:HyperLink ID="HyperLink3" ForeColor="Black" font-underline="false" runat="server" NavigateUrl="~/setpass.aspx">修改密码</asp:HyperLink>
-                <br />
-                <br />
-                <asp:HyperLink ID="HyperLink4" ForeColor="Black" font-underline="false" runat="server" NavigateUrl="~/myphoto.aspx">修改头像</asp:HyperLink>
+                
                 <br />
                 <br />
                 <asp:HyperLink ID="HyperLink5" ForeColor="Black" font-underline="false" runat="server" NavigateUrl="~/mynews.aspx">消息通知</asp:HyperLink>
                 <br />
                 <br />
+                
                 <asp:HyperLink ID="HyperLink6" ForeColor="Black" font-underline="false" runat="server" NavigateUrl="~/login.aspx">退出登录</asp:HyperLink>
         </asp:Panel>
             <asp:Panel ID="Panel6" runat="server" Height="500px" Width="800px" BackColor="white">
@@ -120,9 +120,9 @@
                 <hr style=" color:#e5e5e5" />
                
                 <asp:Label ID="Label11" runat="server" Text="姓名" Font-Size="17px"></asp:Label>
-                <asp:Label ID="Label12" runat="server" Text="王玺" Font-Size="17px"></asp:Label>
+                <asp:Label ID="Label12" runat="server" Font-Size="17px"></asp:Label>
                 <asp:TextBox ID="Name" runat="server"></asp:TextBox>
-               <asp:Button ID="GG" runat="server" Font-Size="17px" ForeColor="#00b4aa" Text="更改" OnClick="GG_Click" />
+                <asp:Button ID="GG" runat="server" Font-Size="17px" ForeColor="#00b4aa" Text="更改" OnClick="GG_Click" />
                 <asp:Button ID="cancel" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="cancel_Click" />
                 <asp:Button ID="Button1" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button1_Click" />
             
@@ -143,16 +143,6 @@
                 <asp:Button ID="GG3" runat="server" Font-Size="17px" ForeColor="#00b4aa" Text="更改" OnClick="GG3_Click" />
                 <asp:Button ID="cancel3" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="cancel3_Click" />
                 <asp:Button ID="Button3" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button3_Click" />
-                
-                
-                <hr style=" color:#e5e5e5" />
-                 <asp:Label ID="Label20" runat="server" Text="微信号" Font-Size="17px"></asp:Label>
-                <asp:Label ID="Label21" runat="server" Text="cici2020" Font-Size="17px"></asp:Label>
-                <asp:TextBox ID="Vx" runat="server"></asp:TextBox>
-                <asp:Button ID="GG4" runat="server" Font-Size="17px" ForeColor="#00b4aa" Text="更改" OnClick="GG4_Click"  />
-                <asp:Button ID="cancel4" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="cancel4_Click" />
-                <asp:Button ID="Button4" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button4_Click" />
-                
                 
                 <hr style=" color:#e5e5e5" />
                  <asp:Label ID="Label23" runat="server" Text="电子邮箱" Font-Size="17px"></asp:Label>

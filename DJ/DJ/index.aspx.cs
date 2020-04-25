@@ -6,7 +6,7 @@ public partial class index : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         Labelid.Text = Session["account"].ToString();
-        Label6.Text = DAL.ManagerDAL.SelectPrincpleName(Labelid.Text);
+        Label6.Text = DAL.ManagerDAL.SelectInfo(Labelid.Text, "SelectName");
         Session["PrincipalName"] = Label6.Text;
         
     }

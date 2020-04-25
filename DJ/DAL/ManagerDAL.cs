@@ -113,19 +113,109 @@ namespace DAL
 
             return i > 0;
         }
+        /// <summary>
+        /// 查询信息
+        /// </summary>
+        /// <param name="Account">查询的ID</param>
+        /// <param name="mername">存储过程名字（查询什么信息）</param>
+        /// <returns></returns>
 
-        public static string SelectPrincpleName(string Account)
+        public static string SelectInfo(string Account,string mername)
         {
             SqlParameter[] p = new SqlParameter[]
             {
                 new SqlParameter("@Account" ,Account)
             };
-            SqlDataReader reader = SQLHelper.ExecuteReader("SelectName", CommandType.StoredProcedure, p);
+            SqlDataReader reader = SQLHelper.ExecuteReader(mername, CommandType.StoredProcedure, p);
             if (reader.Read())
                 return reader.GetString(0);
 
             return "";
         }
+        /// <summary>
+        /// 修改负责人名字
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
+        public static bool ChangePrincipalName(string account, string name)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@Account",account),
+                new SqlParameter("@Principalname",name)
+            };
+            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeName", CommandType.StoredProcedure, p));
 
+            return i > 0;
+        }
+        /// <summary>
+        /// 修改性别
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="sex"></param>
+        /// <returns></returns>
+        public static bool ChangeSex(string account, string sex)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@Account",account),
+                new SqlParameter("@Sex",sex)
+            };
+            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeSex", CommandType.StoredProcedure, p));
+
+            return i > 0;
+        }
+        /// <summary>
+        /// 修改电话号码
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="tel"></param>
+        /// <returns></returns>
+        public static bool ChangeTel(string account, string tel)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@Account",account),
+                new SqlParameter("@tel",tel)
+            };
+            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeTel", CommandType.StoredProcedure, p));
+
+            return i > 0;
+        }
+        /// <summary>
+        /// 修改邮箱
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="email"></param>
+        /// <returns></returns>
+        public static bool ChangeEmail(string account, string email)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@Account",account),
+                new SqlParameter("@email",email)
+            };
+            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeEmail", CommandType.StoredProcedure, p));
+
+            return i > 0;
+        }
+        /// <summary>
+        /// 修改地址
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="adress"></param>
+        /// <returns></returns>
+        public static bool ChangeAdress(string account, string adress)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@Account",account),
+                new SqlParameter("@adress",adress)
+            };
+            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeAdress", CommandType.StoredProcedure, p));
+
+            return i > 0;
+        }
     }
 }
