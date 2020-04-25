@@ -120,8 +120,8 @@
                 <hr style=" color:#e5e5e5" />
                
                 <asp:Label ID="Label11" runat="server" Text="姓名" Font-Size="17px"></asp:Label>
-                <asp:Label ID="Label12" runat="server" Text="王玺" Font-Size="17px"></asp:Label>
-                <asp:TextBox ID="Name" runat="server"></asp:TextBox>
+                <asp:Label ID="Label12" runat="server" Text="王玺" ForeColor="#00b4aa" Font-Size="17px"></asp:Label>
+                <asp:TextBox ID="Name" runat="server" MaxLength="10" Placeholder="字符长度不超过20"></asp:TextBox>
                <asp:Button ID="GG" runat="server" Font-Size="17px" ForeColor="#00b4aa" Text="更改" OnClick="GG_Click" />
                 <asp:Button ID="cancel" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="cancel_Click" />
                 <asp:Button ID="Button1" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button1_Click" />
