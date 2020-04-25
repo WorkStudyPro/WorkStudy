@@ -100,9 +100,7 @@
                 <br />
                 <asp:HyperLink ID="HyperLink3" ForeColor="Black" font-underline="false" runat="server" NavigateUrl="~/setpass.aspx">修改密码</asp:HyperLink>
                 <br />
-                <br />
-                <asp:HyperLink ID="HyperLink4" ForeColor="Black" font-underline="false" runat="server" NavigateUrl="~/myphoto.aspx">修改头像</asp:HyperLink>
-                <br />
+                
                 <br />
                 <asp:HyperLink ID="HyperLink5" ForeColor="Black" font-underline="false" runat="server" NavigateUrl="~/mynews.aspx">消息通知</asp:HyperLink>
                 <br />
@@ -145,15 +143,6 @@
                 <asp:Button ID="GG3" runat="server" Font-Size="17px" ForeColor="#00b4aa" Text="更改" OnClick="GG3_Click" />
                 <asp:Button ID="cancel3" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="cancel3_Click" />
                 <asp:Button ID="Button3" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button3_Click" />
-                
-                
-                <hr style=" color:#e5e5e5" />
-                 <asp:Label ID="Label20" runat="server" Text="微信号" Font-Size="17px"></asp:Label>
-                <asp:Label ID="Label21" runat="server" Text="cici2020" Font-Size="17px"></asp:Label>
-                <asp:TextBox ID="Vx" runat="server"></asp:TextBox>
-                <asp:Button ID="GG4" runat="server" Font-Size="17px" ForeColor="#00b4aa" Text="更改" OnClick="GG4_Click"  />
-                <asp:Button ID="cancel4" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="cancel4_Click" />
-                <asp:Button ID="Button4" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button4_Click" />
                 
                 
                 <hr style=" color:#e5e5e5" />
