@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link href="CSS/cssc.css" rel="stylesheet" />
-<link href="CSS/mana.css" rel="stylesheet" />
+<link href="CSS/management.css" rel="stylesheet" />
     <style type="text/css">
         #Panel3 {
     height: 870px;
