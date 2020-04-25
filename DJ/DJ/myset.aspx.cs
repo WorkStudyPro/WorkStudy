@@ -22,11 +22,18 @@ public partial class Default2 : System.Web.UI.Page
         Button4.Visible = false;
         Button5.Visible = false;
         Button6.Visible = false;
-        
+        cancel.Visible = false;
+        cancel2.Visible = false;
+        cancel3.Visible = false;
+        cancel4.Visible = false;
+        cancel5.Visible = false;
+        cancel6.Visible = false;
+
     }
 
     protected void GG_Click(object sender, EventArgs e)
     {
+        cancel.Visible = true;
         Name.Visible = true;
         Label12.Visible = false;
         GG.Visible = false;
@@ -48,8 +55,18 @@ public partial class Default2 : System.Web.UI.Page
         GG2.Enabled = true; GG3.Enabled = true; GG4.Enabled = true; GG5.Enabled = true; GG6.Enabled = true;
     }
 
+    protected void cancel_Click(object sender, EventArgs e)
+    {
+        Name.Visible = false;
+        Label12.Visible = true;
+        GG.Visible = true;
+        Button1.Visible = false;
+        GG2.Enabled = true; GG3.Enabled = true; GG4.Enabled = true; GG5.Enabled = true; GG6.Enabled = true;
+    }
+
     protected void GG2_Click(object sender, EventArgs e)
     {
+        cancel2.Visible = true;
         Sex.Visible = true;
         Label15.Visible = false;
         GG2.Visible = false;
@@ -71,8 +88,18 @@ public partial class Default2 : System.Web.UI.Page
         GG.Enabled = true; GG3.Enabled = true; GG4.Enabled = true; GG5.Enabled = true; GG6.Enabled = true;
     }
 
+    protected void cancel2_Click(object sender, EventArgs e)
+    {
+        Sex.Visible = false;
+        Label15.Visible = true;
+        GG2.Visible = true;
+        Button2.Visible = false;
+        GG.Enabled = true; GG3.Enabled = true; GG4.Enabled = true; GG5.Enabled = true; GG6.Enabled = true;
+    }
+
     protected void GG3_Click(object sender, EventArgs e)
     {
+        cancel3.Visible = true;
         Tel.Visible = true;
         Label18.Visible = false;
         GG3.Visible = false;
@@ -94,8 +121,18 @@ public partial class Default2 : System.Web.UI.Page
         GG2.Enabled = true; GG.Enabled = true; GG4.Enabled = true; GG5.Enabled = true; GG6.Enabled = true;
     }
 
+    protected void cancel3_Click(object sender, EventArgs e)
+    {
+        Tel.Visible = false;
+        Label18.Visible = true;
+        GG3.Visible = true;
+        Button3.Visible = false;
+        GG2.Enabled = true; GG.Enabled = true; GG4.Enabled = true; GG5.Enabled = true; GG6.Enabled = true;
+    }
+
     protected void GG4_Click(object sender, EventArgs e)
     {
+        cancel4.Visible = true;
         Vx.Visible = true;
         Label21.Visible = false;
         GG4.Visible = false;
@@ -117,8 +154,18 @@ public partial class Default2 : System.Web.UI.Page
         GG2.Enabled = true; GG3.Enabled = true; GG.Enabled = true; GG5.Enabled = true; GG6.Enabled = true;
     }
 
+    protected void cancel4_Click(object sender, EventArgs e)
+    {
+        Vx.Visible = false;
+        Label21.Visible = true;
+        GG4.Visible = true;
+        Button4.Visible = false;
+        GG2.Enabled = true; GG3.Enabled = true; GG.Enabled = true; GG5.Enabled = true; GG6.Enabled = true;
+    }
+
     protected void GG5_Click(object sender, EventArgs e)
     {
+        cancel5.Visible = true;
         Mail.Visible = true;
         Label24.Visible = false;
         GG5.Visible = false;
@@ -140,8 +187,18 @@ public partial class Default2 : System.Web.UI.Page
         GG2.Enabled = true; GG3.Enabled = true; GG4.Enabled = true; GG.Enabled = true; GG6.Enabled = true;
     }
 
+    protected void cancel5_Click(object sender, EventArgs e)
+    {
+        Mail.Visible = false;
+        Label24.Visible = true;
+        GG5.Visible = true;
+        Button5.Visible = false;
+        GG2.Enabled = true; GG3.Enabled = true; GG4.Enabled = true; GG.Enabled = true; GG6.Enabled = true;
+    }
+
     protected void GG6_Click(object sender, EventArgs e)
     {
+        cancel6.Visible = true;
         Home.Visible = true;
         Label27.Visible = false;
         GG6.Visible = false;
@@ -163,7 +220,12 @@ public partial class Default2 : System.Web.UI.Page
         GG2.Enabled = true; GG3.Enabled = true; GG4.Enabled = true; GG5.Enabled = true; GG.Enabled = true;
     }
 
-
-
-    
+    protected void cancel6_Click(object sender, EventArgs e)
+    {
+        Home.Visible = false;
+        Label27.Visible = true;
+        GG6.Visible = true;
+        Button6.Visible = false;
+        GG2.Enabled = true; GG3.Enabled = true; GG4.Enabled = true; GG5.Enabled = true; GG.Enabled = true;
+    }
 }
