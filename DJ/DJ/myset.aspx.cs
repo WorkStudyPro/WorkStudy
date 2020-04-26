@@ -50,7 +50,7 @@ public partial class Default2 : System.Web.UI.Page
         Button1.Visible = false;
         if(Name.Text==string.Empty)
             Utility.JavaScript.FormAndRedirect("提示", "名字不能为空！", "", this);
-        if (DAL.ManagerDAL.ChangePrincipalName(Session["account"].ToString(), Name.Text))
+        else if (DAL.ManagerDAL.ChangePrincipalName(Session["account"].ToString(), Name.Text))
             Utility.JavaScript.FormAndRedirect("提示", "名字已修改成功！", "", this);
         GG2.Enabled = true; GG3.Enabled = true;  GG5.Enabled = true; GG6.Enabled = true;
     }
@@ -82,7 +82,7 @@ public partial class Default2 : System.Web.UI.Page
         Button2.Visible = false;
         if (Sex.Text == string.Empty)
             Utility.JavaScript.FormAndRedirect("提示", "修改性别不能为空！", "", this);
-        if(DAL.ManagerDAL.ChangeSex(Session["account"].ToString(),Sex.Text))
+        else if(DAL.ManagerDAL.ChangeSex(Session["account"].ToString(),Sex.Text))
             Utility.JavaScript.FormAndRedirect("提示", "性别已修改成功！", "", this);
         GG.Enabled = true; GG3.Enabled = true;  GG5.Enabled = true; GG6.Enabled = true;
     }
@@ -114,7 +114,7 @@ public partial class Default2 : System.Web.UI.Page
         Button3.Visible = false;
         if (Tel.Text == string.Empty)
             Utility.JavaScript.FormAndRedirect("提示", "修改手机号码不能为空！", "", this);
-        if(DAL.ManagerDAL.ChangeTel(Session["account"].ToString(),Tel.Text))
+        else if(DAL.ManagerDAL.ChangeTel(Session["account"].ToString(),Tel.Text))
             Utility.JavaScript.FormAndRedirect("提示", "手机已修改成功！", "", this);
         GG2.Enabled = true; GG.Enabled = true;  GG5.Enabled = true; GG6.Enabled = true;
     }
@@ -146,7 +146,7 @@ public partial class Default2 : System.Web.UI.Page
         Button5.Visible = false;
         if (Mail.Text == string.Empty)
             Utility.JavaScript.FormAndRedirect("提示", "修改邮箱不能为空！", "", this);
-        if (DAL.ManagerDAL.ChangeEmail(Session["account"].ToString(), Mail.Text))
+        else if (DAL.ManagerDAL.ChangeEmail(Session["account"].ToString(), Mail.Text))
             Utility.JavaScript.FormAndRedirect("提示", "邮箱已修改成功！", "", this);
         GG2.Enabled = true; GG3.Enabled = true;  GG.Enabled = true; GG6.Enabled = true;
     }
@@ -178,7 +178,7 @@ public partial class Default2 : System.Web.UI.Page
         Button6.Visible = false;
         if (Home.Text == string.Empty)
             Utility.JavaScript.FormAndRedirect("提示", "修改地址不能为空！", "", this);
-        if (DAL.ManagerDAL.ChangeAdress(Session["account"].ToString(), Home.Text))
+        else if (DAL.ManagerDAL.ChangeAdress(Session["account"].ToString(), Home.Text))
             Utility.JavaScript.FormAndRedirect("提示", "地址已修改成功！", "", this);
         GG2.Enabled = true; GG3.Enabled = true; GG5.Enabled = true; GG.Enabled = true;
     }
