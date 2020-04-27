@@ -24,11 +24,15 @@ namespace BLL
         /// <returns></returns>
         public static bool AddManager(Manager manager)
         {
-            //判断账号是否存在？
-            if (DAL.ManagerDAL.ManagerIsExist(manager.Account))
-                return false;
+            //判断电话号码是否被注册过
+            if (!DAL.ManagerDAL.SelectTel(manager.Tel))
+                //判断ID是否存在
+                if (DAL.ManagerDAL.SelectId(manager.Tel)!=null)
+                    return false;
+                else
+                    return DAL.ManagerDAL.AddManager(manager);
             else
-                return DAL.ManagerDAL.AddManager(manager);
+                return false;
         }
     }
 }

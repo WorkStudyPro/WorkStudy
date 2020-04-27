@@ -25,13 +25,10 @@ public partial class index : System.Web.UI.Page
                 //登录成功，数据存入session中
                 Session["tel"] = manager.Tel;
                 Session["ID"] = manager.Account;
-                //弹窗
-                
+                //弹窗提示
                 Utility.JavaScript.FormAndRedirect("这是您的ID！如遗忘，将无法找回！",DAL.ManagerDAL.SelectId(manager.Tel).ToString(), "http://localhost:56935/login.aspx", this);
             }
             else
-            {
-                Utility.JavaScript.Alert("该账号已存在，请重新填写", this);
-            }
+                Utility.JavaScript.ErrorAlert("错误提示！", "此手机号码已被注册！", Page);
     }
 }

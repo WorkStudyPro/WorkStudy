@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\DJ",
+    "\\DJ\\DAL",
     "\\DJ\\DJ"
   ],
-  "SelectedNode": "\\DJ\\DJ.sln",
+  "SelectedNode": "\\DJ\\DJ\\index.aspx.cs",
   "PreviewInSolutionExplorer": false
 }

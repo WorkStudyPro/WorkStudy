@@ -23,9 +23,7 @@ namespace DAL
                 new SqlParameter("@Account",account),
                 new SqlParameter("@Password",password)
             };
-            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ManagerLogin", CommandType.StoredProcedure, p));
-
-            return i > 0;
+            return Convert.ToInt32(SQLHelper.ExecuteScalar("ManagerLogin", CommandType.StoredProcedure, p)) > 0;
         }
         /// <summary>
         /// 增，注册商家账号，传递实参
@@ -40,29 +38,43 @@ namespace DAL
                 new SqlParameter("@Password",manager.Password),
                 new SqlParameter("@Tel",manager.Tel)
             };
-            int i = Convert.ToInt32(SQLHelper.ExecuteNonQuery("ManagerRegister", CommandType.StoredProcedure, p));
-
-            return i > 0;
+            return Convert.ToInt32(SQLHelper.ExecuteNonQuery("ManagerRegister", CommandType.StoredProcedure, p)) > 0;
         }
 
         /// <summary>
-        /// 统计，判断商家账号是否存在
+        /// 查询ID是否存在,若存在返回ID，不存在返回null;
         /// </summary>
-        /// <param name="account"></param>
+        /// <param name="tel"></param>
         /// <returns></returns>
-        public static bool ManagerIsExist(string account)
+        public static string SelectId(string tel)
         {
             SqlParameter[] p = new SqlParameter[]
             {
-                new SqlParameter("@Account",account)
+                new SqlParameter("@tel" ,tel)
             };
-            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ManagerIsExist", CommandType.StoredProcedure, p));
+            SqlDataReader reader = SQLHelper.ExecuteReader("selectId", CommandType.StoredProcedure, p);
+            if (reader.Read())
+                return reader.GetInt32(0).ToString();
 
-            return i > 0;
+            return null;
         }
 
         /// <summary>
-        /// Id匹配tel
+        /// 查询电话号码，若存在返回true,不存在返回false
+        /// </summary>
+        /// <param name="Tel"></param>
+        /// <returns></returns>
+        public static bool SelectTel(string Tel)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@Tel",Tel)
+            };
+            return Convert.ToInt32(SQLHelper.ExecuteScalar("SelectTel", CommandType.StoredProcedure, p)) > 0;
+        }
+
+        /// <summary>
+        /// Id匹配tel，若匹配，返回tel，不匹配返回null
         /// </summary>
         /// <param name="account"></param>
         /// <returns></returns>
@@ -76,50 +88,15 @@ namespace DAL
             if (reader.Read())
                 return reader.GetString(0);
 
-            return "";
+            return null;
         }
+        
         /// <summary>
-        /// 根据tel查询ID
-        /// </summary>
-        /// <param name="tel"></param>
-        /// <returns></returns>
-        public static int SelectId(string tel)
-        {
-            SqlParameter[] p = new SqlParameter[]
-            {
-                new SqlParameter("@tel" ,tel)
-            };
-            SqlDataReader reader = SQLHelper.ExecuteReader("selectId", CommandType.StoredProcedure, p);
-            if (reader.Read())
-                return reader.GetInt32(0);
-
-            return -1;
-        }
-        /// <summary>
-        /// 修改密码
-        /// </summary>
-        /// <param name="account">ID</param>
-        /// <param name="pwd">新密码</param>
-        /// <returns></returns>
-
-        public static bool ManagerChangePwd(string account,string pwd)
-        {
-            SqlParameter[] p = new SqlParameter[]
-            {
-                new SqlParameter("@Account",account),
-                new SqlParameter("@Password",pwd)
-            }; 
-            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ManagerNewPassword", CommandType.StoredProcedure, p));
-
-            return i > 0;
-        }
-        /// <summary>
-        /// 查询信息
+        /// 查询信息,若查询到信息，则返回信息，foe则返回null
         /// </summary>
         /// <param name="Account">查询的ID</param>
-        /// <param name="mername">存储过程名字（查询什么信息）</param>
+        /// <param name="mername">调用的存储过程（查询什么信息）</param>
         /// <returns></returns>
-
         public static string SelectInfo(string Account,string mername)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -130,10 +107,27 @@ namespace DAL
             if (reader.Read())
                 return reader.GetString(0);
 
-            return "";
+            return null;
         }
+
         /// <summary>
-        /// 修改负责人名字
+        /// 修改密码，修改成功返回true，否则返回false
+        /// </summary>
+        /// <param name="account">ID</param>
+        /// <param name="pwd">新密码</param>
+        /// <returns></returns>
+        public static bool ManagerChangePwd(string account, string pwd)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@Account",account),
+                new SqlParameter("@Password",pwd)
+            };
+            return Convert.ToInt32(SQLHelper.ExecuteScalar("ManagerNewPassword", CommandType.StoredProcedure, p)) > 0;
+        }
+
+        /// <summary>
+        /// 修改负责人名字，修改成功返回true，否则返回false
         /// </summary>
         /// <param name="account"></param>
         /// <param name="name"></param>
@@ -145,12 +139,10 @@ namespace DAL
                 new SqlParameter("@Account",account),
                 new SqlParameter("@Principalname",name)
             };
-            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeName", CommandType.StoredProcedure, p));
-
-            return i > 0;
+            return Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeName", CommandType.StoredProcedure, p)) > 0;
         }
         /// <summary>
-        /// 修改性别
+        /// 修改性别，修改成功返回true，否则返回false
         /// </summary>
         /// <param name="account"></param>
         /// <param name="sex"></param>
@@ -162,12 +154,10 @@ namespace DAL
                 new SqlParameter("@Account",account),
                 new SqlParameter("@Sex",sex)
             };
-            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeSex", CommandType.StoredProcedure, p));
-
-            return i > 0;
+            return Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeSex", CommandType.StoredProcedure, p)) > 0;
         }
         /// <summary>
-        /// 修改电话号码
+        /// 修改电话号码，修改成功返回true，否则返回false
         /// </summary>
         /// <param name="account"></param>
         /// <param name="tel"></param>
@@ -179,12 +169,10 @@ namespace DAL
                 new SqlParameter("@Account",account),
                 new SqlParameter("@tel",tel)
             };
-            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeTel", CommandType.StoredProcedure, p));
-
-            return i > 0;
+            return Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeTel", CommandType.StoredProcedure, p)) > 0;
         }
         /// <summary>
-        /// 修改邮箱
+        /// 修改邮箱，修改成功返回true，否则返回false
         /// </summary>
         /// <param name="account"></param>
         /// <param name="email"></param>
@@ -196,12 +184,10 @@ namespace DAL
                 new SqlParameter("@Account",account),
                 new SqlParameter("@email",email)
             };
-            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeEmail", CommandType.StoredProcedure, p));
-
-            return i > 0;
+            return Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeEmail", CommandType.StoredProcedure, p)) > 0;
         }
         /// <summary>
-        /// 修改地址
+        /// 修改地址，修改成功返回true，否则返回false
         /// </summary>
         /// <param name="account"></param>
         /// <param name="adress"></param>
@@ -213,9 +199,7 @@ namespace DAL
                 new SqlParameter("@Account",account),
                 new SqlParameter("@adress",adress)
             };
-            int i = Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeAdress", CommandType.StoredProcedure, p));
-
-            return i > 0;
+            return Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeAdress", CommandType.StoredProcedure, p)) > 0;
         }
     }
 }

@@ -12,8 +12,7 @@ namespace Utility
         public static void Alert(string message, Page page)
         {
             #region
-            string js = @"<Script language='JavaScript'>
-                    alert('" + message + "');</Script>";
+            string js = @"<Script language='JavaScript'>alert('" + message + "');</Script>";
             //HttpContext.Current.Response.Write(js);
             if (!page.ClientScript.IsStartupScriptRegistered(page.GetType(), "alert"))
             {

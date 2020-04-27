@@ -1,30 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 public partial class Default2 : System.Web.UI.Page
 {
-        
+
     protected void Page_Load(object sender, EventArgs e)
     {
-        Name.Visible = false;
-        Sex.Visible = false;
-        Tel.Visible = false;
-        Mail.Visible = false;
-        Home.Visible = false;
-        Button1.Visible = false;
-        Button2.Visible = false;
-        Button3.Visible = false;
-        Button5.Visible = false;
-        Button6.Visible = false;
-        cancel.Visible = false;
-        cancel2.Visible = false;
-        cancel3.Visible = false;
-        cancel5.Visible = false;
-        cancel6.Visible = false;
         Label12.Text = DAL.ManagerDAL.SelectInfo(Session["account"].ToString(), "SelectName");
         Label15.Text = DAL.ManagerDAL.SelectInfo(Session["account"].ToString(), "SelectSex");
         Label18.Text = DAL.ManagerDAL.SelectInfo(Session["account"].ToString(), "IdMatchTel");
@@ -48,14 +28,14 @@ public partial class Default2 : System.Web.UI.Page
         Label12.Visible = true;
         GG.Visible = true;
         Button1.Visible = false;
-        if(Name.Text==string.Empty)
+        if (Name.Text == string.Empty)
             Utility.JavaScript.FormAndRedirect("提示", "名字不能为空！", "", this);
         else if (DAL.ManagerDAL.ChangePrincipalName(Session["account"].ToString(), Name.Text))
             Utility.JavaScript.FormAndRedirect("提示", "名字已修改成功！", "", this);
         GG2.Enabled = true; GG3.Enabled = true;  GG5.Enabled = true; GG6.Enabled = true;
     }
 
-    protected void cancel_Click(object sender, EventArgs e)
+    protected void Cancel_Click(object sender, EventArgs e)
     {
         Name.Visible = false;
         Label12.Visible = true;
@@ -87,7 +67,7 @@ public partial class Default2 : System.Web.UI.Page
         GG.Enabled = true; GG3.Enabled = true;  GG5.Enabled = true; GG6.Enabled = true;
     }
 
-    protected void cancel2_Click(object sender, EventArgs e)
+    protected void Cancel2_Click(object sender, EventArgs e)
     {
         Sex.Visible = false;
         Label15.Visible = true;
@@ -119,7 +99,7 @@ public partial class Default2 : System.Web.UI.Page
         GG2.Enabled = true; GG.Enabled = true;  GG5.Enabled = true; GG6.Enabled = true;
     }
 
-    protected void cancel3_Click(object sender, EventArgs e)
+    protected void Cancel3_Click(object sender, EventArgs e)
     {
         Tel.Visible = false;
         Label18.Visible = true;
@@ -151,7 +131,7 @@ public partial class Default2 : System.Web.UI.Page
         GG2.Enabled = true; GG3.Enabled = true;  GG.Enabled = true; GG6.Enabled = true;
     }
 
-    protected void cancel5_Click(object sender, EventArgs e)
+    protected void Cancel5_Click(object sender, EventArgs e)
     {
         Mail.Visible = false;
         Label24.Visible = true;
@@ -183,7 +163,7 @@ public partial class Default2 : System.Web.UI.Page
         GG2.Enabled = true; GG3.Enabled = true; GG5.Enabled = true; GG.Enabled = true;
     }
 
-    protected void cancel6_Click(object sender, EventArgs e)
+    protected void Cancel6_Click(object sender, EventArgs e)
     {
         Home.Visible = false;
         Label27.Visible = true;

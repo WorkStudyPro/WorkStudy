@@ -120,47 +120,47 @@
                 <hr style=" color:#e5e5e5" />
                
                 <asp:Label ID="Label11" runat="server" Text="姓名" Font-Size="17px"></asp:Label>
-                <asp:Label ID="Label12" runat="server" Text="王玺" ForeColor="#00b4aa" Font-Size="17px"></asp:Label>
-                <asp:TextBox ID="Name" runat="server" MaxLength="10" Placeholder="字符长度不超过20"></asp:TextBox>
+                <asp:Label ID="Label12" runat="server" Text="" ForeColor="#00b4aa" Font-Size="17px"></asp:Label>
+                <asp:TextBox ID="Name" runat="server" MaxLength="10" Placeholder="字符长度不超过20" Visible="False"></asp:TextBox>
                <asp:Button ID="GG" runat="server" Font-Size="17px" ForeColor="#00b4aa" Text="更改" OnClick="GG_Click" />
-                <asp:Button ID="cancel" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="cancel_Click" />
-                <asp:Button ID="Button1" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button1_Click" />
+                <asp:Button ID="cancel" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="Cancel_Click" Visible="False" />
+                <asp:Button ID="Button1" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button1_Click" Visible="False" />
             
                 
                 <hr style=" color:#e5e5e5" />
                  <asp:Label ID="Label14" runat="server" Text="性别" Font-Size="17px"></asp:Label>
                 <asp:Label ID="Label15" runat="server" Text="男" ForeColor="#00b4aa" Font-Size="17px"></asp:Label>
-                <asp:TextBox ID="Sex" runat="server" MaxLength="6" Placeholder="字符长度不超过12"></asp:TextBox>
+                <asp:TextBox ID="Sex" runat="server" MaxLength="6" Placeholder="字符长度不超过12" Visible="False"></asp:TextBox>
                 <asp:Button ID="GG2" runat="server" Font-Size="17px" ForeColor="#00b4aa" Text="更改" OnClick="GG2_Click" />
-                <asp:Button ID="cancel2" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="cancel2_Click" />
-                <asp:Button ID="Button2" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button2_Click" />
+                <asp:Button ID="cancel2" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="Cancel2_Click" Visible="False" />
+                <asp:Button ID="Button2" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button2_Click" Visible="False" />
                  
                 
                 <hr style=" color:#e5e5e5" />
                  <asp:Label ID="Label17" runat="server" Text="电话号码" Font-Size="17px"></asp:Label>
                 <asp:Label ID="Label18" runat="server" Text="18582409158" ForeColor="#00b4aa" Font-Size="17px"></asp:Label>
-                <asp:TextBox ID="Tel" runat="server" MaxLength="11" Placeholder="字符长度不超过11"></asp:TextBox>
+                <asp:TextBox ID="Tel" runat="server" MaxLength="11" Placeholder="字符长度不超过11" Visible="False"></asp:TextBox>
                 <asp:Button ID="GG3" runat="server" Font-Size="17px" ForeColor="#00b4aa" Text="更改" OnClick="GG3_Click" />
-                <asp:Button ID="cancel3" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="cancel3_Click" />
-                <asp:Button ID="Button3" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button3_Click" />
+                <asp:Button ID="cancel3" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="Cancel3_Click" Visible="False" />
+                <asp:Button ID="Button3" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button3_Click" Visible="False" />
                 
                 
                 <hr style=" color:#e5e5e5" />
                  <asp:Label ID="Label23" runat="server" Text="电子邮箱" Font-Size="17px"></asp:Label>
                 <asp:Label ID="Label24" runat="server" Text="787406408@qq.com" ForeColor="#00b4aa" Font-Size="17px"></asp:Label>
-                <asp:TextBox ID="Mail" runat="server" MaxLength="25" Placeholder="字符长度不超过50"></asp:TextBox>
+                <asp:TextBox ID="Mail" runat="server" MaxLength="25" Placeholder="字符长度不超过50" Visible="False"></asp:TextBox>
                 <asp:Button ID="GG5" runat="server" Font-Size="17px" ForeColor="#00b4aa" Text="更改" OnClick="GG5_Click" />
-                <asp:Button ID="cancel5" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="cancel5_Click" />
-                <asp:Button ID="Button5" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button5_Click"  />
+                <asp:Button ID="cancel5" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="Cancel5_Click" Visible="False" />
+                <asp:Button ID="Button5" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button5_Click" Visible="False"  />
                 
                 
                 <hr style=" color:#e5e5e5" />
                   <asp:Label ID="Label26" runat="server" Text="店铺地址" Font-Size="17px"></asp:Label>
                 <asp:Label ID="Label27" runat="server" Text="四川工程职业技术学院工农村" ForeColor="#00b4aa" Font-Size="17px"></asp:Label>
-                <asp:TextBox ID="Home" runat="server" MaxLength="25" Placeholder="字符长度不超过50"></asp:TextBox>
+                <asp:TextBox ID="Home" runat="server" MaxLength="25" Placeholder="字符长度不超过50" Visible="False"></asp:TextBox>
                 <asp:Button ID="GG6" runat="server" Font-Size="17px" ForeColor="#00b4aa" Text="更改" OnClick="GG6_Click" />
-                 <asp:Button ID="cancel6" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="cancel6_Click" />
-                <asp:Button ID="Button6" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button6_Click"  />
+                 <asp:Button ID="cancel6" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="取消" OnClick="Cancel6_Click" Visible="False" />
+                <asp:Button ID="Button6" Font-Size="17px" ForeColor="#00b4aa" runat="server" Text="保存" OnClick="Button6_Click" Visible="False"  />
                
                 
                 <hr style=" color:#e5e5e5" />
