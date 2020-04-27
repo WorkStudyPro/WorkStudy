@@ -13,6 +13,16 @@
     height: 870px;
     background: rgba(0,0,0,0);
                 }
+        #Button发布兼职 {
+    width: 132px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 36%;
+    background-color: #1ecdb9;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+}
         
         </style>
 </head>
@@ -30,10 +40,9 @@
 			        <li>			
 				<span></span>
                         <asp:Panel ID="Panel2" runat="server" >
-                    <asp:Image ID="Image2" runat="server" ImageUrl="~/image/账号.png" ImageAlign="Middle" Height="49px" Width="36px" />
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/image/账号.png" ImageAlign="Middle" Height="39px" Width="36px" />
                     <asp:Label ID="Label6" runat="server" ForeColor="white" Text="66666666"></asp:Label>
-                    
-                            <asp:Label ID="kong" runat="server" Text=">"></asp:Label>
+                    <img src="image/图标%2018.svg" width="30px" height="30px" class="JT"/>
                       </asp:Panel>
 			   <ul id="second"><br />
                    <asp:HyperLink ID="HyperLink11" NavigateUrl="~/myset.aspx" ForeColor="white" font-underline="false"  runat="server">基本信息</asp:HyperLink><br /><br />
@@ -102,23 +111,30 @@
 	  <script>
           $(function () {
               //监听事件
+              var isTrue = false;
               $("#first>li").click(function () {
-
+                  if (isTrue) {
+                      $(this).find(".JT").css("transform", "rotate(0deg)");
+                      isTrue = false;
+                  }
+                  else {
+                      $(this).find(".JT").css("transform", "rotate(90deg)");
+                      isTrue = true;
+                  }
                   $(this).children("ul").slideToggle();
                   $(this).children("span1").toggleClass("current");
-
-                  //排他
-                  $(this).siblings().children("ul").slideUp();
-                  $(this).siblings().children("span1").removeClass("current");
-                  //end()回到当前节点的上级节点
-
-                  // $(this).children("ul").slideToggle().end().siblings().children("ul").slideUp();
-
-                  // $(this).children("span").toggleClass("current").end().siblings().children("span").removeClass("current");
-
               })
+              //排他
+              $(this).siblings().children("ul").slideUp();
+              $(this).siblings().children("span1").removeClass("current");
+              //end()回到当前节点的上级节点
 
+              // $(this).children("ul").slideToggle().end().siblings().children("ul").slideUp();
+
+              // $(this).children("span").toggleClass("current").end().siblings().children("span").removeClass("current");
           })
+
+
 		  </script>
     <script src="js/paper-full.min.js"></script>
     <script src="js/fly.js"></script>

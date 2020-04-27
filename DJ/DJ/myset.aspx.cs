@@ -37,6 +37,7 @@ public partial class Default2 : System.Web.UI.Page
 
     protected void Cancel_Click(object sender, EventArgs e)
     {
+        cancel.Visible = false;
         Name.Visible = false;
         Label12.Visible = true;
         GG.Visible = true;
@@ -69,6 +70,7 @@ public partial class Default2 : System.Web.UI.Page
 
     protected void Cancel2_Click(object sender, EventArgs e)
     {
+        cancel2.Visible = false;
         Sex.Visible = false;
         Label15.Visible = true;
         GG2.Visible = true;
@@ -101,6 +103,7 @@ public partial class Default2 : System.Web.UI.Page
 
     protected void Cancel3_Click(object sender, EventArgs e)
     {
+        cancel3.Visible = false;
         Tel.Visible = false;
         Label18.Visible = true;
         GG3.Visible = true;
@@ -133,6 +136,7 @@ public partial class Default2 : System.Web.UI.Page
 
     protected void Cancel5_Click(object sender, EventArgs e)
     {
+        cancel5.Visible = false;
         Mail.Visible = false;
         Label24.Visible = true;
         GG5.Visible = true;
@@ -165,6 +169,7 @@ public partial class Default2 : System.Web.UI.Page
 
     protected void Cancel6_Click(object sender, EventArgs e)
     {
+        cancel6.Visible = false;
         Home.Visible = false;
         Label27.Visible = true;
         GG6.Visible = true;

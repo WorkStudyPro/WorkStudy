@@ -24,7 +24,7 @@ canvas {
 #second {
     color: black;
     display: none;
-    margin-left: 87%;
+    margin-left:1620px;
     z-index: 999;
     position: relative;
     width: 130px;
@@ -32,13 +32,6 @@ canvas {
     box-shadow: -5px 0 10px rgba(0,0,0,.1), 0 0 0 rgba(0,0,0,.1), 0 5px 10px rgba(0,0,0,.1), 5px 0 10px rgba(0,0,0,.1);
 }
 
-#kong {
-    float: right;
-    margin-right: 21%;
-    margin-top: -1%;
-    font-size: x-large;
-    color: white;
-}
 
 #second > li {
     border-bottom: 1px solid blue;
@@ -66,10 +59,19 @@ canvas {
 }
 
 
-#Image2 {
-    margin-top: -7%;
+.JT {
+    float: left;
+    transition: all 0.5s ease-out;
 }
 
+#Image2 {
+    margin-top: -3%;
+    float: left;
+}
+
+#Label6 {
+    float: left;
+}
 
 #Panel4 {
     margin-left: 20%;
