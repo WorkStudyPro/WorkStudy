@@ -10,7 +10,7 @@ namespace DAL
     public class SQLHelper
     {
         //从网站、windows的配置文件中读取数据库连接字符串
-        static string cnstr = ConfigurationManager.ConnectionStrings["cnstr"].ConnectionString;//
+        static string cnstr = ConfigurationManager.ConnectionStrings["cnstr"].ConnectionString;
 
         /// <summary>
         /// 执行增、删、改的SQL命令或存储过程，返回受影响的行数
