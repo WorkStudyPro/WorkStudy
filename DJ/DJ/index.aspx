@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
 
+<%@ Register Src="~/work.ascx" TagPrefix="uc1" TagName="work" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,24 +11,9 @@
     <title></title>
    <link href="CSS/cssc.css" rel="stylesheet" />
     <link href="CSS/index.css" rel="stylesheet" />
-    <style type="text/css">
-         #Image发布兼职{
-            margin-left: 41%;
-            margin-top: 11%;
-            margin-bottom: 6%;
-         }
-         #Button发布兼职{
-            width: 132px;
-            height: 40px;
-            line-height: 40px;
-            margin-left: -17%;
-            background-color: #1ecdb9;
-            border-radius: 6px;
-            color: #fff;
-            cursor: pointer;
-         }
-        
-    </style>
+    <link href="CSS/work.css" rel="stylesheet" />
+    
+   
 </head>
 <body>
     <form id="form1" runat="server">
@@ -98,8 +86,13 @@
             <br />
             <%--中间菜单--%>
             <div id="divs">
-               <asp:Image ID="Image发布兼职" runat="server" ImageUrl="~/image/发布兼职logo.png" />
-                <asp:Button ID="Button发布兼职" runat="server" Text="发布兼职" OnClick="Button发布兼职_Click"  />
+                <asp:Panel ID="Panelwork" runat="server" style="width:870px;margin-left: 25px;position: absolute;margin-top: 15px;overflow-y:auto; overflow-x:hidden; height:350px;">
+                
+                    <uc1:work runat="server" ID="work" />
+                    <uc1:work runat="server" ID="work2"  />
+                     <uc1:work runat="server" ID="work3" />
+                    
+              </asp:Panel>
             </div>
             <%--右边菜单--%>
              <div id="right">

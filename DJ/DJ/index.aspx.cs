@@ -9,6 +9,7 @@ public partial class index : System.Web.UI.Page
         Label6.Text = DAL.ManagerDAL.SelectInfo(Labelid.Text, "SelectName");
         Session["PrincipalName"] = Label6.Text;
         
+
     }
 
     protected void ImageButton2_Click(object sender, ImageClickEventArgs e)

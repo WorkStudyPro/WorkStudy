@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index-1.aspx.cs" Inherits="index_1" %>
 
+<%@ Register Src="~/work.ascx" TagPrefix="uc1" TagName="work" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -10,7 +13,7 @@
     <script src="js/fly.js"></script>
     <link href="CSS/cssc.css" rel="stylesheet" />
     <link href="CSS/index.css" rel="stylesheet" />
-    
+    <link href="CSS/work.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -75,7 +78,11 @@
             <asp:HyperLink ID="HyperLinkss" runat="server"  ForeColor="#00b4aa">在招兼职</asp:HyperLink>
             <br /><br />
             <%--中间菜单--%>
-            <div id="divs"></div>
+            <div id="divs">
+                <div style="width:870px;margin-left: 25px;position: absolute;margin-top: 15px;overflow-y:auto; overflow-x:hidden; height:350px;">
+                    <uc1:work runat="server" ID="work" ClientIDMode="Inherit" />
+                    </div>
+            </div>
             <%--右边菜单--%>
              <div id="right">
                 <br />

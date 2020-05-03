@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="management.aspx.cs" Inherits="management" %>
 
+<%@ Register Src="~/work.ascx" TagPrefix="uc1" TagName="work" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,6 +11,7 @@
     <title></title>
   <link href="CSS/cssc.css" rel="stylesheet" />
     <link href="CSS/management.css" rel="stylesheet" />
+    <link href="CSS/work.css" rel="stylesheet" />
 </head>
 <body>
    <form id="form1" runat="server">
@@ -52,6 +56,9 @@
             <br />
             <%--中间菜单--%>
             <div id="divs">
+                <div style="width:870px;margin-left: 25px;position: absolute;margin-top: 15px;overflow-y:auto; overflow-x:hidden; height:650px;">
+                <uc1:work runat="server" ID="work" />
+                    </div>
              <asp:Image ID="Image发布兼职" runat="server" ImageUrl="~/image/发布兼职logo.png" />        
             </div>
           </div>
