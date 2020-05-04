@@ -89,8 +89,7 @@
                 <asp:Panel ID="Panelwork" runat="server" style="width:870px;margin-left: 25px;position: absolute;margin-top: 15px;overflow-y:auto; overflow-x:hidden; height:350px;">
                 
                     <uc1:work runat="server" ID="work" />
-                    <uc1:work runat="server" ID="work2"  />
-                     <uc1:work runat="server" ID="work3" />
+                    
                     
               </asp:Panel>
             </div>
