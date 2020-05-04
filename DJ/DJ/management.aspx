@@ -61,7 +61,6 @@
                     <uc1:work runat="server" ID="work1" />
                      <uc1:work runat="server" ID="work2" />
                     </div>
-             <asp:Image ID="Image发布兼职" runat="server" ImageUrl="~/image/发布兼职logo.png" />        
             </div>
           </div>
     </form>
