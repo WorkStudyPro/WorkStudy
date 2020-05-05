@@ -9,7 +9,7 @@ public partial class management : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        
     }
 
     protected void Button发布兼职_Click(object sender, EventArgs e)
