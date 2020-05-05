@@ -27,9 +27,7 @@ namespace DAL
                 cmd.CommandText = sql;
                 cmd.CommandType = type;
                 if (p != null)
-                {
                     cmd.Parameters.AddRange(p);
-                }
                 r = cmd.ExecuteNonQuery();
             }
             return r;
@@ -49,9 +47,7 @@ namespace DAL
             cmd.CommandText = sql;
             cmd.CommandType = type;
             if (p != null)
-            {
                 cmd.Parameters.AddRange(p);
-            }
             dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
             return dr;
         }

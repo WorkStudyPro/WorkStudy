@@ -45,7 +45,7 @@ public partial class Login : System.Web.UI.Page
             }
             else
                 //Utility.JavaScript.Alert("账号或密码不正确，请重试", this);
-                Utility.JavaScript.FormAndRedirect("提示", "账号或密码不正确，请重试", "http://localhost:56935/login.aspx", this);
+                Utility.JavaScript.ErrorAlert("提示", "账号或密码不正确，请重试",  this);
     }
 
     protected void CheckBox1_CheckedChanged(object sender, EventArgs e)

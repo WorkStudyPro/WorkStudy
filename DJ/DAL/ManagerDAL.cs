@@ -90,14 +90,14 @@ namespace DAL
 
             return null;
         }
-        
+
         /// <summary>
         /// 查询信息,若查询到信息，则返回信息，foe则返回null
         /// </summary>
         /// <param name="Account">查询的ID</param>
         /// <param name="mername">调用的存储过程（查询什么信息）</param>
         /// <returns></returns>
-        public static string SelectInfo(string Account,string mername)
+        public static string SelectInfo(string Account, string mername)
         {
             SqlParameter[] p = new SqlParameter[]
             {
@@ -141,6 +141,7 @@ namespace DAL
             };
             return Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeName", CommandType.StoredProcedure, p)) > 0;
         }
+
         /// <summary>
         /// 修改性别，修改成功返回true，否则返回false
         /// </summary>
@@ -156,6 +157,7 @@ namespace DAL
             };
             return Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeSex", CommandType.StoredProcedure, p)) > 0;
         }
+
         /// <summary>
         /// 修改电话号码，修改成功返回true，否则返回false
         /// </summary>
@@ -171,6 +173,7 @@ namespace DAL
             };
             return Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeTel", CommandType.StoredProcedure, p)) > 0;
         }
+
         /// <summary>
         /// 修改邮箱，修改成功返回true，否则返回false
         /// </summary>
@@ -186,6 +189,7 @@ namespace DAL
             };
             return Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeEmail", CommandType.StoredProcedure, p)) > 0;
         }
+
         /// <summary>
         /// 修改地址，修改成功返回true，否则返回false
         /// </summary>
@@ -200,6 +204,21 @@ namespace DAL
                 new SqlParameter("@adress",adress)
             };
             return Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeAdress", CommandType.StoredProcedure, p)) > 0;
+        }
+
+        public static bool AddJob(JobData jobData)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+               new SqlParameter("@ID",jobData.M_ID),
+               new SqlParameter("@Name",jobData.W_Name),
+               new SqlParameter("@Time",jobData.W_Time),
+               new SqlParameter("@Place",jobData.W_Place),
+               new SqlParameter("@Descrip",jobData.W_Description),
+               new SqlParameter("@People",jobData.W_People),
+               new SqlParameter("@Money",jobData.W_Money)
+            };
+            return SQLHelper.ExecuteNonQuery("AddJob", CommandType.StoredProcedure, p) > 0;
         }
     }
 }
