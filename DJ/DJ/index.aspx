@@ -94,7 +94,7 @@
             <%--中间菜单--%>
             <div id="divs">
                 <asp:Panel ID="Panelwork" runat="server" Style="width: 870px; margin-left: 25px; position: absolute; margin-top: 15px; overflow-y: auto; overflow-x: hidden; height: 350px;">
-                    <uc1:work runat="server" ID="work" />
+                    <%--<uc1:work runat="server" ID="work" />--%>
                 </asp:Panel>
             </div>
             <%--右边菜单--%>
