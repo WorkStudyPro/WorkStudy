@@ -57,7 +57,9 @@
             <%--中间菜单--%>
             <div id="divs">
                 <div style="width:870px;margin-left: 25px;position: absolute;margin-top: 15px;overflow-y:auto; overflow-x:hidden; height:650px;">
-                    <asp:Panel ID="Panel3" runat="server"></asp:Panel>
+                <uc1:work runat="server" ID="work" />
+                    <uc1:work runat="server" ID="work1" />
+                    <uc1:work runat="server" ID="work2" />
                     </div>
             </div>
           </div>
