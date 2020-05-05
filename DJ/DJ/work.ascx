@@ -3,7 +3,7 @@
 <div id="work" style="width: 850px; height: 150px; border: 1px solid #1ecdb9; background: rgba(0,0,0,0); border-radius: 15px; margin-bottom: 10px;">
     <br />
     <div id="workleft">
-        <asp:Label ID="name" runat="server" Style="margin-left: 8%; cursor: pointer;" Text="食堂打扫" Font-Bold="true" Font-Size="22px" ForeColor="#1ecdb9" onclick="openDialog()"></asp:Label>
+        <asp:Label ID="name" runat="server" Style="margin-left: 8%; cursor: pointer;" Text="食堂打扫" Font-Bold="True" Font-Size="22px" ForeColor="#1ECDB9" onclick="openDialog()"></asp:Label>
         <br />
         <br />
         <asp:Image ID="Imagetime" Style="margin-left: 5%; vertical-align: middle;" runat="server" ImageUrl="~/image/时间.svg" Width="20px" />
