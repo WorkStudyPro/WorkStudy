@@ -1,19 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 public partial class work : System.Web.UI.UserControl
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        SqlDataReader reader = DAL.ManagerDAL.SelectJob(Session["account"].ToString());
+        if (reader.Read())
+        {
+            name.Text= reader.GetString(0);
+            renshu.Text = reader.GetInt32(4).ToString();
+            gongzi1.Text = reader.GetInt32(5).ToString();
+        }
 
     }
 
-    protected void name_Click(object sender, EventArgs e)
-    {
-        
-    }
 }

@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Data;
 using System.Data.SqlClient;
-using Model;
 
 namespace DAL
 {
@@ -219,6 +219,15 @@ namespace DAL
                new SqlParameter("@Money",jobData.W_Money)
             };
             return SQLHelper.ExecuteNonQuery("AddJob", CommandType.StoredProcedure, p) > 0;
+        }
+
+        public static SqlDataReader SelectJob(string account)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account)
+            };
+            return SQLHelper.ExecuteReader("SelectJob", CommandType.StoredProcedure, p);
         }
     }
 }

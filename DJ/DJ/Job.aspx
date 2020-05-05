@@ -6,7 +6,9 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/sweetalert-dev.js"></script>
+    <link href="CSS/sweetalert.css" rel="stylesheet" />
     <link href="CSS/cssc.css" rel="stylesheet" />
     <link href="CSS/management.css" rel="stylesheet" />
     <style type="text/css">
