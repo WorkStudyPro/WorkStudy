@@ -11,4 +11,9 @@ public partial class Job : System.Web.UI.Page
     {
         
     }
+
+    protected void Button发布兼职_Click(object sender, EventArgs e)
+    {
+
+    }
 }
