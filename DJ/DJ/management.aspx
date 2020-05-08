@@ -11,7 +11,6 @@
     <title></title>
     <link href="CSS/cssc.css" rel="stylesheet" />
     <link href="CSS/management.css" rel="stylesheet" />
-    <link href="CSS/work.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
