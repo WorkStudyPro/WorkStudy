@@ -98,12 +98,4 @@
     <asp:Label ID="Label1" useHandCursor="true" runat="server" onclick="closeDialog();" Style="margin-left: 383px; margin-bottom: 30px; display: block; width: 100px; height: 40px; line-height: 40px; text-align: center; border-radius: 6px; border: 1px solid #1ecdb9; font-size: 14px; color: #1ecdb9; cursor: pointer;" Text="关闭"></asp:Label>
 </div>
 
-<%--<script type="text/javascript">
 
-    function openDialog() {
-        document.getElementById('light').style.display = 'block';
-    }
-    function closeDialog() {
-        document.getElementById('light').style.display = 'none';
-    }
-</script>--%>
