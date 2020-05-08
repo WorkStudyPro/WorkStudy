@@ -7,7 +7,7 @@ public partial class _Default : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         work worko = (work)Page.LoadControl("~/work.ascx");
-
+        FindControl(worko).ToString();
         Panelwork.Controls.Add(worko);
         
     }
