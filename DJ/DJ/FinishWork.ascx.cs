@@ -11,4 +11,12 @@ public partial class FinishWork : System.Web.UI.UserControl
     {
 
     }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        light.Style.Add("display", "block");
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        light.Style.Add("display", "none");
+    }
 }
