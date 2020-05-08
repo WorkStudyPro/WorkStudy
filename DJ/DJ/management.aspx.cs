@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Data.SqlClient;
-using System.Web.UI.WebControls;
 
 public partial class management : System.Web.UI.Page
 {
