@@ -25,7 +25,7 @@
         <asp:Label ID="gongzi1" runat="server" ForeColor="#1ECDB9" Text="2500"></asp:Label>
     </div>
     <div id="workright">
-        <asp:Button ID="Button关闭兼职" runat="server" Text="关闭兼职" Style="width: 132px; height: 40px; line-height: 40px; float: right; background-color: #1ecdb9; border-radius: 6px; color: #fff; cursor: pointer; margin-top: -10%; margin-right: 4%;" />
+        <asp:Button ID="Button关闭兼职" runat="server" Text="关闭兼职" Style="width: 132px; height: 40px; line-height: 40px; float: right; background-color: #1ecdb9; border-radius: 6px; color: #fff; cursor: pointer; margin-top: -7%; margin-right: 4%;" />
     </div>
 </div>
 <div id="light" style="display: none; position: absolute; margin-top: -162px; width: 850px; height: 99%; border: 1px solid #1ecdb9; background-color: white; z-index: 1002; overflow: auto;">
@@ -98,7 +98,7 @@
     <asp:Label ID="Label1" useHandCursor="true" runat="server" onclick="closeDialog();" Style="margin-left: 383px; margin-bottom: 30px; display: block; width: 100px; height: 40px; line-height: 40px; text-align: center; border-radius: 6px; border: 1px solid #1ecdb9; font-size: 14px; color: #1ecdb9; cursor: pointer;" Text="关闭"></asp:Label>
 </div>
 
-<script type="text/javascript">
+<%--<script type="text/javascript">
 
     function openDialog() {
         document.getElementById('light').style.display = 'block';
@@ -106,4 +106,4 @@
     function closeDialog() {
         document.getElementById('light').style.display = 'none';
     }
-</script>
+</script>--%>
