@@ -10,6 +10,7 @@ public partial class management : System.Web.UI.Page
         while (reader.Read())
         {
             work work = (work)LoadControl("work.ascx");
+
             ((Label)work.FindControl("name")).Text = reader.GetString(0);
             ((Label)work.FindControl("time")).Text = reader.GetString(1);
             ((Label)work.FindControl("where")).Text = reader.GetString(2);
