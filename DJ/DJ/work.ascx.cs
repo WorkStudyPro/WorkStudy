@@ -8,21 +8,5 @@ public partial class work : System.Web.UI.UserControl
     {
 
     }
-
-    public static void User(work work,SqlDataReader reader)
-    {
-        ((Label)work.FindControl("name")).Text = reader.GetString(2);
-        ((Label)work.FindControl("time")).Text = reader.GetString(3);
-        ((Label)work.FindControl("where")).Text = reader.GetString(4);
-        ((Label)work.FindControl("renshu")).Text = reader.GetInt32(6).ToString();
-        ((Label)work.FindControl("gongzi1")).Text = reader.GetInt32(7).ToString();
-
-        ((Label)work.FindControl("name1")).Text = ((Label)work.FindControl("name")).Text;
-        ((Label)work.FindControl("time1")).Text = ((Label)work.FindControl("time")).Text;
-        ((Label)work.FindControl("where1")).Text = ((Label)work.FindControl("where")).Text;
-        ((Label)work.FindControl("jieshao1")).Text = reader.GetString(5);
-        ((Label)work.FindControl("renshu1")).Text = ((Label)work.FindControl("renshu")).Text;
-        ((Label)work.FindControl("gongzidaiyu1")).Text = ((Label)work.FindControl("gongzi1")).Text;
-    }
-
+    
 }

@@ -24,9 +24,7 @@
         <asp:Label ID="gongzi1" runat="server" ForeColor="#1ECDB9" Text="2500"></asp:Label>
     </div>
     <div id="workright">
-        <%-- <asp:Button ID="Button修改兼职" runat="server"  Text="修改兼职" style="width: 132px;height: 40px;line-height: 40px;float: right;background-color: #1ecdb9;border-radius: 6px;color: #fff;cursor: pointer;margin-top: -10%;margin-right: 4%;" />--%><br />
         <asp:Button ID="Button关闭兼职" runat="server" Text="关闭兼职" Style="width: 132px; height: 40px; line-height: 40px; float: right; background-color: #1ecdb9; border-radius: 6px; color: #fff; cursor: pointer; margin-top: -10%; margin-right: 4%;" />
-
     </div>
 </div>
 <div id="xxxx">
@@ -34,7 +32,7 @@
         <table style="margin-left: 100px;">
             <tr style="width: 854px; height: 60px;">
                 <td>
-                    <asp:Label ID="name1" runat="server" Style="margin-left: 283px;" Text="食堂打扫" Font-Bold="true" Font-Size="22px" ForeColor="#1ecdb9" ></asp:Label>
+                    <asp:Label ID="name1" runat="server" Style="margin-left: 283px;" Text="食堂打扫" Font-Bold="true" Font-Size="22px" ForeColor="#1ecdb9" onclick="openDialog()"></asp:Label>
                 </td>
             </tr>
             <tr style="width: 854px; height: 60px;">
@@ -103,8 +101,7 @@
 
 </div>
 <script type="text/javascript">
-    $(function () {
-    })
+
     function openDialog() {
         document.getElementById('light').style.display = 'block';
         document.getElementById('fade').style.display = 'block'

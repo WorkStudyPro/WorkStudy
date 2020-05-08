@@ -90,11 +90,7 @@
             //排他
             $(this).siblings().children("ul").slideUp();
             $(this).siblings().children("span1").removeClass("current");
-            //end()回到当前节点的上级节点
-
-            // $(this).children("ul").slideToggle().end().siblings().children("ul").slideUp();
-
-            // $(this).children("span").toggleClass("current").end().siblings().children("span").removeClass("current");
+            
         })
 
 
