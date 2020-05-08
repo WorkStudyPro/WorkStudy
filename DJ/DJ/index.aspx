@@ -88,12 +88,11 @@
             <br />
 
             <asp:HyperLink ID="HyperLinks" runat="server" ForeColor="#00b4aa">新报名</asp:HyperLink>
-            <asp:HyperLink ID="HyperLinkss" runat="server" ForeColor="white" NavigateUrl="~/index-1.aspx" Font-Underline="false">在招兼职</asp:HyperLink>
             <br />
             <br />
             <%--中间菜单--%>
             <div id="divs">
-                <asp:Panel ID="Panelwork" runat="server" Style="width: 870px; margin-left: 25px; position: absolute; margin-top: 15px; overflow-y: auto; overflow-x: hidden; height: 350px;">
+                <asp:Panel ID="Panelwork" runat="server" Style="width: 870px; margin-left: 25px; position: absolute; margin-top: 15px; overflow-y: auto; overflow-x: hidden; height: 465px;">
                     
                 </asp:Panel>
             </div>

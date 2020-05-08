@@ -78,9 +78,9 @@
             <div id="div1">
                 <br />
                 <asp:Image ID="Image3" runat="server" ImageUrl="~/image/通知logo.png" Height="51px" Width="58px" ImageAlign="Middle" />
-                
+               
                 <asp:Label ID="Label8" runat="server" Text="系统通知" Font-Size="17px"></asp:Label>
-                <asp:Image ID="Image0" runat="server" Height="34px" ImageAlign="Middle" ImageUrl="~/image/》.png" Width="39px" />
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/image/图标 18.svg"   Height="34px" Style="margin-left: 140px;margin-top: -15px;" ImageAlign="Middle"  Width="39px" />
             </div>
             
         </div>

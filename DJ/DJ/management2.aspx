@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="management2.aspx.cs" Inherits="management2" %>
 
+<%@ Register Src="~/FinishWork.ascx" TagPrefix="uc1" TagName="FinishWork" %>
+
+
 
 <!DOCTYPE html>
 
@@ -59,7 +62,8 @@
             <%--中间菜单--%>
             <div id="divs">
                 <div style="width: 870px; margin-left: 25px; position: absolute; margin-top: 15px; overflow-y: auto; overflow-x: hidden; height: 650px;">
-                </div>
+                    <uc1:FinishWork runat="server" ID="FinishWork" />
+                    </div>
                 <%--<asp:Image ID="Image发布兼职" runat="server" ImageUrl="~/image/发布兼职logo.png" /> --%>
             </div>
         </div>

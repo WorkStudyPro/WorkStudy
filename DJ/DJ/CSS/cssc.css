@@ -4,6 +4,7 @@
     float: right;
     margin-top: -2%;
     margin-right: 3%;
+    cursor: pointer;
 }
 #first > li {
     text-indent: 10px;
