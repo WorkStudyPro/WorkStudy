@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Data.SqlClient;
 using System.Web.UI;
+using System.Web.UI.WebControls;
 
 public partial class index : System.Web.UI.Page
 {
@@ -8,7 +10,14 @@ public partial class index : System.Web.UI.Page
         Labelid.Text = Session["account"].ToString();
         Label6.Text = DAL.ManagerDAL.SelectInfo(Labelid.Text, "SelectName");
         Session["PrincipalName"] = Label6.Text;
-        
+        SqlDataReader reader = DAL.ManagerDAL.SelectNewJob(Session["account"].ToString());
+        if (reader.Read())
+        {
+            work work = (work)LoadControl("work.ascx");
+            work.user(work, reader);
+
+            Panelwork.Controls.Add(work);
+        }
 
     }
 

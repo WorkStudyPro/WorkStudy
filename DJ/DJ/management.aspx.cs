@@ -6,14 +6,12 @@ public partial class management : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        SqlDataReader reader = DAL.ManagerDAL.SelectJob("154669");
+        SqlDataReader reader = DAL.ManagerDAL.SelectNewJob(Session["account"].ToString());
         while (reader.Read())
         {
             work work = (work)LoadControl("work.ascx");
-            ((Label)work.FindControl("name")).Text = reader.GetString(0);
-
-            ((Label)work.FindControl("renshu")).Text = reader.GetInt32(4).ToString();
-            ((Label)work.FindControl("gongzi1")).Text = reader.GetInt32(5).ToString();
+            work.user(work, reader);
+            
             Panel3.Controls.Add(work);
         }
     }

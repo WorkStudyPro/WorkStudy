@@ -229,5 +229,14 @@ namespace DAL
             };
             return SQLHelper.ExecuteReader("SelectJob", CommandType.StoredProcedure, p);
         }
+
+        public static SqlDataReader SelectNewJob(string account)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account)
+            };
+            return SQLHelper.ExecuteReader("SelectNewWork", CommandType.StoredProcedure, p);
+        }
     }
 }
