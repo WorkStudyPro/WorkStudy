@@ -34,7 +34,7 @@
         <table style="margin-left: 100px;">
             <tr style="width: 854px; height: 60px;">
                 <td>
-                    <asp:Label ID="name1" runat="server" Style="margin-left: 283px;" Text="食堂打扫" Font-Bold="true" Font-Size="22px" ForeColor="#1ecdb9" onclick="openDialog()"></asp:Label>
+                    <asp:Label ID="name1" runat="server" Style="margin-left: 283px;" Text="食堂打扫" Font-Bold="true" Font-Size="22px" ForeColor="#1ecdb9" ></asp:Label>
                 </td>
             </tr>
             <tr style="width: 854px; height: 60px;">
