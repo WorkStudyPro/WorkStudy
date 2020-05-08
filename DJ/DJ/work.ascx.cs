@@ -4,15 +4,17 @@ public partial class work : System.Web.UI.UserControl
 { 
     protected void Page_Load(object sender, EventArgs e)
     {
-           
+
     }
-    
-    public void wwor()
+
+
+
+    protected void Button1_Click(object sender, EventArgs e)
     {
-        string scriptstrs = "";
-        scriptstrs += "{ function openDialog() {document.getElementById('light').style.display = 'block';}function closeDialog(){document.getElementById('light').style.display = 'none'; }}";
-        if (!Page.ClientScript.IsClientScriptBlockRegistered(this.GetType(), "key"))
-            Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "key", scriptstrs, true);
-        
+        light.Style.Add("display", "block");
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        light.Style.Add("display", "none");
     }
 }
