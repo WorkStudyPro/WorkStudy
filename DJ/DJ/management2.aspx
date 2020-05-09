@@ -62,7 +62,8 @@
             <%--中间菜单--%>
             <div id="divs">
                 <div style="width: 890px; position: absolute; overflow-y: auto; overflow-x: hidden; height: 650px; background-color: white; margin-left: 28%; margin-top: 10px;">
-                    <uc1:FinishWork runat="server" ID="FinishWork" />
+                    <asp:Panel ID="Panel3" runat="server"></asp:Panel>
+                    
                     </div>
                 <%--<asp:Image ID="Image发布兼职" runat="server" ImageUrl="~/image/发布兼职logo.png" /> --%>
             </div>
