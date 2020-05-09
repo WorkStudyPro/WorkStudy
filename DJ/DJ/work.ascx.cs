@@ -6,7 +6,7 @@ public partial class work : System.Web.UI.UserControl
     {
 
     }
-
+    
 
 
     protected void Button1_Click(object sender, EventArgs e)
