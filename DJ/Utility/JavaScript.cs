@@ -24,7 +24,7 @@ namespace Utility
         public static void ErrorAlert(string title,string text,Page page)
         {
             string scriptstrs = "";
-            scriptstrs += "{swal({title:'" + title + "',text: '" + text + "',confirmButtonText: '确认!',confirmButtonColor: '#00b4aa',closeOnConfirm: false,});}";
+            scriptstrs += "{swal({title:'" + title + "',text: '" + text + "',confirmButtonText: '确认',confirmButtonColor: '#00b4aa',closeOnConfirm: false,});}";
             if (!page.ClientScript.IsClientScriptBlockRegistered(page.GetType(), "key"))
                 page.ClientScript.RegisterClientScriptBlock(page.GetType(), "key", scriptstrs, true);
         }
@@ -49,7 +49,7 @@ namespace Utility
         public static void FormAndRedirect(string title,string text,string Url,Page page)
         {
             string scriptstrs = "";
-            scriptstrs += "{swal({title: '" + title + "',text: '" + text + "',confirmButtonText: '确认!',confirmButtonColor: '#00b4aa',closeOnConfirm: false,},function(isConfirm) {if (isConfirm){location.href ='" + Url + "'; } });}";
+            scriptstrs += "{swal({title: '" + title + "',text: '" + text + "',confirmButtonText: '确认',confirmButtonColor: '#00b4aa',closeOnConfirm: false,},function(isConfirm) {if (isConfirm){location.href ='" + Url + "'; } });}";
             if (!page.ClientScript.IsClientScriptBlockRegistered(page.GetType(), "key"))
                 page.ClientScript.RegisterClientScriptBlock(page.GetType(), "key", scriptstrs, true);
         }
