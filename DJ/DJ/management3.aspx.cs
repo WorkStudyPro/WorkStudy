@@ -10,6 +10,7 @@ public partial class management3 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Label6.Text = Session["PrincipalName"].ToString();
         SqlDataReader reader = DAL.ManagerDAL.SelectJob(Session["account"].ToString());
         while (reader.Read())
         {

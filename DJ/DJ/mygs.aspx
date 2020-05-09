@@ -78,22 +78,22 @@
                 <br /> <br /> <br />
                 <br />
                 <asp:Label ID="gs" runat="server" Font-Size="21px" ForeColor="#00b4aa" Style="margin-left: 18%;" Text="公司名称："></asp:Label>
-                <asp:Label ID="gsname" runat="server" Font-Size="21px" Style="margin-left: 5%;"  Text="Label" ></asp:Label>
+                <asp:Label ID="companyname" runat="server" Font-Size="21px" Style="margin-left: 5%;"  Text="Label" ></asp:Label>
                 <br /><br /> <br />
                 <asp:Label ID="gs1" runat="server" Font-Size="21px" ForeColor="#00b4aa" Style="margin-left: 18%;" Text="公司地址："></asp:Label>
-                <asp:Label ID="gswhere" runat="server" Font-Size="21px" Style="margin-left: 5%;"  Text="Label"></asp:Label>
+                <asp:Label ID="companyplace" runat="server" Font-Size="21px" Style="margin-left: 5%;"  Text="Label"></asp:Label>
                 
                 <br /><br /> <br />
                 <asp:Label ID="gs2" runat="server" Font-Size="21px" ForeColor="#00b4aa" Style="margin-left: 18%;" Text="公司老板："></asp:Label>
-                <asp:Label ID="gsboss" runat="server" Font-Size="21px" Style="margin-left: 5%;"  Text="Label"></asp:Label>
+                <asp:Label ID="companyboss" runat="server" Font-Size="21px" Style="margin-left: 5%;"  Text="Label"></asp:Label>
 
                 <br /><br /> <br />
                 <asp:Label ID="gs3" runat="server" Font-Size="21px" ForeColor="#00b4aa" Style="margin-left: 18%;" Text="老板电话："></asp:Label>
-                <asp:Label ID="gsbosstel" runat="server" Font-Size="21px" Style="margin-left: 5%;"  Text="Label"></asp:Label>
+                <asp:Label ID="gscompanybosstel" runat="server" Font-Size="21px" Style="margin-left: 5%;"  Text="Label"></asp:Label>
 
                 <br /><br /> <br />
                 <asp:Label ID="gs4" runat="server" Font-Size="21px" ForeColor="#00b4aa" Style="margin-left: 18%;" Text="公司星级："></asp:Label>
-                <asp:Label ID="gsstar" runat="server" Font-Size="21px" Style="margin-left: 5%;"  Text="Label"></asp:Label>
+                <asp:Label ID="companystar" runat="server" Font-Size="21px" Style="margin-left: 5%;"  Text="Label"></asp:Label>
                 <br /><br /><br />
                 <br />
                 <br />
