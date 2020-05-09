@@ -1,9 +1,9 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="FinishWork.ascx.cs" Inherits="FinishWork" %>
-<div id="work" style="width: 850px; height: 150px; border: 1px solid #1ecdb9; background: rgba(0,0,0,0); border-radius: 15px; margin-bottom: 10px; margin-left: 10px; margin-top: 10px;">
+<div id="work"  style="width: 850px; height: 150px; border: 1px solid #1ecdb9; background: rgba(0,0,0,0); border-radius: 15px; margin-bottom: 10px;">
     <br />
-    <div id="workleft">
-        <%--        <asp:Label ID="name" runat="server" onclick="openDialog();" Style="margin-left: 8%; cursor: pointer;" Text="食堂打扫" Font-Bold="True" Font-Size="22px" ForeColor="#1ECDB9" ></asp:Label>--%>
-        <asp:Button ID="name" runat="server" Text="食堂打扫" OnClick="Button1_Click" Style="margin-left: 8%; cursor: pointer; background-color: Transparent; border-style: none; outline: none;" Font-Bold="True" Font-Size="22px" ForeColor="#1ECDB9" />
+    <div id="workleft"> 
+<%--        <asp:Label ID="name" runat="server" onclick="openDialog();" Style="margin-left: 8%; cursor: pointer;" Text="食堂打扫" Font-Bold="True" Font-Size="22px" ForeColor="#1ECDB9" ></asp:Label>--%>
+        <asp:Button ID="name" runat="server" Text="食堂打扫" onclick="Button1_Click" Style="margin-left: 8%; cursor: pointer;background-color: Transparent; border-style: none;outline: none; " Font-Bold="True" Font-Size="22px" ForeColor="#1ECDB9" />
         <br />
         <br />
         <asp:Image ID="Imagetime" Style="margin-left: 5%; vertical-align: middle;" runat="server" ImageUrl="~/image/时间.svg" Width="20px" />
@@ -24,10 +24,10 @@
         <asp:Label ID="gongzi1" runat="server" ForeColor="#1ECDB9" Text="2500"></asp:Label>
     </div>
     <div id="workright">
-        <asp:Label ID="yijieshu" runat="server" Style="float: right; margin-top: -9%; margin-right: 7%; color: #1ecdb9; font-size: 18px;" Text="已结束"></asp:Label>
+        <asp:Label ID="yijieshu" runat="server" Style="float: right;margin-top: -9%;margin-right: 7%;color: #1ecdb9;font-size: 18px;" Text="已结束"></asp:Label>
     </div>
 </div>
-<div id="light" runat="server" style="display: none; position: absolute; margin-top: -162px; width: 860px; height: 99%; border: 1px solid #1ecdb9; background-color: white; z-index: 1002; overflow: auto;">
+<div id="light"  runat="server" style="display: none; position: absolute; margin-top: -162px; width: 850px; height: 99%; border: 1px solid #1ecdb9; background-color: white; z-index: 1002; overflow: auto;">
     <table style="margin-left: 100px;">
         <tr style="width: 854px; height: 60px;">
             <td>
@@ -94,8 +94,8 @@
 
     <br />
     <br />
-    <%--    <asp:Label ID="Label1" useHandCursor="true" runat="server" onclick="closeDialog();" Style="margin-left: 383px; margin-bottom: 30px; display: block; width: 100px; height: 40px; line-height: 40px; text-align: center; border-radius: 6px; border: 1px solid #1ecdb9; font-size: 14px; color: #1ecdb9; cursor: pointer;" Text="关闭"></asp:Label>--%>
-    <asp:Button ID="Button2" runat="server" useHandCursor="true" Text="关闭" OnClick="Button2_Click" Style="margin-left: 383px; background-color: Transparent; border-style: none; outline: none; margin-bottom: 30px; display: block; width: 100px; height: 40px; line-height: 40px; text-align: center; border-radius: 6px; border: 1px solid #1ecdb9; font-size: 14px; color: #1ecdb9; cursor: pointer;" />
+<%--    <asp:Label ID="Label1" useHandCursor="true" runat="server" onclick="closeDialog();" Style="margin-left: 383px; margin-bottom: 30px; display: block; width: 100px; height: 40px; line-height: 40px; text-align: center; border-radius: 6px; border: 1px solid #1ecdb9; font-size: 14px; color: #1ecdb9; cursor: pointer;" Text="关闭"></asp:Label>--%>
+    <asp:Button ID="Button2" runat="server" useHandCursor="true"   Text="关闭" OnClick="Button2_Click" Style="margin-left: 383px; background-color: Transparent; border-style: none; outline: none;  margin-bottom: 30px; display: block; width: 100px; height: 40px;line-height: 40px; text-align: center; border-radius: 6px; border: 1px solid #1ecdb9; font-size: 14px; color: #1ecdb9; cursor: pointer;" />
 </div>
 <%--<script type="text/javascript">
     $(function () {

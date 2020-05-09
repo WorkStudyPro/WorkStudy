@@ -88,7 +88,7 @@
             <br />
             <br />
             <%--中间菜单--%>
-            <div id="divs" style="width:920px;">
+            <div id="divs">
                 <asp:Panel ID="Panelwork" runat="server" Style="width: 870px; margin-left: 25px; position: absolute; margin-top: 15px; overflow-y: auto; overflow-x: hidden; height: 465px;">
                     
                 </asp:Panel>
