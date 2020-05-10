@@ -89,7 +89,7 @@
 
                 <br /><br /> <br />
                 <asp:Label ID="gs3" runat="server" Font-Size="21px" ForeColor="#00b4aa" Style="margin-left: 18%;" Text="老板电话："></asp:Label>
-                <asp:Label ID="gscompanybosstel" runat="server" Font-Size="21px" Style="margin-left: 5%;"  Text="Label"></asp:Label>
+                <asp:Label ID="companybosstel" runat="server" Font-Size="21px" Style="margin-left: 5%;"  Text="Label"></asp:Label>
 
                 <br /><br /> <br />
                 <asp:Label ID="gs4" runat="server" Font-Size="21px" ForeColor="#00b4aa" Style="margin-left: 18%;" Text="公司星级："></asp:Label>
