@@ -109,7 +109,7 @@ namespace DAL
 
             return null;
         }
-
+        
         /// <summary>
         /// 修改密码，修改成功返回true，否则返回false
         /// </summary>
@@ -238,5 +238,20 @@ namespace DAL
             };
             return SQLHelper.ExecuteReader("SelectNewWork", CommandType.StoredProcedure, p);
         }
+
+        public static int SelectJobCount(string Account)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@Account" ,Account)
+            };
+            SqlDataReader reader = SQLHelper.ExecuteReader("SelectJobCount", CommandType.StoredProcedure, p);
+            if (reader.Read())
+                return reader.GetInt32(0);
+
+            return 0;
+        }
+
     }
+    
 }

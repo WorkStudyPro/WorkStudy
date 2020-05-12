@@ -26,7 +26,7 @@
         <asp:Label ID="gongzi1" runat="server" ForeColor="#1ECDB9" Text="2500"></asp:Label>
     </div>
     <div id="workright">
-        <asp:Button ID="Button关闭兼职" runat="server" Text="关闭兼职" Style="width: 132px; height: 40px; line-height: 40px; float: right; background-color: #1ecdb9; border-radius: 6px; color: #fff; cursor: pointer; margin-top: -7%; margin-right: 4%;" />
+        <asp:Button ID="Button关闭兼职" runat="server" Text="关闭兼职" Style="width: 132px; height: 40px; line-height: 40px; float: right; background-color: #1ecdb9; border-radius: 6px; color: #fff; cursor: pointer; margin-top: -7%; margin-right: 4%;" OnClick="Button关闭兼职_Click" />
     </div>
 </div>
 <div id="light"  runat="server" style="display: none; position: absolute; margin-top: -162px; width: 850px; height: 99%; border: 1px solid #1ecdb9; background-color: white; z-index: 1002; overflow: auto;">
