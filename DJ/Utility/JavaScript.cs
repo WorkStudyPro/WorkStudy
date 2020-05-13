@@ -1,4 +1,5 @@
-﻿using System.Web.UI;
+﻿using System;
+using System.Web.UI;
 
 namespace Utility
 {
@@ -29,6 +30,12 @@ namespace Utility
                 page.ClientScript.RegisterClientScriptBlock(page.GetType(), "key", scriptstrs, true);
         }
 
+        public static void ErrorAlert(string v1, string v2, ControlCollection controls)
+        {
+            string scriptstrs = "";
+            scriptstrs += "{swal({title:'" + v1 + "',text: '" + v2 + "',confirmButtonText: '确认',confirmButtonColor: '#00b4aa',closeOnConfirm: false,});}";
+        }
+
         /// <summary>
         /// 弹出消息框并且转向到新的URL
         /// </summary>
@@ -45,6 +52,8 @@ namespace Utility
             }
             #endregion
         }
+
+        
 
         public static void FormAndRedirect(string title,string text,string Url,Page page)
         {

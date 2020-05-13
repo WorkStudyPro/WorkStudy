@@ -62,13 +62,13 @@ namespace DAL
         /// <summary>
         /// 查询电话号码，若存在返回true,不存在返回false
         /// </summary>
-        /// <param name="Tel"></param>
+        /// <param name="tel"></param>
         /// <returns></returns>
-        public static bool SelectTel(string Tel)
+        public static bool SelectTel(string tel)
         {
             SqlParameter[] p = new SqlParameter[]
             {
-                new SqlParameter("@Tel",Tel)
+                new SqlParameter("@Tel",tel)
             };
             return Convert.ToInt32(SQLHelper.ExecuteScalar("SelectTel", CommandType.StoredProcedure, p)) > 0;
         }
@@ -94,14 +94,14 @@ namespace DAL
         /// <summary>
         /// 查询信息,若查询到信息，则返回信息，foe则返回null
         /// </summary>
-        /// <param name="Account">查询的ID</param>
+        /// <param name="account">查询的ID</param>
         /// <param name="mername">调用的存储过程（查询什么信息）</param>
         /// <returns></returns>
-        public static string SelectInfo(string Account, string mername)
+        public static string SelectInfo(string account, string mername)
         {
             SqlParameter[] p = new SqlParameter[]
             {
-                new SqlParameter("@Account" ,Account)
+                new SqlParameter("@Account" ,account)
             };
             SqlDataReader reader = SQLHelper.ExecuteReader(mername, CommandType.StoredProcedure, p);
             if (reader.Read())
@@ -239,17 +239,28 @@ namespace DAL
             return SQLHelper.ExecuteReader("SelectNewWork", CommandType.StoredProcedure, p);
         }
 
-        public static int SelectJobCount(string Account)
+        public static int SelectJobCount(string account)
         {
             SqlParameter[] p = new SqlParameter[]
             {
-                new SqlParameter("@Account" ,Account)
+                new SqlParameter("@Account" ,account)
             };
             SqlDataReader reader = SQLHelper.ExecuteReader("SelectJobCount", CommandType.StoredProcedure, p);
             if (reader.Read())
                 return reader.GetInt32(0);
 
             return 0;
+        }
+
+        public static bool CloseJob(string account,string name)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account),
+                new SqlParameter("@name",name)
+            };
+
+            return Convert.ToInt32(SQLHelper.ExecuteScalar("CloseJob", CommandType.StoredProcedure, p)) > 0;
         }
 
     }
