@@ -7,6 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
    <link href="CSS/cssc.css" rel="stylesheet" />
+    <link href="CSS/sweetalert.css" rel="stylesheet" />
+    <script src="js/sweetalert-dev.js"></script>
      <style type="text/css">
         #HyperLink3{
              color: #00b4aa;
@@ -108,28 +110,28 @@
                 &nbsp;&nbsp;<asp:Label ID="Label9" runat="server" ForeColor="Red" Text="*原密码"></asp:Label>
                 
                 <br />
-                <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="180px" Font-Size="Medium"></asp:TextBox>
+                <asp:TextBox ID="TextBox1" runat="server" Height="30px" Width="180px"  Font-Size="Medium"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator1" ForeColor="Red" runat="server" ErrorMessage="*不能为空" ControlToValidate="TextBox1" Display="Dynamic"></asp:RequiredFieldValidator>
 
                  <br />
                  <br />
                 &nbsp;&nbsp;<asp:Label ID="Label10" runat="server" ForeColor="Red" Text="*新密码"></asp:Label>
                 
                 <br />
-                <asp:TextBox ID="TextBox2" runat="server" Height="30px" Width="180px" Font-Size="Medium"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" Height="30px" Width="180px" Font-Size="Medium"></asp:TextBox><asp:CompareValidator ID="CompareValidator2" runat="server" ForeColor="Red" ErrorMessage="*原密码与新密码一样" ControlToValidate="TextBox2" ControlToCompare="TextBox1" Operator="NotEqual"></asp:CompareValidator>
 
                  <br />
                  <br />
                 &nbsp;&nbsp;<asp:Label ID="Label11" runat="server" ForeColor="Red" Text="*再次输入新密码"></asp:Label>
                 
                 <br />
-                <asp:TextBox ID="TextBox3" runat="server" Height="30px" Width="180px" Font-Size="Medium"></asp:TextBox>
+                <asp:TextBox ID="TextBox3" runat="server" Height="30px" Width="180px" Font-Size="Medium"></asp:TextBox><asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="*两次密码不相同" ControlToCompare="TextBox2" ForeColor="Red" ControlToValidate="TextBox3"></asp:CompareValidator>
                 <br />
                 <br />
                 <br />
                 <br />
                 <br />
                 <br />
-                <asp:Button ID="Button1" ForeColor=" white" runat="server" Text="确认修改" Height="30px" Width="100px" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" ForeColor=" white" runat="server" Text="确认修改" style="cursor:pointer;"  Height="30px" Width="100px" OnClick="Button1_Click" />
         </asp:Panel>
             </asp:Panel>
     </form>
