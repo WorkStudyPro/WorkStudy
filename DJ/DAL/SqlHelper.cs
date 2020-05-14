@@ -22,10 +22,12 @@ namespace DAL
             using (SqlConnection cn = new SqlConnection(cnstr))
             {
                 cn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = cn;
-                cmd.CommandText = sql;
-                cmd.CommandType = type;
+                SqlCommand cmd = new SqlCommand
+                {
+                    Connection = cn,
+                    CommandText = sql,
+                    CommandType = type
+                };
                 if (p != null)
                     cmd.Parameters.AddRange(p);
                 r = cmd.ExecuteNonQuery();
@@ -42,10 +44,12 @@ namespace DAL
             SqlDataReader dr;
             SqlConnection cn = new SqlConnection(cnstr);
             cn.Open();
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = cn;
-            cmd.CommandText = sql;
-            cmd.CommandType = type;
+            SqlCommand cmd = new SqlCommand
+            {
+                Connection = cn,
+                CommandText = sql,
+                CommandType = type
+            };
             if (p != null)
                 cmd.Parameters.AddRange(p);
             dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
@@ -62,10 +66,12 @@ namespace DAL
             using (SqlConnection cn = new SqlConnection(cnstr))
             {
                 cn.Open();
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = cn;
-                cmd.CommandText = sql;
-                cmd.CommandType = type;
+                SqlCommand cmd = new SqlCommand
+                {
+                    Connection = cn,
+                    CommandText = sql,
+                    CommandType = type
+                };
                 if (p != null)
                 {
                     cmd.Parameters.AddRange(p);
@@ -85,8 +91,10 @@ namespace DAL
             using (SqlConnection cn = new SqlConnection(cnstr))
             {
                 cn.Open();
-                SqlDataAdapter da = new SqlDataAdapter();
-                da.SelectCommand = new SqlCommand();
+                SqlDataAdapter da = new SqlDataAdapter
+                {
+                    SelectCommand = new SqlCommand()
+                };
                 da.SelectCommand.Connection = cn;
                 da.SelectCommand.CommandText = sql;
                 da.SelectCommand.CommandType = type;

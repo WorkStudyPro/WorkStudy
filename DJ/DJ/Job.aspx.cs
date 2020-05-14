@@ -7,7 +7,7 @@ public partial class Job : System.Web.UI.Page
     JobData job = new JobData();
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Label6.Text = Session["PrincipalName"].ToString();
     }
 
     protected void Button发布兼职_Click(object sender, EventArgs e)
@@ -20,7 +20,11 @@ public partial class Job : System.Web.UI.Page
         job.W_People = Convert.ToInt32(box4.Text);
         job.W_Money = Convert.ToInt32(box5.Text);
         if (DAL.ManagerDAL.AddJob(job))
-            Utility.JavaScript.FormAndRedirect("提示", "兼职发布成功", "http://localhost:56935/index.aspx", this);
+        {
+            if(DAL.ManagerDAL.UpRealTime(Session["account"].ToString(), job.W_Name))
+                Utility.JavaScript.FormAndRedirect("提示", "兼职发布成功", "http://localhost:56935/index.aspx", this);
+        }
+            
         
     }
 }

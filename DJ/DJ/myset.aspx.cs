@@ -5,6 +5,7 @@ public partial class Default2 : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        Label6.Text = Session["PrincipalName"].ToString();
         Label12.Text = DAL.ManagerDAL.SelectInfo(Session["account"].ToString(), "SelectName");
         Label15.Text = DAL.ManagerDAL.SelectInfo(Session["account"].ToString(), "SelectSex");
         Label18.Text = DAL.ManagerDAL.SelectInfo(Session["account"].ToString(), "IdMatchTel");

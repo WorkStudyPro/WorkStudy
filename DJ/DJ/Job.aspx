@@ -69,10 +69,10 @@
         <hr style="border: 0; height: 1px; width: 880px; margin-left: 508px; background-color: aquamarine;" />
         <br />
         <%--中间菜单--%>
-        <div id="divs">
+        <div id="divs"style="width: 900px; height: 680px; margin-left: 26%; background: white; border-radius: 5px;">
             <br />
             <br />
-            <div id="divss">
+            <div id="divss" style="background: rgba(0,0,0,0); width: 580px; margin-left: 160px; height: 600px;">
                 <div id="信息" style="width: 580px; height: 20px;">
                     <div id="竖线" style="float: left; width: 5px; height: 25px; background: #1ecdb9;"></div>
                     &nbsp;&nbsp;

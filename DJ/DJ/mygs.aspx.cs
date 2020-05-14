@@ -9,6 +9,8 @@ public partial class mygs : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        //Label6.Text = Session["PrincipalName"].ToString();
+
 
     }
 }

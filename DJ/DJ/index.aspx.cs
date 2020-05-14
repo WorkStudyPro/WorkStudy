@@ -8,9 +8,9 @@ public partial class index : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         Labelid.Text = Session["account"].ToString();
-        Label6.Text = DAL.ManagerDAL.SelectInfo(Labelid.Text, "SelectName");
+        Session["PrincipalName"] = DAL.ManagerDAL.SelectInfo(Labelid.Text, "SelectName");
         Label3.Text = DAL.ManagerDAL.SelectJobCount(Labelid.Text).ToString();
-        Session["PrincipalName"] = Label6.Text;
+        Label6.Text= Session["PrincipalName"].ToString();
         SqlDataReader reader = DAL.ManagerDAL.SelectNewJob(Session["account"].ToString());
         if (reader.Read())
         {

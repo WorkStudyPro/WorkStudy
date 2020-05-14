@@ -263,6 +263,18 @@ namespace DAL
             return Convert.ToInt32(SQLHelper.ExecuteScalar("CloseJob", CommandType.StoredProcedure, p)) > 0;
         }
 
+        public static bool UpRealTime(string account,string name)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account),
+                new SqlParameter("@JobName",name)
+            };
+            return Convert.ToInt32(SQLHelper.ExecuteNonQuery("UpRealseTime", CommandType.StoredProcedure, p)) > 0;
+        }
+
+       
+
     }
     
 }
