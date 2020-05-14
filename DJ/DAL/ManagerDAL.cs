@@ -273,7 +273,14 @@ namespace DAL
             return Convert.ToInt32(SQLHelper.ExecuteNonQuery("UpRealseTime", CommandType.StoredProcedure, p)) > 0;
         }
 
-       
+        public static SqlDataReader SelectGSInfo(string account)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account)
+            };
+            return SQLHelper.ExecuteReader("SelectInfo", CommandType.StoredProcedure, p);
+        }
 
     }
     
