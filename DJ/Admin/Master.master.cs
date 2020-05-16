@@ -13,11 +13,31 @@ public partial class Master : System.Web.UI.MasterPage
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        Response.Redirect("set.aspx");
+        Response.Redirect("Set.aspx");
     }
 
     protected void Button2_Click(object sender, EventArgs e)
     {
-        Response.Redirect("setpass.aspx");
+        Response.Redirect("SetPass.aspx");
+    }
+
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Application.aspx");
+    }
+
+    protected void Button4_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Recruitment.aspx");
+    }
+
+    protected void Button5_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Over.aspx");
+    }
+
+    protected void Button6_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Refuse.aspx");
     }
 }

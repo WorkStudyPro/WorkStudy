@@ -48,7 +48,7 @@
                 }
 
                 // 留自己
-                sec.style.height = 2.5078 + "rem";
+                sec.style.height = 1.5078 + "rem";
                 this.getElementsByTagName("i")[0].classList.add("arrowRot");
                 this.classList.remove("obtain");
                 this.classList.add("obFocus");
