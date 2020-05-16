@@ -1,5 +1,9 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="set.ascx.cs" Inherits="set" %>
-<asp:Panel ID="Panel6" runat="server" Height="750px" Width="1550px" BackColor="white">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.master" AutoEventWireup="true" CodeFile="Set.aspx.cs" Inherits="_Default" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <asp:Panel ID="Panel6" runat="server" Height="750px" Width="1550px" BackColor="white">
                 <br />
                 <asp:Label ID="Label8" runat="server" Text="管理员基本信息" Font-Bold="true" ForeColor="#1ecdb9" style="margin-left: 100px;" Font-Size="25px" ></asp:Label>
                 <br />
@@ -36,7 +40,7 @@
 
 
                  <asp:Label ID="Label17" runat="server" Text="电话号码:" style="font-size: 21px;margin-left: 100px;"></asp:Label>
-                <asp:Label ID="Label18" runat="server" Text="18123456789" Style="margin-left: 12%;font-size: 21px;" ForeColor="#1ecdb9" Font-Size="17px"></asp:Label>
+                <asp:Label ID="Label18" runat="server" Text="18582409158" Style="margin-left: 12%;font-size: 21px;" ForeColor="#1ecdb9" Font-Size="17px"></asp:Label>
                 <asp:TextBox ID="Tel" Style="margin-left:185px;background:transparent;border:1px solid #e5e5e5;height: 26px;position: absolute;" runat="server" MaxLength="11" Placeholder="号码长度不超过11" Visible="False"></asp:TextBox>
                 <asp:Button ID="GG3" runat="server" style="background-color: Transparent; border-style: none;outline: none;cursor:pointer;float: right;margin-right: 15%;" Font-Size="21px" ForeColor="#1ecdb9" Text="更改" Font-Bold="true" OnClick="GG3_Click" />
                 <asp:Button ID="cancel3" style="background-color: Transparent;border-style: none;outline: none;cursor:pointer;float: right;margin-right: 8%;" Font-Size="21px" ForeColor="#1ecdb9" runat="server" Text="取消" Font-Bold="true" OnClick="Cancel3_Click" Visible="False" />
@@ -47,7 +51,7 @@
 
 
                  <asp:Label ID="Label23" runat="server" Text="电子邮箱:" style="font-size: 21px;margin-left: 100px;"></asp:Label>
-                <asp:Label ID="Label24" runat="server" Text="123456789@qq.com" Style="margin-left: 12%;font-size: 21px;" ForeColor="#1ecdb9" Font-Size="17px"></asp:Label>
+                <asp:Label ID="Label24" runat="server" Text="787406408@qq.com" Style="margin-left: 12%;font-size: 21px;" ForeColor="#1ecdb9" Font-Size="17px"></asp:Label>
                 <asp:TextBox ID="Mail" runat="server" Style="margin-left:185px;background:transparent;border:1px solid #e5e5e5;height: 26px;position: absolute;" MaxLength="25" Placeholder="字符长度不超过50" Visible="False"></asp:TextBox>
                 <asp:Button ID="GG5" runat="server" style="background-color: Transparent; border-style: none;outline: none;cursor:pointer;float: right;margin-right: 15%;" Font-Size="21px" ForeColor="#1ecdb9" Text="更改" Font-Bold="true" OnClick="GG5_Click" />
                 <asp:Button ID="cancel5" style="background-color: Transparent;border-style: none;outline: none;cursor:pointer;float: right;margin-right: 8%;" Font-Size="21px" ForeColor="#1ecdb9" runat="server" Text="取消" Font-Bold="true" OnClick="Cancel5_Click" Visible="False" />
@@ -65,3 +69,5 @@
                 <asp:Button ID="Button6" Style="background-color: Transparent;border-style: none;outline: none; cursor:pointer;float: right;margin-right: 67px;" Font-Size="21px" ForeColor="#1ecdb9" runat="server" Text="保存" Font-Bold="true" OnClick="Button6_Click" Visible="False"  />
 
             </asp:Panel>
+</asp:Content>
+

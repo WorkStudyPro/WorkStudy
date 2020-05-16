@@ -1,21 +1,32 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
-
-<%@ Register Src="~/setpass.ascx" TagPrefix="uc1" TagName="setpass" %>
-<%@ Register Src="~/set.ascx" TagPrefix="uc1" TagName="set" %>
-
-
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <script src="js/adapter.js"></script>
-    <link href="css/indexcss.css" rel="stylesheet" />
-    <link href="css/bsae.css" rel="stylesheet" />
-</head>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
 
+ <script src="js/adapter.js"></script> <!--rem适配js-->
+    
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/indexcss.css" rel="stylesheet" />
+    
+    <script src="js/menujs.js"></script>
+    <script src="js/psw.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+
+    <script>
+    $(function () {
+        $("#TextBox1").pstrength();
+        $("#TextBox2").pstrength();
+        $("#TextBox3").pstrength();
+    })
+</script>
+</head>
 <body style="background-color:rgb(230,236,240) ;">
     <form id="form1" runat="server">
       <div id="menu1" style="width: 1660px;background-color: white;height: 58px;margin-left: 260px;">
@@ -90,10 +101,11 @@
 
         <%--中间显示--%>
         <asp:Panel ID="center" style="background-color:white;width:1550px;height:750px;z-index: 999;position: relative;margin-left: 320px;margin-top: 60px;" runat="server">
-            
+          <%--  <uc1:setpass runat="server" ID="setpass" />--%>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
         </asp:Panel>
         </form>
 </body>
-
-<script src="js/menujs.js"></script>
 </html>
