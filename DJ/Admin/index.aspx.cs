@@ -8,15 +8,18 @@ using System.Web.UI.WebControls;
 
 public partial class index : System.Web.UI.Page
 {
+    
     bool flag = false;
     protected void Page_Load(object sender, EventArgs e)
     {
         UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+      
+        
     }
-    protected Control control;
     protected void Button1_Click(object sender, EventArgs e)
     {
 
+        flag = true;
         set xx = (set)LoadControl("set.ascx");
 
         if (flag == false)
@@ -34,9 +37,9 @@ public partial class index : System.Web.UI.Page
 
     protected void Button2_Click(object sender, EventArgs e)
     {
-        
+
         setpass pwd = (setpass)LoadControl("setpass.ascx");
-        
+
         if (flag == false)
         {
             center.Controls.Add(pwd);

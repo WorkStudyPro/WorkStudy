@@ -11,4 +11,9 @@ public partial class setpass : System.Web.UI.UserControl
     {
 
     }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        
+    }
 }
