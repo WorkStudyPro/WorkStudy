@@ -11,54 +11,26 @@
     <asp:GridView ID="GridView1" runat="server" style="margin-left: 118px;position: absolute;margin-top: 92px;" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Width="1320px" PageSize="8" >
         <Columns>
             
-            <asp:BoundField DataField="M_ID" HeaderText="商家账号" SortExpression="M_ID" >
-            <HeaderStyle ForeColor="#1ECDB9" Font-Size="20px" />
-            <ItemStyle Width="7%" HorizontalAlign="Center" Height="50px" />
+            <asp:BoundField DataField="M_ID" HeaderText="M_ID" SortExpression="M_ID" >
             </asp:BoundField>
-            <asp:BoundField DataField="J_Post" HeaderText="招聘职位" SortExpression="J_Post" >
-            <HeaderStyle ForeColor="#1ECDB9" Font-Size="20px" />
-            <ItemStyle Width="7%" HorizontalAlign="Center" Height="50px" />
+            <asp:BoundField DataField="W_Name" HeaderText="W_Name" SortExpression="W_Name" >
             </asp:BoundField>
-            <asp:BoundField DataField="J_Position" HeaderText="工作地点" SortExpression="J_Position" >
-            <HeaderStyle ForeColor="#1ECDB9" Font-Size="20px" />
-            <ItemStyle Width="12%" HorizontalAlign="Center" Height="50px" />
+            <asp:BoundField DataField="W_Place" HeaderText="W_Place" SortExpression="W_Place" >
             </asp:BoundField>
-            <asp:BoundField DataField="J_Description" HeaderText="工作详情" SortExpression="J_Description" >
-            <HeaderStyle ForeColor="#1ECDB9" Font-Size="20px" Height="50px" />
-            <ItemStyle HorizontalAlign="Center" />
+            <asp:BoundField DataField="W_Description" HeaderText="W_Description" SortExpression="W_Description" >
             </asp:BoundField>
-            <asp:BoundField DataField="J_ReNum" HeaderText="需求人数" SortExpression="J_ReNum" >
-            <HeaderStyle ForeColor="#1ECDB9" Font-Size="20px" />
-            <ItemStyle Width="7%" HorizontalAlign="Center" Height="50px" />
+            <asp:BoundField DataField="W_People" HeaderText="W_People" SortExpression="W_People" >
             </asp:BoundField>
-            <asp:BoundField DataField="J_Time" HeaderText="工作时间" SortExpression="J_Time" >
-            <HeaderStyle ForeColor="#1ECDB9" Font-Size="20px" />
-            <ItemStyle Width="10%" HorizontalAlign="Center" Height="50px" />
+            <asp:BoundField DataField="W_Time" HeaderText="W_Time" SortExpression="W_Time" >
             </asp:BoundField>
-            <asp:BoundField DataField="J_ReleaseTime" HeaderText="发布日期" SortExpression="J_ReleaseTime" >
-            <HeaderStyle ForeColor="#1ECDB9" Font-Size="20px" />
-            <ItemStyle Width="14%" HorizontalAlign="Center" Height="50px" />
+            <asp:BoundField DataField="W_ReleaseTime" HeaderText="W_ReleaseTime" SortExpression="W_ReleaseTime" >
             </asp:BoundField>
-            <asp:BoundField DataField="J_Salary" HeaderText="薪资待遇" SortExpression="J_Salary" >
-            <HeaderStyle ForeColor="#1ECDB9" Font-Size="20px" />
-            <ItemStyle Width="7%" HorizontalAlign="Center" Height="50px" />
+            <asp:BoundField DataField="W_Money" HeaderText="W_Money" SortExpression="W_Money" >
             </asp:BoundField>
-            <asp:TemplateField ShowHeader="False">
-                <ItemTemplate>
-                    <asp:LinkButton ID="LinkButton1" ForeColor="#1ECDB9" runat="server" CausesValidation="false" CommandName="" OnClick="LinkButton1_Click" Text="审核通过"></asp:LinkButton>
-                </ItemTemplate>
-                <ItemStyle  HorizontalAlign="Center" Width="7%" />
-            </asp:TemplateField>
-            <asp:TemplateField ShowHeader="False">
-                <ItemTemplate>
-                    <asp:LinkButton ID="LinkButton2" ForeColor="Red" runat="server" CausesValidation="false" CommandName="" OnClick="LinkButton2_Click" Text="拒绝申请"></asp:LinkButton>
-                </ItemTemplate>
-                <ItemStyle  HorizontalAlign="Center" Width="7%" />
-            </asp:TemplateField>
            
         </Columns>
     </asp:GridView>
-<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Work_StudyConnectionString %>" SelectCommand="SELECT [M_ID], [J_Post], [J_Position], [J_Description], [J_ReNum], [J_Time], [J_ReleaseTime], [J_Salary] FROM [Table_Job] WHERE [J_State]='False'">
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Work_StudyConnectionString %>" SelectCommand="SELECT [M_ID], [W_Name], [W_Place], [W_Description], [W_People], [W_Time], [W_ReleaseTime], [W_Money] FROM [Table_Work] ORDER BY [M_ID], [W_ReleaseTime] DESC">
     </asp:SqlDataSource>
 </asp:Content>
 
