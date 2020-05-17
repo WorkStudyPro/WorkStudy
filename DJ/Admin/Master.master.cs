@@ -40,4 +40,14 @@ public partial class Master : System.Web.UI.MasterPage
     {
         Response.Redirect("Refuse.aspx");
     }
+
+    protected void Button8_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Student.aspx");
+    }
+
+    protected void Button7_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Merchants.aspx");
+    }
 }
