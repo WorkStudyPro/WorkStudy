@@ -27,10 +27,10 @@
                 <asp:Label ID="Label1" runat="server" Text="勤工助学系统"></asp:Label>
             </asp:Panel>
             <asp:Image ID="Image1" runat="server" ImageUrl="~/image/账号1.png" Height="24px" Width="22px" ImageAlign="Middle" />
-            <asp:TextBox ID="TextBox1" runat="server" Height="23px"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" Height="23px" AutoCompleteType="Disabled"></asp:TextBox>
             <br />
             <asp:Image ID="Image2" runat="server" ImageUrl="~/image/密码1.png" Height="24px" Width="22px" ImageAlign="Middle" />
-            <asp:TextBox ID="TextBox2" runat="server" Height="23px"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" Height="23px" AutoCompleteType="Disabled"></asp:TextBox>
             <br />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

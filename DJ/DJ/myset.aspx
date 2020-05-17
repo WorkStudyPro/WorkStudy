@@ -163,8 +163,8 @@
                
                 
                 <hr style=" color:#e5e5e5" />
-                  <asp:Label ID="Label29" runat="server" Text="上次登录" Font-Size="17px"></asp:Label>
-                <asp:Label ID="Label30" runat="server" Text="2020年4月2日12:56:38" ForeColor="#00b4aa" Font-Size="17px"></asp:Label>
+                  <asp:Label ID="Label29" runat="server" Text="登录时间" Font-Size="17px"></asp:Label>
+                <asp:Label ID="Label30" runat="server" Text="NULL" ForeColor="#00b4aa" Font-Size="17px"></asp:Label>
                
             </asp:Panel>
         </asp:Panel>

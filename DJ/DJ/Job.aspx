@@ -69,7 +69,7 @@
         <hr style="border: 0; height: 1px; width: 880px; margin-left: 508px; background-color: aquamarine;" />
         <br />
         <%--中间菜单--%>
-        <div id="divs"style="width: 900px; height: 680px; margin-left: 26%; background: white; border-radius: 5px;">
+        <div id="divs" style="width: 900px; height: 680px; margin-left: 26%; background: white; border-radius: 5px;">
             <br />
             <br />
             <div id="divss" style="background: rgba(0,0,0,0); width: 580px; margin-left: 160px; height: 600px;">
@@ -82,37 +82,37 @@
                 <br />
                 <asp:Label ID="L2" runat="server" Text="岗位名称"></asp:Label>
                 &nbsp;&nbsp;   &nbsp;&nbsp; 
-                <asp:TextBox ID="box1" Text="请如实输入正确的工作岗位" onkeydown="if(event.keyCode == 13)event.returnValue = false;" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){this.value=defaultValue;this.style.color='#CCCCCC'}" ForeColor="#CCCCCC" runat="server" Height="40px" Width="450px"></asp:TextBox>
+                <asp:TextBox ID="box1" Text="请如实输入正确的工作岗位" onkeydown="if(event.keyCode == 13)event.returnValue = false;" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){this.value=defaultValue;this.style.color='#CCCCCC'}" ForeColor="#CCCCCC" runat="server" Height="40px" Width="450px" AutoCompleteType="Disabled"></asp:TextBox>
 
                 <br />
                 <br />
                 <asp:Label ID="L3" runat="server" Text="岗位介绍"></asp:Label>
                 &nbsp;&nbsp;   &nbsp;&nbsp; 
-                <asp:TextBox ID="box2" Text="请如实输入正确的工作介绍" onkeydown="if(event.keyCode == 13)event.returnValue = false;" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){this.value=defaultValue;this.style.color='#CCCCCC'}" ForeColor="#CCCCCC" runat="server" Height="150px" Width="450px" AutoCompleteType="Disabled"></asp:TextBox>
+                <asp:TextBox ID="box2" Text="请如实输入正确的工作介绍" onkeydown="if(event.keyCode == 13)event.returnValue = false;" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){this.value=defaultValue;this.style.color='#CCCCCC'}" ForeColor="#CCCCCC" runat="server" Height="150px" Width="450px" AutoCompleteType="Disabled" TextMode="SingleLine"></asp:TextBox>
 
                 <br />
                 <br />
                 <asp:Label ID="L4" runat="server" Text="工作时间"></asp:Label>
                 &nbsp;&nbsp;   &nbsp;&nbsp; 
-                <asp:TextBox ID="box3" Text="请输入正确的工作时间，如“周一至周五9:00-17:00”" onkeydown="if(event.keyCode == 13)event.returnValue = false;" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){this.value=defaultValue;this.style.color='#CCCCCC'}" ForeColor="#CCCCCC" runat="server" Height="40px" Width="450px"></asp:TextBox>
+                <asp:TextBox ID="box3" AutoCompleteType="Disabled" Text="请输入正确的工作时间，如“周一至周五9:00-17:00”" onkeydown="if(event.keyCode == 13)event.returnValue = false;" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){this.value=defaultValue;this.style.color='#CCCCCC'}" ForeColor="#CCCCCC" runat="server" Height="40px" Width="450px"></asp:TextBox>
 
                 <br />
                 <br />
                 <asp:Label ID="L5" runat="server" Text="需求人数"></asp:Label>
                 &nbsp;&nbsp;   &nbsp;&nbsp; 
-                <asp:TextBox ID="box4" Text="请如实输入您的需求人数" onkeydown="if(event.keyCode == 13)event.returnValue = false;" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){this.value=defaultValue;this.style.color='#CCCCCC'}" ForeColor="#CCCCCC" runat="server" Height="40px" Width="450px"></asp:TextBox>
+                <asp:TextBox ID="box4" AutoCompleteType="Disabled" Text="请如实输入您的需求人数" onkeydown="if(event.keyCode == 13)event.returnValue = false;" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){this.value=defaultValue;this.style.color='#CCCCCC'}" ForeColor="#CCCCCC" runat="server" Height="40px" Width="450px"></asp:TextBox>
 
                 <br />
                 <br />
                 <asp:Label ID="L6" runat="server" Text="工资详情"></asp:Label>
                 &nbsp;&nbsp;   &nbsp;&nbsp; 
-                <asp:TextBox ID="box5" Text="每小时工资" onkeydown="if(event.keyCode == 13)event.returnValue = false;" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){this.value=defaultValue;this.style.color='#CCCCCC'}" ForeColor="#CCCCCC" runat="server" Height="40px" Width="450px"></asp:TextBox>
+                <asp:TextBox ID="box5" AutoCompleteType="Disabled" Text="每小时工资" onkeydown="if(event.keyCode == 13)event.returnValue = false;" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){this.value=defaultValue;this.style.color='#CCCCCC'}" ForeColor="#CCCCCC" runat="server" Height="40px" Width="450px"></asp:TextBox>
 
                 <br />
                 <br />
                 <asp:Label ID="L7" runat="server" Text="工作地点"></asp:Label>
                 &nbsp;&nbsp;   &nbsp;&nbsp; 
-                <asp:TextBox ID="box6" Text="请如实输入工作地点" onkeydown="if(event.keyCode == 13)event.returnValue = false;" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){this.value=defaultValue;this.style.color='#CCCCCC'}" ForeColor="#CCCCCC" runat="server" Height="40px" Width="450px"></asp:TextBox>
+                <asp:TextBox ID="box6" AutoCompleteType="Disabled" Text="请如实输入工作地点" onkeydown="if(event.keyCode == 13)event.returnValue = false;" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" onBlur="if(!value){this.value=defaultValue;this.style.color='#CCCCCC'}" ForeColor="#CCCCCC" runat="server" Height="40px" Width="450px"></asp:TextBox>
                 <br />
                 <br />
                 <asp:Button ID="Button发布兼职" runat="server" Text="发布兼职" OnClick="Button发布兼职_Click" />

@@ -40,14 +40,14 @@
                 <asp:Label ID="Label1" runat="server" Text="勤工助学系统"></asp:Label>
             </asp:Panel>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="id" runat="server" Text="ID:" ForeColor="white"></asp:Label>
-            <asp:TextBox ID="TextBox1" runat="server" Height="23px"></asp:TextBox>
+            <asp:TextBox ID="TextBox1" runat="server" Height="23px" AutoCompleteType="Disabled"></asp:TextBox>
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="iphone" runat="server" ForeColor="white" Text="手机:"></asp:Label>
-            <asp:TextBox ID="TextBox2" runat="server" Height="23px"></asp:TextBox>
+            <asp:TextBox ID="TextBox2" runat="server" Height="23px" AutoCompleteType="Disabled"></asp:TextBox>
             <br />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="yzm" runat="server" ForeColor="white" Text="验证:"></asp:Label>
-            <asp:TextBox ID="TextBox3" runat="server" Height="23px" Width="93px"></asp:TextBox>
+            <asp:TextBox ID="TextBox3" runat="server" Height="23px" Width="93px" AutoCompleteType="Disabled"></asp:TextBox>
             &nbsp;&nbsp;
             <asp:Image ID="yzm1" runat="server" ImageUrl="~/ValidateCode.aspx" Width="90px" Height="30px" onclick="this.src=this.src+'?'" alt="点击更换图片!" />
             <br />

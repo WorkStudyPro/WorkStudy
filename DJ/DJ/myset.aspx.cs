@@ -11,6 +11,8 @@ public partial class Default2 : System.Web.UI.Page
         Label18.Text = DAL.ManagerDAL.SelectInfo(Session["account"].ToString(), "IdMatchTel");
         Label24.Text = DAL.ManagerDAL.SelectInfo(Session["account"].ToString(), "SelectEmail");
         Label27.Text = DAL.ManagerDAL.SelectInfo(Session["account"].ToString(), "SelectAdress");
+        Label10.Text = Session["account"].ToString();
+        Label30.Text = Session["logintime"].ToString();
     }
 
     protected void GG_Click(object sender, EventArgs e)
