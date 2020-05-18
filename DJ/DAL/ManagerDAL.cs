@@ -10,6 +10,8 @@ namespace DAL
     /// </summary>
     public class ManagerDAL
     {
+
+        //商家
         /// <summary>
         /// 商家登录
         /// </summary>
@@ -282,6 +284,17 @@ namespace DAL
             return SQLHelper.ExecuteReader("SelectInfo", CommandType.StoredProcedure, p);
         }
 
+        //管理员
+
+        public static bool AceptJob(string account, string name)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account),
+                new SqlParameter("@Name",name)
+            };
+            return Convert.ToInt32(SQLHelper.ExecuteNonQuery("AceptJob", CommandType.StoredProcedure, p)) > 0;
+        }
     }
     
 }

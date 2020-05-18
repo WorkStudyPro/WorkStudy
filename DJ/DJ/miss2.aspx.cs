@@ -12,17 +12,11 @@ public partial class miss2 : System.Web.UI.Page
     {
         if (DAL.ManagerDAL.ManagerChangePwd(Session["account"].ToString(), TextBox2.Text))
         {
-            string scriptstrs = "";
-            scriptstrs += "{swal({title: '提示',text: '修改成功!点击确定跳转到登录页面！',confirmButtonText: '确认!',confirmButtonColor: '#00b4aa',closeOnConfirm: false,},function(isConfirm) {if (isConfirm){location.href = 'http://localhost:56935/login.aspx'; } });}";
-            if (!Page.ClientScript.IsClientScriptBlockRegistered(this.GetType(), "key"))
-                Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "key", scriptstrs, true);
+            Utility.JavaScript.FormAndRedirect("提示", "修改成功，点击确定跳转至登录页", "http://localhost:56935/index.aspx", this);
         }
         else
         {
-            string scriptstrs = "";
-            scriptstrs += "{swal({title: '错误提示！',text: '修改失败',confirmButtonText: '确认!',confirmButtonColor: '#00b4aa',closeOnConfirm: false,});}";
-            if (!Page.ClientScript.IsClientScriptBlockRegistered(this.GetType(), "key"))
-                Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "key", scriptstrs, true);
+            Utility.JavaScript.ErrorAlert("错误提示！", "修改失败！可能的原因是密码不符合规范", Page);
         }
         
     }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29911.84
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DJ", "DJ\", "{9F68CD86-263B-4FEC-A774-5EB273E0CEEB}"
 	ProjectSection(WebsiteProperties) = preProject
@@ -34,9 +34,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{BAF75F88-1510-411A-8461-7E672EDB78DE}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Admin(1)", "Admin\", "{5F5808DE-3878-4AD3-8A4E-7489F3A5E326}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Admin", "Admin\", "{5F5808DE-3878-4AD3-8A4E-7489F3A5E326}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		ProjectReferences = "{48e995ca-b039-445c-abb6-99bf8072d1e1}|BLL.dll;{24D3609D-24F6-42EF-B8DF-62C6ACE7F26B}|Model.dll;{baf75f88-1510-411a-8461-7e672edb78de}|Utility.dll;{efb254ca-9dd0-4e9f-92cd-58733f12a349}|DAL.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_2166"
 		Debug.AspNetCompiler.PhysicalPath = "Admin\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2166\"
