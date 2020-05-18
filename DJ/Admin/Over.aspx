@@ -53,7 +53,7 @@
            
         </Columns>
     </asp:GridView>
-<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:constr %>" SelectCommand="SELECT [M_ID], [W_Name], [W_Place], [W_Description], [W_People], [W_Time], [W_ReleaseTime], [W_Money] FROM [Table_Work] WHERE [W_State]='False' ORDER BY [M_ID], [W_ReleaseTime] DESC ">
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:constr %>" SelectCommand="SELECT [M_ID], [W_Name], [W_Place], [W_Description], [W_People], [W_Time], [W_ReleaseTime], [W_Money] FROM [Table_Work] WHERE [W_State]='4' ORDER BY [M_ID], [W_ReleaseTime] DESC ">
     </asp:SqlDataSource>
 </asp:Content>
 

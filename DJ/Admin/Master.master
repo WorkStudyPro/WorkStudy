@@ -43,7 +43,7 @@
           <asp:Label ID="Label8" runat="server" Text="9.00-17.00" ForeColor="#1ecdb9"  style="line-height: 58px;"></asp:Label>
           
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <asp:Label ID="Label3" runat="server" Text="上次登陆时间："  style="line-height: 58px;"></asp:Label>
+          <asp:Label ID="Label3" runat="server" Text="登陆时间："  style="line-height: 58px;"></asp:Label>
           <asp:Label ID="Label4" runat="server" Text="2020年5月15日11:40:51" ForeColor="#1ecdb9"  style="line-height: 58px;"></asp:Label>
 
       </div>
@@ -64,8 +64,9 @@
                     <div class="secondary">
                         <h3><asp:Button ID="Button3" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="兼职申请" OnClick="Button3_Click" /></h3>
                         <h3><asp:Button ID="Button4" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="在招兼职" OnClick="Button4_Click" /></h3>
-                        <h3><asp:Button ID="Button5" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="已结束" OnClick="Button5_Click" /></h3>
                         <h3><asp:Button ID="Button6" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="申请驳回" OnClick="Button6_Click" /></h3>
+                        <h3><asp:Button ID="Button5" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="已结束" OnClick="Button5_Click" /></h3>
+
                     </div>
                 </li>
                 <li>
