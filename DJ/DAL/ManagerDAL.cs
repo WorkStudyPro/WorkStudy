@@ -295,6 +295,16 @@ namespace DAL
             };
             return Convert.ToInt32(SQLHelper.ExecuteNonQuery("AceptJob", CommandType.StoredProcedure, p)) > 0;
         }
+
+        public static bool RefuseJob(string account, string name)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account),
+                new SqlParameter("@Name",name)
+            };
+            return Convert.ToInt32(SQLHelper.ExecuteNonQuery("RefuseJob", CommandType.StoredProcedure, p)) > 0;
+        }
     }
     
 }

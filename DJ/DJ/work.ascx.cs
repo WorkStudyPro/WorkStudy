@@ -39,7 +39,7 @@ public partial class work : System.Web.UI.UserControl
     {
         if (DAL.ManagerDAL.CloseJob(Session["account"].ToString(), name.Text))
         {
-            Utility.JavaScript.ErrorAlert("提示", "账号或密码不正确，请重试", this.Controls);
+            Utility.JavaScript.ErrorAlert("提示", "已关闭兼职", this.Controls);
         }
     }
 }

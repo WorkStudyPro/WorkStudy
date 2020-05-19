@@ -17,7 +17,6 @@ public partial class index : System.Web.UI.Page
             Label1.Text = "1";
             work work = (work)LoadControl("work.ascx");
             work.User(work, reader);
-
             Panelwork.Controls.Add(work);
         }
         else
