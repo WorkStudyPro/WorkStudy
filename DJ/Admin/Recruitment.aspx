@@ -16,21 +16,15 @@
     
          </div><br /><br />
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" style="margin-left: 2px;position: absolute;margin-top: 4px;" Visible="False" DataKeyNames="J_ID" DataSourceID="SqlDataSource2">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" style="margin-left: 2px;position: absolute;margin-top: 4px;text-align:center" Visible="False" DataKeyNames="J_ID" DataSourceID="SqlDataSource2">
         <Columns >
             <asp:TemplateField HeaderText="订单编号" InsertVisible="False" SortExpression="J_ID">
-                <EditItemTemplate>
-                    <asp:Label ID="Label1" runat="server" style="font-size:17px;Width:81px;" Text='<%# Eval("J_ID") %>'></asp:Label>
-                </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label1" runat="server" Text='<%# Eval("J_ID") %>'></asp:Label>
                 </ItemTemplate>
                 <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="81px" />
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="商家账号" SortExpression="M_ID">
-                <EditItemTemplate>
-                    <asp:Label ID="TextBox1" style="font-size:17px;Width:81px;" runat="server" Text='<%# Eval("M_ID") %>'></asp:Label>
-                </EditItemTemplate>
+            <asp:TemplateField HeaderText="商家账号" SortExpression="M_ID" ConvertEmptyStringToNull="False">
                 <ItemTemplate>
                     <asp:Label ID="Label2" runat="server" Text='<%# Eval("M_ID") %>'></asp:Label>
                 </ItemTemplate>
@@ -38,7 +32,7 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="招聘职位" SortExpression="W_Name">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox2" runat="server" style="font-size:17px;Width:99px;" Text='<%# Bind("W_Name") %>'></asp:TextBox>
+                    <asp:TextBox ID="TextBox2"  runat="server" style="font-size:16px;Width:99px;color:RGBA(165,165,166,39)" Text='<%# Bind("W_Name") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label3" runat="server" Text='<%# Bind("W_Name") %>'></asp:Label>
@@ -47,7 +41,7 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="工作时间" SortExpression="W_Time">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox3" runat="server" style="font-size:17px;Width:177px;" Text='<%# Bind("W_Time") %>'></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" style="font-size:16px;Width:177px;color:RGBA(165,165,166,39)" Text='<%# Bind("W_Time") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label4" runat="server" Text='<%# Bind("W_Time") %>'></asp:Label>
@@ -56,7 +50,7 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="工作地点" SortExpression="W_Place">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox4" runat="server" style="font-size:17px;Width:182px;" Text='<%# Bind("W_Place") %>'></asp:TextBox>
+                    <asp:TextBox ID="TextBox4" runat="server" style="font-size:16px;Width:182px;color:RGBA(165,165,166,39)" Text='<%# Bind("W_Place") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label5" runat="server" Text='<%# Bind("W_Place") %>'></asp:Label>
@@ -65,16 +59,16 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="工作详情" SortExpression="W_Description">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox5" runat="server" style="font-size:17px;Width:353px;" Text='<%# Bind("W_Description") %>'></asp:TextBox>
+                    <asp:TextBox ID="TextBox5" runat="server" style="font-size:16px;Width:318px;color:RGBA(165,165,166,39)" Text='<%# Bind("W_Description") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label6" runat="server" Text='<%# Bind("W_Description") %>'></asp:Label>
                 </ItemTemplate>
-                <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="353px" />
+                <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="318px" />
             </asp:TemplateField>
             <asp:TemplateField HeaderText="需求人数" SortExpression="W_People">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox6" runat="server" style="font-size:17px;Width:80px;" Text='<%# Bind("W_People") %>'></asp:TextBox>
+                    <asp:TextBox ID="TextBox6" runat="server" style="font-size:16px;Width:80px;color:RGBA(165,165,166,39)" Text='<%# Bind("W_People") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label7" runat="server" Text='<%# Bind("W_People") %>'></asp:Label>
@@ -83,7 +77,7 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="薪资待遇" SortExpression="W_Money">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox7" runat="server" style="font-size:17px;Width:80px;" Text='<%# Bind("W_Money") %>'></asp:TextBox>
+                    <asp:TextBox ID="TextBox7" runat="server" style="font-size:16px;Width:80px;color:RGBA(165,165,166,39)" Text='<%# Bind("W_Money") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label8" runat="server" Text='<%# Bind("W_Money") %>'></asp:Label>
@@ -92,7 +86,7 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="兼职状态" SortExpression="W_State">
                 <EditItemTemplate>
-                    <asp:Label ID="TextBox8" runat="server" style="font-size:17px;Width:81px;" Text='<%# Eval("W_State") %>'></asp:Label>
+                    <asp:Label ID="TextBox8" runat="server" style="font-size:16px;Width:81px;" Text='<%# Eval("W_State") %>'></asp:Label>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label9" runat="server" Text='<%# Eval("W_State") %>'></asp:Label>
@@ -101,23 +95,33 @@
             </asp:TemplateField>
             <asp:TemplateField HeaderText="发布时间" SortExpression="W_ReleaseTime">
                 <EditItemTemplate>
-                    <asp:Label ID="TextBox9" runat="server" style="font-size:17px;Width:170px;" Text='<%# Eval("W_ReleaseTime") %>'></asp:Label>
+                    <asp:Label ID="TextBox9" runat="server" style="font-size:16px;Width:170px;" Text='<%# Eval("W_ReleaseTime") %>'></asp:Label>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label10" runat="server" Text='<%# Eval("W_ReleaseTime") %>'></asp:Label>
                 </ItemTemplate>
                 <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="170px" />
             </asp:TemplateField>
-            <asp:TemplateField ShowHeader="False">
-                <EditItemTemplate>
-                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="17px" ForeColor="#1ecdb9" Width="70px" CausesValidation="True" CommandName="Update" Text="确认修改"></asp:LinkButton>
-                    <asp:LinkButton ID="LinkButton2" runat="server" Font-Size="17px" ForeColor="Red" Width="70px" CausesValidation="False" CommandName="Cancel" Text="取消修改"></asp:LinkButton>
+
+             <asp:TemplateField ShowHeader="False">
+                 <EditItemTemplate>
+                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="17px" ForeColor="#1ecdb9" Width="50px" CausesValidation="True" CommandName="Update" Text="保存"></asp:LinkButton>
                 </EditItemTemplate>
                 <ItemTemplate>
-                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="17px" ForeColor="#1ecdb9" Width="70px" CausesValidation="False" CommandName="Edit" Text="修改兼职"></asp:LinkButton>
-                   <asp:LinkButton ID="LinkButton2" runat="server" Font-Size="17px" ForeColor="Red" Width="70px" CausesValidation="False" CommandName="Delete" Text="删除兼职"></asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton4" runat="server" Font-Size="17px" ForeColor="#1ecdb9" Width="50px"  CausesValidation="False" CommandName="Edit" Text="修改"></asp:LinkButton>
+                </ItemTemplate>
+                 </asp:TemplateField>
+
+            <asp:TemplateField ShowHeader="False">
+                <EditItemTemplate>
+                    <asp:LinkButton ID="LinkButton2" runat="server" Font-Size="17px" ForeColor="Red" Width="50px" CausesValidation="False" CommandName="Cancel" Text="取消"></asp:LinkButton>
+                </EditItemTemplate>
+                <ItemTemplate>
+                   <asp:LinkButton ID="LinkButton2" runat="server" Font-Size="17px" ForeColor="Red" Width="50px"  CausesValidation="False" CommandName="Delete" Text="删除"></asp:LinkButton>
                 </ItemTemplate>
             </asp:TemplateField>
+
+           
             <asp:TemplateField ShowHeader="False">
                 <ItemTemplate>
                     <asp:LinkButton ID="LinkButton3" Font-Size="17px" ForeColor="Red" Width="70px" runat="server" CausesValidation="false" CommandName="" Text="关闭兼职" OnClick="LinkButton3_Click1"></asp:LinkButton>
@@ -129,7 +133,7 @@
 
 
 
-               <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:constr %>" DeleteCommand="DELETE FROM [Table_Work] WHERE [J_ID] = @J_ID" InsertCommand="INSERT INTO [Table_Work] ([M_ID], [W_Name], [W_Time], [W_Place], [W_Description], [W_People], [W_Money], [W_State], [W_ReleaseTime]) VALUES (@M_ID, @W_Name, @W_Time, @W_Place, @W_Description, @W_People, @W_Money, @W_State, @W_ReleaseTime)" SelectCommand="SELECT * FROM [Table_Work] WHERE ([M_ID] = @M_ID)" UpdateCommand="UPDATE [Table_Work] SET [M_ID] = @M_ID, [W_Name] = @W_Name, [W_Time] = @W_Time, [W_Place] = @W_Place, [W_Description] = @W_Description, [W_People] = @W_People, [W_Money] = @W_Money, [W_State] = @W_State, [W_ReleaseTime] = @W_ReleaseTime WHERE [J_ID] = @J_ID">
+               <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:constr %>" DeleteCommand="DELETE FROM [Table_Work] WHERE [J_ID] = @J_ID" InsertCommand="INSERT INTO [Table_Work] ([M_ID], [W_Name], [W_Time], [W_Place], [W_Description], [W_People], [W_Money], [W_State], [W_ReleaseTime]) VALUES (@M_ID, @W_Name, @W_Time, @W_Place, @W_Description, @W_People, @W_Money, @W_State, @W_ReleaseTime)" SelectCommand="SELECT * FROM [Table_Work] WHERE ([M_ID] = @M_ID) AND [W_State]='2'" UpdateCommand="UPDATE [Table_Work] SET  [W_Name] = @W_Name, [W_Time] = @W_Time, [W_Place] = @W_Place, [W_Description] = @W_Description, [W_People] = @W_People, [W_Money] = @W_Money WHERE [J_ID] = @J_ID">
                    <DeleteParameters>
                        <asp:Parameter Name="J_ID" Type="Int32" />
                    </DeleteParameters>
@@ -213,25 +217,25 @@
                     <asp:Label ID="J_IDLabel1" Font-Size="16px" Width="77px" runat="server" Text='<%# Eval("J_ID") %>' />
                 </td>
                 <td style="width:80px;">
-                    <asp:Label ID="M_IDTextBox" Font-Size="16px" Width="75px" runat="server" Text='<%# Eval("M_ID") %>' />
+                    <asp:Label ID="M_IDTextBox" Font-Size="16px"  Width="75px" runat="server" Text='<%# Eval("M_ID") %>' />
                 </td>
                 <td style="width:99px;">
-                    <asp:TextBox ID="W_NameTextBox" Font-Size="16px" Width="94px" runat="server" Text='<%# Bind("W_Name") %>' />
+                    <asp:TextBox ID="W_NameTextBox" Font-Size="16px" style="color:RGBA(165,165,166,39)"   Width="94px" runat="server" Text='<%# Bind("W_Name") %>' />
                 </td>
                 <td style="width:177px;">
-                    <asp:TextBox ID="W_TimeTextBox" Font-Size="16px" Width="171px" runat="server" Text='<%# Bind("W_Time") %>' />
+                    <asp:TextBox ID="W_TimeTextBox" Font-Size="16px" style="color:RGBA(165,165,166,39)" Width="171px" runat="server" Text='<%# Bind("W_Time") %>' />
                 </td>
                 <td style="width:183px;">
-                    <asp:TextBox ID="W_PlaceTextBox" Font-Size="16px"  Width="180px" runat="server" Text='<%# Bind("W_Place") %>' />
+                    <asp:TextBox ID="W_PlaceTextBox" Font-Size="16px" style="color:RGBA(165,165,166,39)"  Width="180px" runat="server" Text='<%# Bind("W_Place") %>' />
                 </td>
                 <td style="width:353px;">
-                    <asp:TextBox ID="W_DescriptionTextBox" Font-Size="16px" Width="350px" runat="server" Text='<%# Bind("W_Description") %>' />
+                    <asp:TextBox ID="W_DescriptionTextBox" Font-Size="16px" style="color:RGBA(165,165,166,39)" Width="350px" runat="server" Text='<%# Bind("W_Description") %>' />
                 </td>
                 <td style="width:80px;">
-                    <asp:TextBox ID="W_PeopleTextBox" Font-Size="16px" Width="77px" runat="server" Text='<%# Bind("W_People") %>' />
+                    <asp:TextBox ID="W_PeopleTextBox" Font-Size="16px" style="color:RGBA(165,165,166,39)" Width="77px" runat="server" Text='<%# Bind("W_People") %>' />
                 </td>
                 <td style="width:80px;">
-                    <asp:TextBox ID="W_MoneyTextBox" Font-Size="16px" Width="77px" runat="server" Text='<%# Bind("W_Money") %>' />
+                    <asp:TextBox ID="W_MoneyTextBox" Font-Size="16px" style="color:RGBA(165,165,166,39)" Width="77px" runat="server" Text='<%# Bind("W_Money") %>' />
                 </td>
                 <td style="width:80px;">
                     <asp:Label ID="W_StateTextBox" Font-Size="16px" Width="77px" runat="server" Text='<%# Eval("W_State") %>' />
@@ -404,7 +408,7 @@
             </tr>
         </SelectedItemTemplate>
     </asp:ListView>
-<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:constr %>" SelectCommand="SELECT * FROM [Table_Work] WHERE [W_State]='2'"  DeleteCommand="DELETE FROM [Table_Work] WHERE [J_ID] = @J_ID" InsertCommand="INSERT INTO [Table_Work] ([M_ID], [W_Name], [W_Time], [W_Place], [W_Description], [W_People], [W_Money], [W_State], [W_ReleaseTime]) VALUES (@M_ID, @W_Name, @W_Time, @W_Place, @W_Description, @W_People, @W_Money, @W_State, @W_ReleaseTime)" UpdateCommand="UPDATE [Table_Work] SET [M_ID] = @M_ID, [W_Name] = @W_Name, [W_Time] = @W_Time, [W_Place] = @W_Place, [W_Description] = @W_Description, [W_People] = @W_People, [W_Money] = @W_Money, [W_State] = @W_State, [W_ReleaseTime] = @W_ReleaseTime WHERE [J_ID] = @J_ID">
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:constr %>" SelectCommand="SELECT * FROM [Table_Work] WHERE [W_State]='2'"  DeleteCommand="DELETE FROM [Table_Work] WHERE [J_ID] = @J_ID" InsertCommand="INSERT INTO [Table_Work] ([M_ID], [W_Name], [W_Time], [W_Place], [W_Description], [W_People], [W_Money], [W_State], [W_ReleaseTime]) VALUES (@M_ID, @W_Name, @W_Time, @W_Place, @W_Description, @W_People, @W_Money, @W_State, @W_ReleaseTime)" UpdateCommand="UPDATE [Table_Work] SET  [W_Name] = @W_Name, [W_Time] = @W_Time, [W_Place] = @W_Place, [W_Description] = @W_Description, [W_People] = @W_People, [W_Money] = @W_Money WHERE [J_ID] = @J_ID">
     <DeleteParameters>
         <asp:Parameter Name="J_ID" Type="Int32" />
     </DeleteParameters>
