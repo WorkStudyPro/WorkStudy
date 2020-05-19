@@ -16,140 +16,152 @@
     
          </div><br /><br />
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" style="margin-left: 2px;position: absolute;margin-top: 4px;" Visible="False">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" style="margin-left: 2px;position: absolute;margin-top: 4px;" Visible="False" DataKeyNames="J_ID" DataSourceID="SqlDataSource2">
         <Columns >
-            <asp:TemplateField HeaderText="订单编号">
+            <asp:TemplateField HeaderText="订单编号" InsertVisible="False" SortExpression="J_ID">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox1" runat="server" Text='<%# Eval("J_ID") %>'></asp:TextBox>
+                    <asp:Label ID="Label1" runat="server" style="font-size:17px;Width:81px;" Text='<%# Eval("J_ID") %>'></asp:Label>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label1" runat="server" Text='<%# Eval("J_ID") %>'></asp:Label>
-                    
                 </ItemTemplate>
                 <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="81px" />
-                <ItemStyle HorizontalAlign="Center" />
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="商家账号">
+            <asp:TemplateField HeaderText="商家账号" SortExpression="M_ID">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox2" runat="server" Text='<%# Eval("M_ID") %>'></asp:TextBox>
+                    <asp:Label ID="TextBox1" style="font-size:17px;Width:81px;" runat="server" Text='<%# Eval("M_ID") %>'></asp:Label>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label2" runat="server" Text='<%# Eval("M_ID") %>'></asp:Label>
                 </ItemTemplate>
                 <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" />
-                <ItemStyle HorizontalAlign="Center" />
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="招聘职位">
+            <asp:TemplateField HeaderText="招聘职位" SortExpression="W_Name">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("W_Name") %>'></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" style="font-size:17px;Width:99px;" Text='<%# Bind("W_Name") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label3" runat="server" Text='<%# Bind("W_Name") %>'></asp:Label>
                 </ItemTemplate>
                 <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="99px" />
-                <ItemStyle HorizontalAlign="Center" />
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="工作时间">
+            <asp:TemplateField HeaderText="工作时间" SortExpression="W_Time">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("W_Time") %>'></asp:TextBox>
+                    <asp:TextBox ID="TextBox3" runat="server" style="font-size:17px;Width:177px;" Text='<%# Bind("W_Time") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label4" runat="server" Text='<%# Bind("W_Time") %>'></asp:Label>
                 </ItemTemplate>
                 <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="177px" />
-                <ItemStyle HorizontalAlign="Center" />
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="工作地点">
+            <asp:TemplateField HeaderText="工作地点" SortExpression="W_Place">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox5" runat="server" Text='<%# Bind("W_Place") %>'></asp:TextBox>
+                    <asp:TextBox ID="TextBox4" runat="server" style="font-size:17px;Width:182px;" Text='<%# Bind("W_Place") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label5" runat="server" Text='<%# Bind("W_Place") %>'></asp:Label>
                 </ItemTemplate>
                 <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="182px" />
-                <ItemStyle HorizontalAlign="Center" />
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="工作详情">
+            <asp:TemplateField HeaderText="工作详情" SortExpression="W_Description">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox6" runat="server" Text='<%# Bind("W_Description") %>'></asp:TextBox>
+                    <asp:TextBox ID="TextBox5" runat="server" style="font-size:17px;Width:353px;" Text='<%# Bind("W_Description") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label6" runat="server" Text='<%# Bind("W_Description") %>'></asp:Label>
                 </ItemTemplate>
                 <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="353px" />
-                <ItemStyle HorizontalAlign="Center" />
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="需求人数">
+            <asp:TemplateField HeaderText="需求人数" SortExpression="W_People">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox7" runat="server" Text='<%# Bind("W_People") %>'></asp:TextBox>
+                    <asp:TextBox ID="TextBox6" runat="server" style="font-size:17px;Width:80px;" Text='<%# Bind("W_People") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label7" runat="server" Text='<%# Bind("W_People") %>'></asp:Label>
                 </ItemTemplate>
                 <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" />
-                <ItemStyle HorizontalAlign="Center" />
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="薪资待遇">
+            <asp:TemplateField HeaderText="薪资待遇" SortExpression="W_Money">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox8" runat="server" Text='<%# Bind("W_Money") %>'></asp:TextBox>
+                    <asp:TextBox ID="TextBox7" runat="server" style="font-size:17px;Width:80px;" Text='<%# Bind("W_Money") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label8" runat="server" Text='<%# Bind("W_Money") %>'></asp:Label>
                 </ItemTemplate>
                 <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" />
-                <ItemStyle HorizontalAlign="Center" />
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="兼职状态">
+            <asp:TemplateField HeaderText="兼职状态" SortExpression="W_State">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox9" runat="server" Text='<%# Eval("W_State") %>'></asp:TextBox>
+                    <asp:Label ID="TextBox8" runat="server" style="font-size:17px;Width:81px;" Text='<%# Eval("W_State") %>'></asp:Label>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label9" runat="server" Text='<%# Eval("W_State") %>'></asp:Label>
                 </ItemTemplate>
                 <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" />
-                <ItemStyle HorizontalAlign="Center" />
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="发布时间">
+            <asp:TemplateField HeaderText="发布时间" SortExpression="W_ReleaseTime">
                 <EditItemTemplate>
-                    <asp:TextBox ID="TextBox10" runat="server" Text='<%# Eval("W_ReleaseTime") %>'></asp:TextBox>
+                    <asp:Label ID="TextBox9" runat="server" style="font-size:17px;Width:170px;" Text='<%# Eval("W_ReleaseTime") %>'></asp:Label>
                 </EditItemTemplate>
                 <ItemTemplate>
                     <asp:Label ID="Label10" runat="server" Text='<%# Eval("W_ReleaseTime") %>'></asp:Label>
                 </ItemTemplate>
                 <HeaderStyle Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="170px" />
-                <ItemStyle HorizontalAlign="Center" />
             </asp:TemplateField>
-
             <asp:TemplateField ShowHeader="False">
+                <EditItemTemplate>
+                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="17px" ForeColor="#1ecdb9" Width="70px" CausesValidation="True" CommandName="Update" Text="确认修改"></asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton2" runat="server" Font-Size="17px" ForeColor="Red" Width="70px" CausesValidation="False" CommandName="Cancel" Text="取消修改"></asp:LinkButton>
+                </EditItemTemplate>
                 <ItemTemplate>
-                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="17px" ForeColor="#1ecdb9" Width="70px" CausesValidation="false" CommandName="" Text="修改兼职" OnClick="LinkButton1_Click" ></asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="17px" ForeColor="#1ecdb9" Width="70px" CausesValidation="False" CommandName="Edit" Text="修改兼职"></asp:LinkButton>
+                   <asp:LinkButton ID="LinkButton2" runat="server" Font-Size="17px" ForeColor="Red" Width="70px" CausesValidation="False" CommandName="Delete" Text="删除兼职"></asp:LinkButton>
                 </ItemTemplate>
             </asp:TemplateField>
-
             <asp:TemplateField ShowHeader="False">
                 <ItemTemplate>
-                    <asp:LinkButton ID="LinkButton2" runat="server" Font-Size="17px" ForeColor="Red" Width="70px" CausesValidation="false" CommandName="" Text="关闭兼职" OnClick="LinkButton2_Click"></asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton3" Font-Size="17px" ForeColor="Red" Width="70px" runat="server" CausesValidation="false" CommandName="" Text="关闭兼职" OnClick="LinkButton3_Click1"></asp:LinkButton>
                 </ItemTemplate>
             </asp:TemplateField>
-            
-            <%--<asp:HyperLinkField  runat="server"   DataNavigateUrlFields="J_ID" DataNavigateUrlFormatString="Recruitment.aspx?J_ID={0}" Text="修改兼职" />
-            --%>
-            
             
         </Columns>
                </asp:GridView>
 
 
 
-    <%--<asp:TextBox ID="TextBox11" runat="server" Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" ></asp:TextBox>
-    <asp:TextBox ID="TextBox12" runat="server" Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" ></asp:TextBox>
-    <asp:TextBox ID="TextBox13" runat="server" Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" ></asp:TextBox>
-    <asp:TextBox ID="TextBox14" runat="server" Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" ></asp:TextBox>
-    <asp:TextBox ID="TextBox15" runat="server" Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" ></asp:TextBox>
-    <asp:TextBox ID="TextBox16" runat="server" Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" ></asp:TextBox>
-    <asp:Button runat="server" ID="LinkButton3" OnClick="LinkButton3_Click" Text="Button" Font-Size="17px" ForeColor="#1ECDB9" Width="70px" />--%>
-    
-    
+               <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:constr %>" DeleteCommand="DELETE FROM [Table_Work] WHERE [J_ID] = @J_ID" InsertCommand="INSERT INTO [Table_Work] ([M_ID], [W_Name], [W_Time], [W_Place], [W_Description], [W_People], [W_Money], [W_State], [W_ReleaseTime]) VALUES (@M_ID, @W_Name, @W_Time, @W_Place, @W_Description, @W_People, @W_Money, @W_State, @W_ReleaseTime)" SelectCommand="SELECT * FROM [Table_Work] WHERE ([M_ID] = @M_ID)" UpdateCommand="UPDATE [Table_Work] SET [M_ID] = @M_ID, [W_Name] = @W_Name, [W_Time] = @W_Time, [W_Place] = @W_Place, [W_Description] = @W_Description, [W_People] = @W_People, [W_Money] = @W_Money, [W_State] = @W_State, [W_ReleaseTime] = @W_ReleaseTime WHERE [J_ID] = @J_ID">
+                   <DeleteParameters>
+                       <asp:Parameter Name="J_ID" Type="Int32" />
+                   </DeleteParameters>
+                   <InsertParameters>
+                       <asp:Parameter Name="M_ID" Type="Int32" />
+                       <asp:Parameter Name="W_Name" Type="String" />
+                       <asp:Parameter Name="W_Time" Type="String" />
+                       <asp:Parameter Name="W_Place" Type="String" />
+                       <asp:Parameter Name="W_Description" Type="String" />
+                       <asp:Parameter Name="W_People" Type="Int32" />
+                       <asp:Parameter Name="W_Money" Type="Int32" />
+                       <asp:Parameter Name="W_State" Type="String" />
+                       <asp:Parameter Name="W_ReleaseTime" Type="DateTime" />
+                   </InsertParameters>
+                   <SelectParameters>
+                       <asp:ControlParameter ControlID="TextBox1" Name="M_ID" PropertyName="Text" Type="Int32" />
+                   </SelectParameters>
+                   <UpdateParameters>
+                       <asp:Parameter Name="M_ID" Type="Int32" />
+                       <asp:Parameter Name="W_Name" Type="String" />
+                       <asp:Parameter Name="W_Time" Type="String" />
+                       <asp:Parameter Name="W_Place" Type="String" />
+                       <asp:Parameter Name="W_Description" Type="String" />
+                       <asp:Parameter Name="W_People" Type="Int32" />
+                       <asp:Parameter Name="W_Money" Type="Int32" />
+                       <asp:Parameter Name="W_State" Type="String" />
+                       <asp:Parameter Name="W_ReleaseTime" Type="DateTime" />
+                       <asp:Parameter Name="J_ID" Type="Int32" />
+                   </UpdateParameters>
+               </asp:SqlDataSource>
+
+
     
     <asp:ListView ID="ListView1" runat="server"  DataKeyNames="J_ID" DataSourceID="SqlDataSource1">
         <AlternatingItemTemplate>
