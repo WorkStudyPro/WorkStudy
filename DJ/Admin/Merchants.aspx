@@ -14,7 +14,7 @@
     
      <asp:ListView ID="ListView1" runat="server" DataKeyNames="M_ID" DataSourceID="SqlDataSource1" InsertItemPosition="LastItem">
          <AlternatingItemTemplate>
-             <tr style="background-color: #FFFFFF;color: #284775;">
+             <tr style="background-color: #FFFFFF;color: #284775;height:50px;">
                  
                  <td Style="text-align:center">
                      <asp:Label ID="M_IDLabel"  runat="server" Text='<%# Eval("M_ID") %>' />
@@ -55,7 +55,7 @@
              </tr>
          </AlternatingItemTemplate>
          <EditItemTemplate>
-             <tr style="background-color: white;">
+             <tr style="background-color: white;height:50px;">
                  
                  <td>
                      <asp:Label ID="M_IDLabel1" width="110px"  runat="server" Text='<%# Eval("M_ID") %>' />
@@ -144,7 +144,7 @@
              </tr>
          </InsertItemTemplate>
          <ItemTemplate>
-             <tr style="background-color: #E0FFFF;color: #333333;">
+             <tr style="background-color: #E0FFFF;color: #333333;height:50px;">
                 
                  <td Style="text-align:center">
                      <asp:Label ID="M_IDLabel"   runat="server" Text='<%# Eval("M_ID") %>' />
@@ -189,7 +189,7 @@
                  <tr runat="server">
                      <td runat="server">
                          <table id="itemPlaceholderContainer" runat="server" border="1" style="background-color: #FFFFFF;margin-left:24px;border-collapse: collapse;border-color: #999999;border-style:none;border-width:1px;font-family: Verdana, Arial, Helvetica, sans-serif;">
-                             <tr runat="server" style="background-color: #FFFFFF;color: #1ecdb9;">
+                             <tr runat="server" style="background-color: #FFFFFF;color: #1ecdb9;height:50px;">
                                  
                                  <th runat="server" style="font-size:larger">商家账号</th>
                                  <th runat="server" style="font-size:larger">商家密码</th>
@@ -213,7 +213,7 @@
              </table>
          </LayoutTemplate>
          <SelectedItemTemplate>
-             <tr style="background-color: #E2DED6;font-weight: bold;color: #333333;">
+             <tr style="background-color: #E2DED6;font-weight: bold;color: #333333;height:50px;">
                  <td Style="text-align:center">
                      <asp:Label ID="M_IDLabel" runat="server" Text='<%# Eval("M_ID") %>' />
                  </td>
