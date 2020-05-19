@@ -26,22 +26,22 @@ public partial class _Default : System.Web.UI.Page
             GridView1.DataSource = ds;
             GridView1.DataBind();
 
-            if (Request.QueryString["J_ID"] != null)
-            {
-                conn.Open();
-                SqlDataAdapter da1 = new SqlDataAdapter("select * from Table_Work where J_ID=" + Request.QueryString["J_ID"] + "", conn);
-                DataSet ds1 = new DataSet();
-                sda.Fill(ds1);
-                conn.Close();
+            //if (Request.QueryString["J_ID"] != null)
+            //{
+            //    conn.Open();
+            //    SqlDataAdapter da1 = new SqlDataAdapter("select * from Table_Work where J_ID=" + Request.QueryString["J_ID"] + "", conn);
+            //    DataSet ds1 = new DataSet();
+            //    sda.Fill(ds1);
+            //    conn.Close();
 
-                DataRowView drv = ds1.Tables[0].DefaultView[0];
-                TextBox11.Text = drv["W_Name"].ToString();
-                TextBox12.Text = drv["W_Time"].ToString();
-                TextBox13.Text = drv["W_Place"].ToString();
-                TextBox14.Text = drv["W_Description"].ToString();
-                TextBox15.Text = drv["W_People"].ToString();
-                TextBox16.Text = drv["W_Money"].ToString();
-            }
+            //    DataRowView drv = ds1.Tables[0].DefaultView[0];
+            //    TextBox11.Text = drv["W_Name"].ToString();
+            //    TextBox12.Text = drv["W_Time"].ToString();
+            //    TextBox13.Text = drv["W_Place"].ToString();
+            //    TextBox14.Text = drv["W_Description"].ToString();
+            //    TextBox15.Text = drv["W_People"].ToString();
+            //    TextBox16.Text = drv["W_Money"].ToString();
+            //}
 
 
         }
@@ -58,8 +58,8 @@ public partial class _Default : System.Web.UI.Page
     {
         ListView1.Visible = false;
         GridView1.Visible = true;
-        TextBox11.Visible = true;
-        TextBox12.Visible = true;
+        //TextBox11.Visible = true;
+        //TextBox12.Visible = true;
        
     }
 

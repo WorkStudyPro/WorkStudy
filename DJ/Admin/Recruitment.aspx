@@ -122,18 +122,18 @@
 
             <asp:TemplateField ShowHeader="False">
                 <ItemTemplate>
-                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="17px" ForeColor="Red" Width="70px" CausesValidation="false" CommandName="" Text="修改兼职" OnClick="LinkButton1_Click ></asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="17px" ForeColor="#1ecdb9" Width="70px" CausesValidation="false" CommandName="" Text="修改兼职" OnClick="LinkButton1_Click" ></asp:LinkButton>
                 </ItemTemplate>
             </asp:TemplateField>
 
             <asp:TemplateField ShowHeader="False">
                 <ItemTemplate>
-                    <asp:LinkButton ID="LinkButton2" runat="server" Font-Size="17px" ForeColor="Red" Width="70px" CausesValidation="false" CommandName="" Text="关闭兼职" OnClick="LinkButton2_Click ></asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton2" runat="server" Font-Size="17px" ForeColor="Red" Width="70px" CausesValidation="false" CommandName="" Text="关闭兼职" OnClick="LinkButton2_Click"></asp:LinkButton>
                 </ItemTemplate>
             </asp:TemplateField>
             
-            <asp:HyperLinkField  runat="server"   DataNavigateUrlFields="J_ID" DataNavigateUrlFormatString="Recruitment.aspx?J_ID={0}" Text="修改兼职" />
-            
+            <%--<asp:HyperLinkField  runat="server"   DataNavigateUrlFields="J_ID" DataNavigateUrlFormatString="Recruitment.aspx?J_ID={0}" Text="修改兼职" />
+            --%>
             
             
         </Columns>
@@ -141,13 +141,13 @@
 
 
 
-    <asp:TextBox ID="TextBox11" runat="server" Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" ></asp:TextBox>
+    <%--<asp:TextBox ID="TextBox11" runat="server" Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" ></asp:TextBox>
     <asp:TextBox ID="TextBox12" runat="server" Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" ></asp:TextBox>
     <asp:TextBox ID="TextBox13" runat="server" Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" ></asp:TextBox>
     <asp:TextBox ID="TextBox14" runat="server" Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" ></asp:TextBox>
     <asp:TextBox ID="TextBox15" runat="server" Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" ></asp:TextBox>
     <asp:TextBox ID="TextBox16" runat="server" Font-Size="Larger" ForeColor="#1ECDB9" Height="50px" Width="80px" ></asp:TextBox>
-    <asp:Button runat="server" ID="LinkButton3" OnClick="LinkButton3_Click" Text="Button" Font-Size="17px" ForeColor="#1ECDB9" Width="70px" />
+    <asp:Button runat="server" ID="LinkButton3" OnClick="LinkButton3_Click" Text="Button" Font-Size="17px" ForeColor="#1ECDB9" Width="70px" />--%>
     
     
     
