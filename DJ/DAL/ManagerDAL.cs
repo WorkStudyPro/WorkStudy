@@ -223,6 +223,15 @@ namespace DAL
             return SQLHelper.ExecuteNonQuery("AddJob", CommandType.StoredProcedure, p) > 0;
         }
 
+        public static SqlDataReader SelectGSInfo(string account)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account)
+            };
+            return SQLHelper.ExecuteReader("SelectInfo", CommandType.StoredProcedure, p);
+        }
+
         public static SqlDataReader SelectJob(string account)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -262,7 +271,7 @@ namespace DAL
                 new SqlParameter("@name",name)
             };
 
-            return Convert.ToInt32(SQLHelper.ExecuteScalar("CloseJob", CommandType.StoredProcedure, p)) > 0;
+            return Convert.ToInt32(SQLHelper.ExecuteNonQuery("CloseJob", CommandType.StoredProcedure, p)) > 0;
         }
 
         public static bool UpRealTime(string account,string name)
@@ -275,14 +284,7 @@ namespace DAL
             return Convert.ToInt32(SQLHelper.ExecuteNonQuery("UpRealseTime", CommandType.StoredProcedure, p)) > 0;
         }
 
-        public static SqlDataReader SelectGSInfo(string account)
-        {
-            SqlParameter[] p = new SqlParameter[]
-            {
-                new SqlParameter("@ID",account)
-            };
-            return SQLHelper.ExecuteReader("SelectInfo", CommandType.StoredProcedure, p);
-        }
+        
 
         //管理员
 
