@@ -27,7 +27,7 @@
     })
 </script>
 </head>
-<body style="background-color:rgb(230,236,240) ;">
+<body style="background-color:rgb(230,236,240);">
     <form id="form1" runat="server">
       <div id="menu1" style="width: 1660px;background-color: white;height: 58px;margin-left: 260px;">
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -35,16 +35,16 @@
           <asp:Label ID="Label2" runat="server" Text="张三三" ForeColor="#1ecdb9"  style="line-height: 58px;"></asp:Label>
      
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <asp:Label ID="Label5" runat="server" Text="ID："  style="line-height: 58px;"></asp:Label>
-          <asp:Label ID="Label6" runat="server" Text="123456" ForeColor="#1ecdb9"  style="line-height: 58px;"></asp:Label>
+          <asp:Label ID="Label3" runat="server" Text="ID："  style="line-height: 58px;"></asp:Label>
+          <asp:Label ID="Label4" runat="server" Text="123456" ForeColor="#1ecdb9"  style="line-height: 58px;"></asp:Label>
 
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <asp:Label ID="Label7" runat="server" Text="上班时间："  style="line-height: 58px;"></asp:Label>
-          <asp:Label ID="Label8" runat="server" Text="9.00-17.00" ForeColor="#1ecdb9"  style="line-height: 58px;"></asp:Label>
+          <asp:Label ID="Label5" runat="server" Text="上班时间："  style="line-height: 58px;"></asp:Label>
+          <asp:Label ID="Label6" runat="server" Text="9.00-17.00" ForeColor="#1ecdb9"  style="line-height: 58px;"></asp:Label>
           
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <asp:Label ID="Label3" runat="server" Text="登陆时间："  style="line-height: 58px;"></asp:Label>
-          <asp:Label ID="Label4" runat="server" Text="2020年5月15日11:40:51" ForeColor="#1ecdb9"  style="line-height: 58px;"></asp:Label>
+          <asp:Label ID="Label7" runat="server" Text="登录时间："  style="line-height: 58px;"></asp:Label>
+          <asp:Label ID="Label8" runat="server" Text="2020年5月15日11:40:51" ForeColor="#1ecdb9"  style="line-height: 58px;"></asp:Label>
 
       </div>
          <div id="list" style="width: 1660px;background-color: rgb(239,243,246);height: 878px;margin-left: 260px;position: absolute;">

@@ -1,15 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 public partial class Master : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        // Label4.Text = 登录ID;
+        SqlDataReader reader = DAL.ManagerDAL.SelectAdminInfo("156545");
+        while (reader.Read())
+        {
+            Label2.Text = reader.GetString(0);
+            Label6.Text = reader.GetString(1);
+            Label8.Text = DateTime.Now.ToString();
+        }
     }
     protected void Button1_Click(object sender, EventArgs e)
     {

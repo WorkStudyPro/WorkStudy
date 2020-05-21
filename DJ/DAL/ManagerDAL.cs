@@ -307,6 +307,15 @@ namespace DAL
             };
             return Convert.ToInt32(SQLHelper.ExecuteNonQuery("RefuseJob", CommandType.StoredProcedure, p)) > 0;
         }
+
+        public static SqlDataReader SelectAdminInfo(string account)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account)
+            };
+            return SQLHelper.ExecuteReader("SelectAdminInfo", CommandType.StoredProcedure, p);
+        }
     }
     
 }
