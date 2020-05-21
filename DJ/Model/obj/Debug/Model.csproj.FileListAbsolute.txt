@@ -9,3 +9,4 @@ C:\Users\VULCAN\source\repos\WorkStudy\DJ\Model\obj\Debug\Model.csproj.CoreCompi
 C:\Users\VULCAN\source\repos\WorkStudy\DJ\Model\obj\Debug\Model.dll
 C:\Users\VULCAN\source\repos\WorkStudy\DJ\Model\obj\Debug\Model.pdb
 C:\Users\吴远财\Source\Repos\WorkStudyPro\WorkStudy\DJ\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\VULCAN\source\repos\WorkStudy\DJ\Model\obj\Debug\Model.csprojAssemblyReference.cache

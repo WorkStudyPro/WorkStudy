@@ -41,7 +41,7 @@ public partial class Login : System.Web.UI.Page
                 Session["logintime"] = DateTime.Now.ToString();
                 //Utility.JavaScript.JavaScriptLocationHref("http://localhost:56935/index.aspx", this);
                 //Utility.JavaScript.AlertAndRedirect("登录成功，点击确定跳转至首页", "http://localhost:56935/index.aspx", this);
-                Utility.JavaScript.FormAndRedirect("提示", "登录成功，点击确定跳转至首页", "http://localhost:56935/index.aspx", this);
+                Utility.JavaScript.FormAndRedirect("提示", "登录成功，点击确定跳转至首页", "http://localhost:56935/Merchant/index.aspx", this);
             }
             else
                 //Utility.JavaScript.Alert("账号或密码不正确，请重试", this);

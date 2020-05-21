@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script src="js/sweetalert-dev.js"></script>
+    <script src="js/psw.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/adapter.js"></script>
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/indexcss.css" rel="stylesheet" />
+    <link href="css/sweetalert.css" rel="stylesheet" />
+    <script>
+    $(function () {
+        $("#TextBox1").pstrength();
+        $("#TextBox2").pstrength();
+        $("#TextBox3").pstrength();
+    })
+</script>
+</head>
+<body style="background-color:rgb(230,236,240);">
+    <form id="form1" runat="server">
+      <div id="menu1" style="width: 1660px;background-color: white;height: 58px;margin-left: 260px;">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <asp:Label ID="Label1" runat="server" Text="您好！管理员："   style="line-height: 58px;"  ></asp:Label>
+          <asp:Label ID="Label2" runat="server" Text="张三三" ForeColor="#1ecdb9"  style="line-height: 58px;"></asp:Label>
+     
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <asp:Label ID="Label3" runat="server" Text="ID："  style="line-height: 58px;"></asp:Label>
+          <asp:Label ID="Label4" runat="server" Text="123456" ForeColor="#1ecdb9"  style="line-height: 58px;"></asp:Label>
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <asp:Label ID="Label5" runat="server" Text="上班时间："  style="line-height: 58px;"></asp:Label>
+          <asp:Label ID="Label6" runat="server" Text="9.00-17.00" ForeColor="#1ecdb9"  style="line-height: 58px;"></asp:Label>
+          
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <asp:Label ID="Label7" runat="server" Text="登录时间："  style="line-height: 58px;"></asp:Label>
+          <asp:Label ID="Label8" runat="server" Text="2020年5月15日11:40:51" ForeColor="#1ecdb9"  style="line-height: 58px;"></asp:Label>
+
+      </div>
+         <div id="list" style="width: 1660px;background-color: rgb(239,243,246);height: 878px;margin-left: 260px;position: absolute;">
+             </div>
+
+        <%--左侧菜单--%>
+    <div id="menu">
+    <div id="open">
+        <div class="navH" style="color:#1ecdb9">
+           管理员功能
+        </div>
+        <div class="navBox">
+            <ul>
+                <li>
+                    <h2 class="obtain">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image1" runat="server" ImageUrl="~/Admin/images/图标 17.svg" style="margin-top: -4px;" Height="24px" ImageAlign="Middle" /> 主页<i></i></h2>
+                    <div class="secondary">
+                        <h3><asp:Button ID="Button3" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="兼职申请" OnClick="Button3_Click" /></h3>
+                        <h3><asp:Button ID="Button4" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="在招兼职" OnClick="Button4_Click" /></h3>
+                        <h3><asp:Button ID="Button6" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="申请驳回" OnClick="Button6_Click" /></h3>
+                        <h3><asp:Button ID="Button5" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="已结束" OnClick="Button5_Click" /></h3>
+
+                    </div>
+                </li>
+                <li>
+                    <h2 class="obtain">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image2" runat="server" ImageUrl="~/Admin/images/图标 18.svg" style="margin-top: -4px;" Height="24px" ImageAlign="Middle" /> 用户<i></i></h2>
+                    <div class="secondary">
+                        <h3><asp:Button ID="Button7" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="商家账号管理" OnClick="Button7_Click" /></h3>
+                        <h3><asp:Button ID="Button8" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="学生账号管理" OnClick="Button8_Click" /></h3>
+                        <h3>*</h3>
+                        <h3>*</h3>
+                        
+                    </div>
+                </li>
+                <li>
+                    <h2 class="obtain">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image3" runat="server" ImageUrl="~/Admin/images/图标 19.svg" style="margin-top: -4px;" Height="24px" ImageAlign="Middle" /> 设置<i></i></h2>
+                    <div class="secondary">
+                        <h3><asp:Button ID="Button1" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="管理员信息" OnClick="Button1_Click" /></h3>
+                        <h3><asp:Button ID="Button2" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="修改密码" OnClick="Button2_Click" /></h3>
+                        <h3><asp:Button ID="Button9" ForeColor="White" style="background-color: Transparent;font-size: 15px;border-style: none;outline: none; cursor:pointer;" runat="server" Text="退出登录" OnClick="Button9_Click" /></h3>
+                        <h3>*</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+        <%--中间显示--%>
+        <asp:Panel ID="center" style="background-color:white;width:1550px;height:750px;z-index: 999;position: relative;margin-left: 320px;margin-top: 60px;" runat="server">
+          <%--  <uc1:setpass runat="server" ID="setpass" />--%>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </asp:Panel>
+        </form>
+</body>
+</html>
