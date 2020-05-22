@@ -6,10 +6,10 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/sweetalert-dev.js"></script>
-    <link href="CSS/sweetalert.css" rel="stylesheet" />
-    <link href="CSS/Login.css" rel="stylesheet" />
+    <script src="Merchant/js/jquery-3.4.1.min.js"></script>
+    <script src="Merchant/js/sweetalert-dev.js"></script>
+    <link href="Merchant/CSS/sweetalert.css" rel="stylesheet" />
+    <link href="Merchant/CSS/Login.css" rel="stylesheet" />
     <style type="text/css">
         #Button1 {
             margin-left: 35%;
@@ -26,10 +26,10 @@
             <asp:Panel ID="Panel2" runat="server">
                 <asp:Label ID="Label1" runat="server" Text="勤工助学系统"></asp:Label>
             </asp:Panel>
-            <asp:Image ID="Image1" runat="server" ImageUrl="~/image/账号1.png" Height="24px" Width="22px" ImageAlign="Middle" />
+            <asp:Image ID="Image1" runat="server" ImageUrl="Merchant/image/账号1.png" Height="24px" Width="22px" ImageAlign="Middle" />
             <asp:TextBox ID="TextBox1" runat="server" Height="23px" AutoCompleteType="Disabled"></asp:TextBox>
             <br />
-            <asp:Image ID="Image2" runat="server" ImageUrl="~/image/密码1.png" Height="24px" Width="22px" ImageAlign="Middle" />
+            <asp:Image ID="Image2" runat="server" ImageUrl="Merchant/image/密码1.png" Height="24px" Width="22px" ImageAlign="Middle" />
             <asp:TextBox ID="TextBox2" runat="server" Height="23px" AutoCompleteType="Disabled"></asp:TextBox>
             <br />
             <br />

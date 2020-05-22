@@ -8,10 +8,10 @@
         <asp:Button ID="name" runat="server" Text="食堂打扫" onclick="Button1_Click" Style="margin-left: 8%; cursor: pointer;background-color: Transparent; border-style: none;outline: none; " Font-Bold="True" Font-Size="22px" ForeColor="#1ECDB9" />
         <br />
         <br />
-        <asp:Image ID="Imagetime" Style="margin-left: 5%; vertical-align: middle;" runat="server" ImageUrl="~/image/时间.svg" Width="20px" />
+        <asp:Image ID="Imagetime" Style="margin-left: 5%; vertical-align: middle;" runat="server" ImageUrl="image/时间.svg" Width="20px" />
         <asp:Label ID="time" runat="server" Text="周一至周五中午" ForeColor="#8B8989"></asp:Label>
         <br />
-        <asp:Image ID="Imagewhere" Style="margin-left: 5%; vertical-align: middle;" runat="server" ImageUrl="~/image/地点.svg" Width="20px" />
+        <asp:Image ID="Imagewhere" Style="margin-left: 5%; vertical-align: middle;" runat="server" ImageUrl="image/地点.svg" Width="20px" />
         <asp:Label ID="where" runat="server" Text="四川工程职业技术学院" ForeColor="#8B8989"></asp:Label>
     </div>
     <div id="workzhong" style="position: absolute; margin-left: 27%; margin-top: -70px; width: 405px;">

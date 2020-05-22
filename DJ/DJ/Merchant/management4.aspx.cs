@@ -8,7 +8,6 @@ public partial class management4 : System.Web.UI.Page
         Label6.Text = Session["PrincipalName"].ToString();
         SqlDataReader reader = DAL.ManagerDAL.SelectJob(Session["account"].ToString());
         while (reader.Read())
-        
             if (reader.GetString(8).Trim()=="3")
             {
                 work work = (work)LoadControl("work.ascx");

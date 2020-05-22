@@ -6,10 +6,10 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/sweetalert-dev.js"></script>
-    <link href="CSS/sweetalert.css" rel="stylesheet" />
-    <link href="CSS/Login.css" rel="stylesheet" />
+    <script src="Merchant/js/jquery-3.4.1.min.js"></script>
+    <script src="Merchant/js/sweetalert-dev.js"></script>
+    <link href="Merchant/CSS/sweetalert.css" rel="stylesheet" />
+    <link href="Merchant/CSS/Login.css" rel="stylesheet" />
     <style type="text/css">
         #Button1 {
             margin-left: 35%;
@@ -49,7 +49,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="yzm" runat="server" ForeColor="white" Text="验证:"></asp:Label>
             <asp:TextBox ID="TextBox3" runat="server" Height="23px" Width="93px" AutoCompleteType="Disabled"></asp:TextBox>
             &nbsp;&nbsp;
-            <asp:Image ID="yzm1" runat="server" ImageUrl="~/ValidateCode.aspx" Width="90px" Height="30px" onclick="this.src=this.src+'?'" alt="点击更换图片!" />
+            <asp:Image ID="yzm1" runat="server" ImageUrl="Merchant/ValidateCode.aspx" Width="90px" Height="30px" onclick="this.src=this.src+'?'" alt="点击更换图片!" />
             <br />
             <br />
             <br />
