@@ -3,7 +3,6 @@ using System;
 
 public partial class index : System.Web.UI.Page
 {
-    Manager manager = new Manager();
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -16,19 +15,39 @@ public partial class index : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        manager.Tel = TextBox2.Text;
-        manager.Password = TextBox3.Text;
-        manager.Account = new Random().Next(9999, 99999999).ToString();
-        if (manager.Tel != string.Empty && manager.Password != string.Empty)
-            if (BLL.ManagerBusiness.AddManager(manager))
+        if (TextBox2.Text != string.Empty && TextBox3.Text != string.Empty)
+        {
+            if (RadioButtonList1.SelectedValue == "商家")
             {
-                //登录成功，数据存入session中
-                Session["tel"] = manager.Tel;
-                Session["ID"] = manager.Account;
-                //弹窗提示
-                Utility.JavaScript.FormAndRedirect("这是您的ID！如遗忘，将无法找回！",DAL.ManagerDAL.SelectId(manager.Tel).ToString(), "http://localhost:56935/login.aspx", this);
+                Manager manager = new Manager
+                {
+                    Tel = TextBox2.Text,
+                    Password = TextBox3.Text,
+                    Account = new Random().Next(300000, 99999999).ToString()
+                };
+                if (BLL.ManagerBusiness.AddManager(manager))
+                {
+                    //注册成功弹窗提示ID
+                    Utility.JavaScript.FormAndRedirect("这是您的ID！如遗忘，将无法找回！", DAL.ManagerDAL.SelectId(manager.Tel).ToString(), "http://localhost:56935/login.aspx", this);
+                }
+                else
+                    Utility.JavaScript.ErrorAlert("错误提示！", "此手机号码已被注册！", Page);
             }
-            else
-                Utility.JavaScript.ErrorAlert("错误提示！", "此手机号码已被注册！", Page);
+            else if (RadioButtonList1.SelectedValue == "管理员")
+            {
+                Admin admin = new Admin
+                {
+                    A_Tele = TextBox2.Text,
+                    A_PassWord = TextBox3.Text,
+                    A_ID = new Random().Next(100000, 200000)
+                };
+                if (BLL.AdminBusiness.AddAdmin(admin))
+                {
+                    Utility.JavaScript.FormAndRedirect("这是您的ID！如遗忘，将无法找回！", DAL.ManagerDAL.SelectAId(admin.A_Tele), "http://localhost:56935/login.aspx", this);
+                }
+                else
+                    Utility.JavaScript.ErrorAlert("错误提示！", "此手机号码已被注册！", Page);
+            }
+        }
     }
 }

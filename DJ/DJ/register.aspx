@@ -54,7 +54,11 @@
             <asp:Label ID="Label3" runat="server" ForeColor="White" Text="密码"></asp:Label>
             <asp:TextBox ID="TextBox3" runat="server" Height="23px" AutoCompleteType="Disabled"></asp:TextBox>
             <br />
-
+            <asp:RadioButtonList ID="RadioButtonList1" runat="server" Style="margin-left:20%; margin-top:10%;" CellPadding="5" CellSpacing="1" ForeColor="Aqua" RepeatDirection="Horizontal">
+                <asp:ListItem>管理员</asp:ListItem>
+                <asp:ListItem>商家</asp:ListItem>
+                <asp:ListItem>学生</asp:ListItem>
+            </asp:RadioButtonList>
 
             <br />
             <br />

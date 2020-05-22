@@ -284,9 +284,20 @@ namespace DAL
             return Convert.ToInt32(SQLHelper.ExecuteNonQuery("UpRealseTime", CommandType.StoredProcedure, p)) > 0;
         }
 
-        
+
 
         //管理员
+
+        public static bool AddAdmin(Admin admin)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",admin.A_ID),
+                new SqlParameter("@PWD",admin.A_PassWord),
+                new SqlParameter("@Tele",admin.A_Tele)
+            };
+            return Convert.ToInt32(SQLHelper.ExecuteNonQuery("AdminRegister", CommandType.StoredProcedure, p)) > 0;
+        }
 
         public static bool AceptJob(string account, string name)
         {
@@ -315,6 +326,27 @@ namespace DAL
                 new SqlParameter("@ID",account)
             };
             return SQLHelper.ExecuteReader("SelectAdminInfo", CommandType.StoredProcedure, p);
+        }
+
+        public static bool SelectATel(string a_Tele)
+        {
+            SqlParameter[] p = new SqlParameter[]
+             {
+                new SqlParameter("@Tel",a_Tele)
+             };
+            return Convert.ToInt32(SQLHelper.ExecuteScalar("SelectTele", CommandType.StoredProcedure, p)) > 0;
+        }
+
+        public static string SelectAId(string a_Tele)
+        { SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@tel" ,a_Tele)
+            };
+            SqlDataReader reader = SQLHelper.ExecuteReader("selectAID", CommandType.StoredProcedure, p);
+            if (reader.Read())
+                return reader.GetInt32(0).ToString();
+
+            return null;
         }
     }
     
