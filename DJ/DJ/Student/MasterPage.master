@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Student_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/Index.css" rel="stylesheet" />
+    <link href="css/layui.css" rel="stylesheet" />
+    <link href="css/Master.css" rel="stylesheet" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/layui.js"></script>
+    <script src="js/IndexWater.js"></script>
+    <script src="js/Index.js"></script>
+    <script>
+        $(function () {
+            //监听事件
+            var isTrue = false;
+            $("#first>li").click(function () {
+                if (isTrue) {
+                    $(this).find(".JT").css("transform", "rotate(0deg)");
+                    isTrue = false;
+                }
+                else {
+                    $(this).find(".JT").css("transform", "rotate(90deg)");
+                    isTrue = true;
+                }
+                $(this).children("ul").slideToggle();
+                $(this).children("span1").toggleClass("current");
+            })
+            //排他
+            $(this).siblings().children("ul").slideUp();
+            $(this).siblings().children("span1").removeClass("current");
+           
+        })
+
+
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="Header" style="background-color:white;height:65px"> 
+            <br />
+            <asp:Panel ID="Panel1" runat="server" Height="73px">
+                <asp:HyperLink ID="HyperLink7" runat="server"  Font-Underline="false" ForeColor="#00b4aa" Style="margin-left: 5%;line-height: 30px;">首页</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink8" runat="server"  Font-Underline="false" Style="margin-left: 5%" ForeColor="black">寻找兼职</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink9" runat="server"  Font-Underline="false" ForeColor="black" Style="margin-left: 5%">个人简历</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink10" runat="server" ForeColor="black" Font-Underline="false"  Style="margin-left: 5%">消息</asp:HyperLink>
+                <ul id="first">
+                 <li>
+                 <span></span>
+                        <asp:Panel ID="Panel2" runat="server">
+                            <asp:Image ID="Image2" runat="server" ImageUrl="~/Student/images/账号.png" ImageAlign="Middle" Height="39px" Width="36px" />
+                            <asp:Label ID="Label6" runat="server" ForeColor="black" Text="66666666" Style="line-height: 26px;"></asp:Label>
+                            <img src="images/图标%2018.svg" width="30px" height="30px" style="margin-top: -2px;" class="JT" />
+                        </asp:Panel>
+                        <ul id="second">
+                            <br />
+                            <asp:HyperLink ID="HyperLink11" Font-Size="17px" Style="margin-left:30px" ForeColor="white" Font-Underline="false" runat="server">个人中心</asp:HyperLink><br />
+                            <br />
+                            <asp:HyperLink ID="HyperLink13" Font-Size="17px" Style="margin-left:30px" runat="server"  ForeColor="white" Font-Underline="false">修改密码</asp:HyperLink><br />
+                            <br />
+                            <asp:HyperLink ID="HyperLink14" Font-Size="17px" Style="margin-left:30px" runat="server" NavigateUrl="~/login.aspx" ForeColor="white" Font-Underline="false">退出</asp:HyperLink><br />
+                            <br />
+                        </ul>
+                    </li>
+                </ul>
+            </asp:Panel>
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
