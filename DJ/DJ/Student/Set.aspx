@@ -9,9 +9,9 @@
 
     <div id="LeftUp" style="width:200px;height:100px;margin-left: 300px;margin-top: 120px;background-color: white;border-radius: 5px;">
         <br />
-        <asp:HyperLink ID="MySet" runat="server" Style="margin-left:64px" Font-Size="Large">个人信息</asp:HyperLink>
+        <asp:HyperLink ID="MySet" runat="server" Style="margin-left:64px" NavigateUrl="~/Student/Set.aspx" Font-Underline="false" ForeColor="#00b4aa" Font-Size="Large">个人信息</asp:HyperLink>
         <br /><br />
-        <asp:HyperLink ID="SetPass" runat="server" Style="margin-left:64px" Font-Size="Large">修改密码</asp:HyperLink>
+        <asp:HyperLink ID="SetPass" runat="server" Style="margin-left:64px" NavigateUrl="~/Student/SetPass.aspx" Font-Size="Large">修改密码</asp:HyperLink>
     </div>
 
     <div id="LeftDown" style="width:200px;height:150px;margin-left: 300px;margin-top: 100px;background-color: white;border-radius: 5px;" >
