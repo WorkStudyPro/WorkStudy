@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <asp:Label ID="Label0" runat="server" Text="154669121" Style="color: rgba(0,0,0,0);"></asp:Label>
+    <asp:Label ID="HiddenId" runat="server" Text="154669121" Style="color: rgba(0,0,0,0);"></asp:Label>
 
 
     <div id="LeftUp" style="width:200px;height:100px;margin-left: 300px;margin-top: 120px;background-color: white;border-radius: 5px;">
@@ -44,7 +44,7 @@
             <asp:Parameter Name="S_Adress" Type="String" />
         </InsertParameters>
         <SelectParameters>
-            <asp:ControlParameter ControlID="Label0" Name="S_ID" PropertyName="Text" Type="String" />
+            <asp:ControlParameter ControlID="HiddenId" Name="S_ID" PropertyName="Text" Type="String" />
         </SelectParameters>
         <UpdateParameters>
             <asp:Parameter Name="S_Name" Type="String" />
