@@ -24,7 +24,7 @@
         <asp:Label ID="gongzi1" runat="server" ForeColor="#1ECDB9" Text="2500"></asp:Label>
     </div>
     <div id="workright">
-        <asp:Label ID="yijieshu" runat="server" Style="float: right;margin-top: -9%;margin-right: 7%;color: #1ecdb9;font-size: 18px;" Text="已结束"></asp:Label>
+        <asp:Label ID="yijieshu" runat="server" Style="float: right;margin-top: -6%;margin-right: 7%;color: #1ecdb9;font-size: 18px;" Text="已结束"></asp:Label>
     </div>
 </div>
 <div id="light"  runat="server" style="display: none; position: absolute; margin-top: -162px; width: 850px; height: 99%; border: 1px solid #1ecdb9; background-color: white; z-index: 1002; overflow: auto;">

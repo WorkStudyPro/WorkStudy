@@ -47,7 +47,7 @@
             <asp:Panel ID="Panel1" runat="server" Height="73px">
                 <asp:HyperLink ID="HyperLink7" runat="server"  Font-Underline="false" ForeColor="#00b4aa" Style="margin-left: 5%;line-height: 30px;">首页</asp:HyperLink>
                 <asp:HyperLink ID="HyperLink8" runat="server"  Font-Underline="false" Style="margin-left: 5%" ForeColor="black">寻找兼职</asp:HyperLink>
-                <asp:HyperLink ID="HyperLink9" runat="server"  Font-Underline="false" ForeColor="black" Style="margin-left: 5%">个人简历</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink9" runat="server"  Font-Underline="false" NavigateUrl="~/Student/MyResume.aspx" ForeColor="black" Style="margin-left: 5%">个人简历</asp:HyperLink>
                 <asp:HyperLink ID="HyperLink10" runat="server" ForeColor="black" Font-Underline="false"  Style="margin-left: 5%">消息</asp:HyperLink>
                 <ul id="first">
                  <li>
@@ -59,9 +59,9 @@
                         </asp:Panel>
                         <ul id="second">
                             <br />
-                            <asp:HyperLink ID="HyperLink11" Font-Size="17px" Style="margin-left:30px" ForeColor="white" Font-Underline="false" runat="server">个人中心</asp:HyperLink><br />
+                            <asp:HyperLink ID="HyperLink11" Font-Size="17px" Style="margin-left:30px" ForeColor="white" NavigateUrl="~/Student/Set.aspx" Font-Underline="false" runat="server">个人中心</asp:HyperLink><br />
                             <br />
-                            <asp:HyperLink ID="HyperLink13" Font-Size="17px" Style="margin-left:30px" runat="server"  ForeColor="white" Font-Underline="false">修改密码</asp:HyperLink><br />
+                            <asp:HyperLink ID="HyperLink13" Font-Size="17px" Style="margin-left:30px" runat="server" NavigateUrl="~/Student/SetPass.aspx"  ForeColor="white" Font-Underline="false">修改密码</asp:HyperLink><br />
                             <br />
                             <asp:HyperLink ID="HyperLink14" Font-Size="17px" Style="margin-left:30px" runat="server" NavigateUrl="~/login.aspx" ForeColor="white" Font-Underline="false">退出</asp:HyperLink><br />
                             <br />

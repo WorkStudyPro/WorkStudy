@@ -12,7 +12,7 @@
 
     <div id="LeftDown" style="width:200px;height:150px;margin-left: 300px;margin-top: 100px;background-color: white;border-radius: 5px;" >
         <br />
-        <asp:HyperLink ID="MyRe" Style="margin-left:64px" Font-Size="Large" runat="server">个人简历</asp:HyperLink>
+        <asp:HyperLink ID="MyRe" Style="margin-left:64px" Font-Size="Large" NavigateUrl="~/Student/MyResume.aspx" Font-Underline="false" runat="server">个人简历</asp:HyperLink>
         <br /><br />
         <asp:HyperLink ID="MyWork" Style="margin-left:64px" Font-Size="Large" runat="server">我的兼职</asp:HyperLink>
         <br /><br />
