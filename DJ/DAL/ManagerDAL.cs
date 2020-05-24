@@ -288,6 +288,16 @@ namespace DAL
 
         //管理员
 
+        public static bool AdminLogin(int account,string pwd)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account),
+                new SqlParameter("@PWD",pwd)
+            };
+            return Convert.ToInt32(SQLHelper.ExecuteScalar("AdminLogin", CommandType.StoredProcedure, p)) > 0;
+        }
+
         public static bool AddAdmin(Admin admin)
         {
             SqlParameter[] p = new SqlParameter[]

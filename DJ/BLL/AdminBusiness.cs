@@ -9,6 +9,11 @@ namespace BLL
 {
    public class AdminBusiness
     {
+        public static bool AdminLogin(int account,string pwd)
+        {
+            return DAL.ManagerDAL.AdminLogin(account, pwd);
+        }
+
         public static bool AddAdmin(Admin admin)
         {
             //判断电话号码是否被注册过

@@ -26,14 +26,15 @@ public partial class Login : System.Web.UI.Page
         };
         Response.Cookies.Add(Account);
         if (CheckBox1.Checked)
-        { 
+        {
             HttpCookie Pwd = new HttpCookie("Pwd", TextBox2.Text)
-            { 
+            {
                 Expires = DateTime.Now.AddDays(3.0)
             };
             Response.Cookies.Add(Pwd);
         }
         if (TextBox1.Text != string.Empty && TextBox2.Text != string.Empty)
+        {
             if (BLL.ManagerBusiness.ManagerLogin(TextBox1.Text, TextBox2.Text))
             {
                 //登录成功，数据存入session中
@@ -43,14 +44,22 @@ public partial class Login : System.Web.UI.Page
                 //Utility.JavaScript.AlertAndRedirect("登录成功，点击确定跳转至首页", "http://localhost:56935/index.aspx", this);
                 Utility.JavaScript.FormAndRedirect("提示", "登录成功，点击确定跳转至首页", "http://localhost:56935/Merchant/index.aspx", this);
             }
+            else if (BLL.AdminBusiness.AdminLogin(Convert.ToInt32(TextBox1.Text), TextBox2.Text))
+            {
+                Utility.JavaScript.FormAndRedirect("提示", "登录成功，点击确定跳转至首页", "http://localhost:56935/Admin/Application.aspx", this);
+            }
             else
+            {
                 //Utility.JavaScript.Alert("账号或密码不正确，请重试", this);
-                Utility.JavaScript.ErrorAlert("提示", "账号或密码不正确，请重试",  this);
+                Utility.JavaScript.ErrorAlert("提示", "账号或密码不正确，请重试", this);
+            }
+
+        }
     }
 
     protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
     {
-        
+
         if (CheckBox1.Checked)
         {
             Response.Cookies["check"].Value = "true";
