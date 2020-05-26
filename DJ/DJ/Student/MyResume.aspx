@@ -19,9 +19,9 @@
         <br />
         <asp:HyperLink ID="MyRe" Style="margin-left:64px" Font-Size="Large" Font-Underline="false" ForeColor="#00b4aa" NavigateUrl="~/Student/MyResume.aspx" runat="server">个人简历</asp:HyperLink>
         <br /><br />
-        <asp:HyperLink ID="MyWork" Style="margin-left:64px" Font-Size="Large" runat="server">我的兼职</asp:HyperLink>
+        <asp:HyperLink ID="MyWork" Style="margin-left:64px" NavigateUrl="~/Student/MyWork.aspx" Font-Underline="false" Font-Size="Large" runat="server">我的兼职</asp:HyperLink>
         <br /><br />
-        <asp:HyperLink ID="Exit" Style="margin-left:64px" Font-Size="Large" runat="server">退出登录</asp:HyperLink>
+        <asp:HyperLink ID="Exit" Style="margin-left:64px" NavigateUrl="~/login.aspx" Font-Underline="false" Font-Size="Large" runat="server">退出登录</asp:HyperLink>
     </div>
 
 

@@ -45,10 +45,10 @@
     <div id="Header" style="background-color:white;height:65px"> 
             <br />
             <asp:Panel ID="Panel1" runat="server" Height="73px">
-                <asp:HyperLink ID="HyperLink7" runat="server"  Font-Underline="false" ForeColor="#00b4aa" Style="margin-left: 5%;line-height: 30px;">首页</asp:HyperLink>
-                <asp:HyperLink ID="HyperLink8" runat="server"  Font-Underline="false" Style="margin-left: 5%" ForeColor="black">寻找兼职</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink7" runat="server"  Font-Underline="false" NavigateUrl="~/Student/Index.aspx"  Style="margin-left: 5%;line-height: 30px;">首页</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink8" runat="server"  Font-Underline="false" NavigateUrl="~/Student/FindWork.aspx" Style="margin-left: 5%" ForeColor="black">寻找兼职</asp:HyperLink>
                 <asp:HyperLink ID="HyperLink9" runat="server"  Font-Underline="false" NavigateUrl="~/Student/MyResume.aspx" ForeColor="black" Style="margin-left: 5%">个人简历</asp:HyperLink>
-                <asp:HyperLink ID="HyperLink10" runat="server" ForeColor="black" Font-Underline="false"  Style="margin-left: 5%">消息</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink10" runat="server" ForeColor="black" Font-Underline="false" NavigateUrl="~/Student/MyNews.aspx"  Style="margin-left: 5%">消息</asp:HyperLink>
                 <ul id="first">
                  <li>
                  <span></span>
