@@ -35,11 +35,11 @@ public partial class Login : System.Web.UI.Page
         }
         if (TextBox1.Text != string.Empty && TextBox2.Text != string.Empty)
         {
+            //登录成功，数据存入session中
+            Session["account"] = TextBox1.Text;
+            Session["logintime"] = DateTime.Now.ToString();
             if (BLL.ManagerBusiness.ManagerLogin(TextBox1.Text, TextBox2.Text))
             {
-                //登录成功，数据存入session中
-                Session["account"] = TextBox1.Text;
-                Session["logintime"] = DateTime.Now.ToString();
                 //Utility.JavaScript.JavaScriptLocationHref("http://localhost:56935/index.aspx", this);
                 //Utility.JavaScript.AlertAndRedirect("登录成功，点击确定跳转至首页", "http://localhost:56935/index.aspx", this);
                 Utility.JavaScript.FormAndRedirect("提示", "登录成功，点击确定跳转至首页", "http://localhost:56935/Merchant/index.aspx", this);
@@ -59,7 +59,6 @@ public partial class Login : System.Web.UI.Page
 
     protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
     {
-
         if (CheckBox1.Checked)
         {
             Response.Cookies["check"].Value = "true";

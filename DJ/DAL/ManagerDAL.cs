@@ -338,6 +338,16 @@ namespace DAL
             return SQLHelper.ExecuteReader("SelectAdminInfo", CommandType.StoredProcedure, p);
         }
 
+        public static bool AdminChangePwd(string account, string pwd)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account),
+                new SqlParameter("@PWD",pwd)
+            };
+            return Convert.ToInt32(SQLHelper.ExecuteNonQuery("AdminChangePwd", CommandType.StoredProcedure, p)) > 0;
+        }
+
         public static bool SelectATel(string a_Tele)
         {
             SqlParameter[] p = new SqlParameter[]
