@@ -35,7 +35,7 @@
     <br />
      <asp:ListView ID="ListView1" runat="server" DataKeyNames="S_ID" DataSourceID="SqlDataSource1">
          <AlternatingItemTemplate>
-             <tr style="background-color: #FFFFFF;color: #284775;height:50px;">
+             <tr style="background-color: #FFFFFF;color: #284775;height:50px;text-align:center">
                  
                  <td>
                      <asp:Label ID="S_IDLabel" runat="server" Text='<%# Eval("S_ID") %>' />
@@ -59,10 +59,10 @@
                      <asp:Label ID="S_AdressLabel" runat="server" Text='<%# Eval("S_Adress") %>' />
                  </td>
                  <td>
-                     <asp:Button ID="EditButton" width="70px" Font-Size="17px" ForeColor="#1ecdb9" BackColor="White" style="cursor:pointer" runat="server" CommandName="Edit" Text="编辑" />
+                     <asp:Button ID="EditButton" width="70px" Font-Size="17px" ForeColor="#1ecdb9" BackColor="White" style="cursor:pointer" runat="server" CommandName="Edit" Text="修改账号" />
                  </td>
                  <td>
-                     <asp:Button ID="DeleteButton" width="70px" Font-Size="17px" ForeColor="red" BackColor="White" style="cursor:pointer" runat="server" CommandName="Delete" Text="删除" />
+                     <asp:Button ID="DeleteButton" width="70px" Font-Size="17px" ForeColor="red" BackColor="White" style="cursor:pointer" runat="server" CommandName="Delete" Text="删除账号" />
                  </td>
              </tr>
          </AlternatingItemTemplate>

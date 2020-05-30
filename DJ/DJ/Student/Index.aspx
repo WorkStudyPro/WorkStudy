@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Student/MasterPage.master" AutoEventWireup="true" CodeFile="Index.aspx.cs" Inherits="Student_Default" %>
 
+<%@ Register Src="~/Student/IndexWork.ascx" TagPrefix="uc1" TagName="IndexWork" %>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -27,90 +30,11 @@
         <a style="text-align: center; font-size: 25px; color: #00b4aa; margin-left: 910px">热门兼职</a>
         <div style="padding: 20px; background-color: #F2F2F2;">
             <div class="layui-row layui-col-space15">
-                <div class="layui-col-md6">
-                    <div class="layui-card">
-                        <div class="layui-card-header">
-                            <asp:Label ID="WorkName" runat="server" ForeColor="#00b4aa" Font-Size="Large" Text="兼职名称"></asp:Label>
-                        </div>
-                        <div class="layui-card-body">
-                            <img src="images/时间.svg" width="20" height="20" /><asp:Label ID="WorkTime" runat="server" Style="color: rgb(104,104,104)" Text="周一至周五上午"></asp:Label>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			工资薪水：<asp:Label ID="WorkMoney" runat="server" Text="20"></asp:Label>元/小时
-			<asp:Button ID="Button报名" runat="server" Style="width: 100px; height: 35px; text-align: center; border-radius: 6px; border: 1px solid #1ecdb9; font-size: 16px; color: #1ecdb9; cursor: pointer; background-color: white; position: absolute; margin-left: 32%; margin-top: 1%;" Text="报名兼职" />
-                            <br>
-                            <img src="images/地点.svg" width="20" height="20" /><asp:Label ID="WorkPlace" runat="server" Style="color: rgb(104,104,104)" Text="四川工程职业技术学院"></asp:Label>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			需求人数：<asp:Label ID="WorkPeople" runat="server" Text="12"></asp:Label>人
-                        </div>
-                    </div>
-                </div>
-                <div class="layui-col-md6">
-                    <div class="layui-card">
-                        <div class="layui-card-header">
-                            <asp:Label ID="WorkName2" runat="server" ForeColor="#00b4aa" Font-Size="Large" Text="兼职名称"></asp:Label>
-                        </div>
-                        <div class="layui-card-body">
-                            <img src="images/时间.svg" width="20" height="20" /><asp:Label ID="WorkTime2" runat="server" Style="color: rgb(104,104,104)" Text="周一至周五上午"></asp:Label>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			工资薪水：<asp:Label ID="WorkMoney2" runat="server" Text="20"></asp:Label>元/小时
-			<asp:Button ID="Button报名2" runat="server" Style="width: 100px; height: 35px; text-align: center; border-radius: 6px; border: 1px solid #1ecdb9; font-size: 16px; color: #1ecdb9; cursor: pointer; background-color: white; position: absolute; margin-left: 32%; margin-top: 1%;" Text="报名兼职" />
-                            <br>
-                            <img src="images/地点.svg" width="20" height="20" /><asp:Label ID="WorkPlace2" runat="server" Style="color: rgb(104,104,104)" Text="四川工程职业技术学院"></asp:Label>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			需求人数：<asp:Label ID="WorkPeople2" runat="server" Text="12"></asp:Label>人
-                        </div>
-                    </div>
-                </div>
-                <div class="layui-col-md6">
-                    <div class="layui-card">
-                        <div class="layui-card-header">
-                            <asp:Label ID="WorkName3" runat="server" ForeColor="#00b4aa" Font-Size="Large" Text="兼职名称"></asp:Label>
-                        </div>
-                        <div class="layui-card-body">
-                            <img src="images/时间.svg" width="20" height="20" /><asp:Label ID="WorkTime3" runat="server" Style="color: rgb(104,104,104)" Text="周一至周五上午"></asp:Label>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			工资薪水：<asp:Label ID="WorkMoney3" runat="server" Text="20"></asp:Label>元/小时
-			<asp:Button ID="Button报名3" runat="server" Style="width: 100px; height: 35px; text-align: center; border-radius: 6px; border: 1px solid #1ecdb9; font-size: 16px; color: #1ecdb9; cursor: pointer; background-color: white; position: absolute; margin-left: 32%; margin-top: 1%;" Text="报名兼职" />
-                            <br>
-                            <img src="images/地点.svg" width="20" height="20" /><asp:Label ID="WorkPlace3" runat="server" Style="color: rgb(104,104,104)" Text="四川工程职业技术学院"></asp:Label>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			需求人数：<asp:Label ID="WorkPeople3" runat="server" Text="12"></asp:Label>人
-                        </div>
-                    </div>
-                </div>
-                <div class="layui-col-md6">
-                    <div class="layui-card">
-                        <div class="layui-card-header">
-                            <asp:Label ID="WorkName4" runat="server" ForeColor="#00b4aa" Font-Size="Large" Text="兼职名称"></asp:Label>
-                        </div>
-                        <div class="layui-card-body">
-                            <img src="images/时间.svg" width="20" height="20" /><asp:Label ID="WorkTime4" runat="server" Style="color: rgb(104,104,104)" Text="周一至周五上午"></asp:Label>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			工资薪水：<asp:Label ID="WorkMoney4" runat="server" Text="20"></asp:Label>元/小时
-			<asp:Button ID="Button报名4" runat="server" Style="width: 100px; height: 35px; text-align: center; border-radius: 6px; border: 1px solid #1ecdb9; font-size: 16px; color: #1ecdb9; cursor: pointer; background-color: white; position: absolute; margin-left: 32%; margin-top: 1%;" Text="报名兼职" />
-                            <br>
-                            <img src="images/地点.svg" width="20" height="20" /><asp:Label ID="WorkPlace4" runat="server" Style="color: rgb(104,104,104)" Text="四川工程职业技术学院"></asp:Label>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			需求人数：<asp:Label ID="WorkPeople4" runat="server" Text="12"></asp:Label>人
-                        </div>
-                    </div>
-                </div>
+                <%--动态加数据--%>
+                <uc1:IndexWork runat="server" ID="IndexWork" />
+                <uc1:IndexWork runat="server" ID="IndexWork1" />
+                <uc1:IndexWork runat="server" ID="IndexWork2" />
+                <uc1:IndexWork runat="server" ID="IndexWork3" />
             </div>
         </div>
         <div style="height: 144px; background-color: rgb(0,159,217); margin-top: 30px;">
