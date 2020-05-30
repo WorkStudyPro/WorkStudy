@@ -31,10 +31,8 @@
         <div style="padding: 20px; background-color: #F2F2F2;">
             <div class="layui-row layui-col-space15">
                 <%--动态加数据--%>
-                <uc1:IndexWork runat="server" ID="IndexWork" />
-                <uc1:IndexWork runat="server" ID="IndexWork1" />
-                <uc1:IndexWork runat="server" ID="IndexWork2" />
-                <uc1:IndexWork runat="server" ID="IndexWork3" />
+                
+                <asp:Panel ID="Panel1" runat="server"></asp:Panel>
             </div>
         </div>
         <div style="height: 144px; background-color: rgb(0,159,217); margin-top: 30px;">

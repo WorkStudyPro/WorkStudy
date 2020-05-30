@@ -368,6 +368,13 @@ namespace DAL
 
             return null;
         }
+
+        public static SqlDataReader SelectJobS()
+        {
+            SqlParameter[] p = new SqlParameter[] { };
+            
+            return SQLHelper.ExecuteReader("SelectJobS", CommandType.StoredProcedure, p);
+        }
     }
     
 }
