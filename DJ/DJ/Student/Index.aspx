@@ -30,7 +30,7 @@
     <div id="Footer" style="height: 470px; background-color: rgb(242,242,242)">
         <br />
         <a style="text-align: center; font-size: 25px; color: #00b4aa; margin-left: 910px">热门兼职</a>
-        <div style="background-color: #F2F2F2;margin-left:25px;">
+        <div style="background-color: #F2F2F2;margin-left:25px;height:247.5px;">
             <div class="layui-row layui-col-space15">
                 <%--动态加数据--%>
                 
