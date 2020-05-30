@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Student/MasterPage.master" AutoEventWireup="true" CodeFile="Index.aspx.cs" Inherits="Student_Default" %>
 
 <%@ Register Src="~/Student/IndexWork.ascx" TagPrefix="uc1" TagName="IndexWork" %>
+<%@ Register Src="~/Student/Work.ascx" TagPrefix="uc1" TagName="Work" %>
+
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
@@ -28,14 +30,14 @@
     <div id="Footer" style="height: 470px; background-color: rgb(242,242,242)">
         <br />
         <a style="text-align: center; font-size: 25px; color: #00b4aa; margin-left: 910px">热门兼职</a>
-        <div style="padding: 20px; background-color: #F2F2F2;">
+        <div style="background-color: #F2F2F2;margin-left:25px;">
             <div class="layui-row layui-col-space15">
                 <%--动态加数据--%>
                 
                 <asp:Panel ID="Panel1" runat="server"></asp:Panel>
             </div>
         </div>
-        <div style="height: 144px; background-color: rgb(0,159,217); margin-top: 30px;">
+        <div style="height: 144px; background-color: rgb(0,159,217); margin-top: 48px;position: absolute;width: 100%;">
             <div class="wave-box">
 
                 <div class="marquee-box marquee-up" id="marquee-box">

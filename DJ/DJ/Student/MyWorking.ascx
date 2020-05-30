@@ -6,15 +6,22 @@
         </div>
         <div class="layui-card-body">
             <img src="images/时间.svg" width="20" height="20" /><asp:Label ID="WorkTime" runat="server" style="color:rgb(104,104,104)" Text="周一至周五上午"></asp:Label> 
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			工资薪水：<asp:Label ID="WorkMoney" runat="server" Text="20"></asp:Label>元/小时
-            <asp:Label ID="Label1" runat="server" Style="width: 100px;height: 35px;font-size: 16px;color: #1ecdb9;background-color: white;position: absolute;margin-left: 18%;" Text="正在进行"></asp:Label>
+            
+            <div id="CenterUp" style="position:absolute;margin-left: 42%;margin-top: -26px;">
+            <asp:Label ID="Label2" runat="server" Text="工资薪水："></asp:Label>
+			<asp:Label ID="WorkMoney" runat="server" Text="20"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="元/小时"></asp:Label>
+            </div>
+            
+            <asp:Label ID="Label1" runat="server" Style="width: 100px;height: 35px;font-size: 16px;color: #1ecdb9;background-color: white;float:right" Text="正在进行"></asp:Label>
             <br>
             <img src="images/地点.svg" width="20" height="20" /><asp:Label ID="WorkPlace" runat="server" style="color:rgb(104,104,104)" Text="四川工程职业技术学院"></asp:Label>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			需求人数：<asp:Label ID="WorkPeople" runat="server" Text="12"></asp:Label>人
+            
+            <div id="CenterDown" style="position:absolute;margin-left: 42%;margin-top: -26px;">
+            <asp:Label ID="Label4" runat="server" Text="需求人数："></asp:Label>
+            <asp:Label ID="WorkPeople" runat="server" Text="12"></asp:Label>
+            <asp:Label ID="Label5" runat="server" Text="人"></asp:Label>
+            </div>
         </div>
       </div>
     </div>

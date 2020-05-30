@@ -62,7 +62,7 @@
             <%--中间菜单--%>
             <div id="divs" style="width: 900px; height: 680px; margin-left: 26%; background: white; border-radius: 5px;">
                 <div style="width: 870px; margin-left: 25px; position: absolute; margin-top: 15px; overflow-y: auto; overflow-x: hidden; height: 650px;">
-
+                    
                     <asp:Panel ID="Panel3" runat="server"></asp:Panel>
                 </div>
             </div>
