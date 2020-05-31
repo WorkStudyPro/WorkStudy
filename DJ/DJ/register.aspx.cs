@@ -5,7 +5,8 @@ public partial class index : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Label2.Visible = false;
+        Name.Visible = false;
     }
 
     protected void Button2_Click(object sender, EventArgs e)
@@ -49,5 +50,16 @@ public partial class index : System.Web.UI.Page
                     Utility.JavaScript.ErrorAlert("错误提示！", "此手机号码已被注册！", Page);
             }
         }
+    }
+
+    protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+            if (RadioButtonList1.Items[2].Selected)
+            {
+                Label2.Visible = true;
+                Name.Visible = true;
+            }
+        
     }
 }
