@@ -15,9 +15,9 @@ namespace DAL
         /// <summary>
         /// 商家登录
         /// </summary>
-        /// <param name="account"></param>
-        /// <param name="password"></param>
-        /// <returns></returns>
+        /// <param name="account">账号</param>
+        /// <param name="password">密码</param>
+        /// <returns>true</returns>
         public static bool ManagerLogin(string account, string password)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -30,7 +30,7 @@ namespace DAL
         /// <summary>
         /// 增，注册商家账号，传递实参
         /// </summary>
-        /// <param name="manager"></param>
+        /// <param name="manager">商家对象</param>
         /// <returns></returns>
         public static bool AddManager(Manager manager)
         {
@@ -46,8 +46,8 @@ namespace DAL
         /// <summary>
         /// 查询ID是否存在,若存在返回ID，不存在返回null;
         /// </summary>
-        /// <param name="tel"></param>
-        /// <returns></returns>
+        /// <param name="tel">电话号码</param>
+        /// <returns>ID</returns>
         public static string SelectId(string tel)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -64,7 +64,7 @@ namespace DAL
         /// <summary>
         /// 查询电话号码，若存在返回true,不存在返回false
         /// </summary>
-        /// <param name="tel"></param>
+        /// <param name="tel">电话号码</param>
         /// <returns></returns>
         public static bool SelectTel(string tel)
         {
@@ -78,8 +78,8 @@ namespace DAL
         /// <summary>
         /// Id匹配tel，若匹配，返回tel，不匹配返回null
         /// </summary>
-        /// <param name="account"></param>
-        /// <returns></returns>
+        /// <param name="account">账号</param>
+        /// <returns>电话号码</returns>
         public static string IdMatchTel(string account)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -94,11 +94,11 @@ namespace DAL
         }
 
         /// <summary>
-        /// 查询信息,若查询到信息，则返回信息，foe则返回null
+        /// 查询信息,若查询到信息，则返回信息，否则返回null
         /// </summary>
         /// <param name="account">查询的ID</param>
         /// <param name="mername">调用的存储过程（查询什么信息）</param>
-        /// <returns></returns>
+        /// <returns>单条信息</returns>
         public static string SelectInfo(string account, string mername)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -117,7 +117,7 @@ namespace DAL
         /// </summary>
         /// <param name="account">ID</param>
         /// <param name="pwd">新密码</param>
-        /// <returns></returns>
+        /// <returns>true</returns>
         public static bool ManagerChangePwd(string account, string pwd)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -133,7 +133,7 @@ namespace DAL
         /// </summary>
         /// <param name="account"></param>
         /// <param name="name"></param>
-        /// <returns></returns>
+        /// <returns>true</returns>
         public static bool ChangePrincipalName(string account, string name)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -149,7 +149,7 @@ namespace DAL
         /// </summary>
         /// <param name="account"></param>
         /// <param name="sex"></param>
-        /// <returns></returns>
+        /// <returns>true</returns>
         public static bool ChangeSex(string account, string sex)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -165,7 +165,7 @@ namespace DAL
         /// </summary>
         /// <param name="account"></param>
         /// <param name="tel"></param>
-        /// <returns></returns>
+        /// <returns>true</returns>
         public static bool ChangeTel(string account, string tel)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -181,7 +181,7 @@ namespace DAL
         /// </summary>
         /// <param name="account"></param>
         /// <param name="email"></param>
-        /// <returns></returns>
+        /// <returns>true</returns>
         public static bool ChangeEmail(string account, string email)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -197,7 +197,7 @@ namespace DAL
         /// </summary>
         /// <param name="account"></param>
         /// <param name="adress"></param>
-        /// <returns></returns>
+        /// <returns>true</returns>
         public static bool ChangeAdress(string account, string adress)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -208,6 +208,11 @@ namespace DAL
             return Convert.ToInt32(SQLHelper.ExecuteScalar("ChangeAdress", CommandType.StoredProcedure, p)) > 0;
         }
 
+        /// <summary>
+        /// 提交兼职审核，提交成功返回true
+        /// </summary>
+        /// <param name="jobData"></param>
+        /// <returns>true</returns>
         public static bool AddJob(JobData jobData)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -223,6 +228,11 @@ namespace DAL
             return SQLHelper.ExecuteNonQuery("AddJob", CommandType.StoredProcedure, p) > 0;
         }
 
+        /// <summary>
+        /// 查询商家信息，返回SqlDataReader对象
+        /// </summary>
+        /// <param name="account"></param>
+        /// <returns>SqlDataReader对象</returns>
         public static SqlDataReader SelectGSInfo(string account)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -232,6 +242,11 @@ namespace DAL
             return SQLHelper.ExecuteReader("SelectInfo", CommandType.StoredProcedure, p);
         }
 
+        /// <summary>
+        /// 查询兼职信息，返回SqlDateReader对象
+        /// </summary>
+        /// <param name="account"></param>
+        /// <returns>SqlDateReader对象</returns>
         public static SqlDataReader SelectJob(string account)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -369,6 +384,18 @@ namespace DAL
             return null;
         }
 
+
+        //学生
+        public static bool StudentLogin(string account, string pwd)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account),
+                new SqlParameter("@PWD",int.Parse(pwd))
+            };
+            return Convert.ToInt32(SQLHelper.ExecuteScalar("StudentLogin", CommandType.StoredProcedure, p)) > 0;
+        }
+        
         public static SqlDataReader SelectJobS()
         {
             SqlParameter[] p = new SqlParameter[] { };

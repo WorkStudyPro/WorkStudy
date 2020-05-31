@@ -9,6 +9,6 @@ public partial class Student_MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Label6.Text = Session["account"].ToString();
     }
 }

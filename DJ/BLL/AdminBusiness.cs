@@ -9,6 +9,12 @@ namespace BLL
 {
    public class AdminBusiness
     {
+        /// <summary>
+        /// 管理员登录
+        /// </summary>
+        /// <param name="account">账号</param>
+        /// <param name="pwd">密码</param>
+        /// <returns></returns>
         public static bool AdminLogin(int account,string pwd)
         {
             return DAL.ManagerDAL.AdminLogin(account, pwd);

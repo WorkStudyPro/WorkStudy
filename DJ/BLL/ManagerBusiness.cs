@@ -17,6 +17,7 @@ namespace BLL
         {
             return DAL.ManagerDAL.ManagerLogin(account, password);
         }
+
         /// <summary>
         /// 商家注册
         /// </summary>
