@@ -45,6 +45,16 @@
             <asp:Panel ID="Panel2" runat="server">
                 <asp:Label ID="Label1" runat="server" Text="勤工助学系统"></asp:Label>
             </asp:Panel>
+            
+            <asp:RadioButtonList ID="RadioButtonList1" runat="server" Style="margin-left:20%;margin-top:2%" CellPadding="5" CellSpacing="1" ForeColor="Aqua" RepeatDirection="Horizontal" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged" AutoPostBack="True">
+                <asp:ListItem>管理员</asp:ListItem>
+                <asp:ListItem>商家</asp:ListItem>
+                <asp:ListItem>学生</asp:ListItem>
+            </asp:RadioButtonList>
+
+            <asp:Label ID="Label2" runat="server" ForeColor="White"  Text="姓名"></asp:Label>
+
+            <asp:TextBox ID="Name" runat="server" Style="margin-top:5%;" Height="23px"  AutoCompleteType="Disabled"></asp:TextBox>
             <br />
             <asp:Label ID="Label4" runat="server" ForeColor="White" Text="手机号"></asp:Label>
 
@@ -53,15 +63,10 @@
             <br />
             <asp:Label ID="Label3" runat="server" ForeColor="White" Text="密码"></asp:Label>
             <asp:TextBox ID="TextBox3" runat="server" Height="23px" AutoCompleteType="Disabled"></asp:TextBox>
-            <br />
-            <asp:RadioButtonList ID="RadioButtonList1" runat="server" Style="margin-left:20%; margin-top:10%;" CellPadding="5" CellSpacing="1" ForeColor="Aqua" RepeatDirection="Horizontal">
-                <asp:ListItem>管理员</asp:ListItem>
-                <asp:ListItem>商家</asp:ListItem>
-                <asp:ListItem>学生</asp:ListItem>
-            </asp:RadioButtonList>
-
+            
             <br />
             <br />
+            
             <asp:Button ID="Button1" runat="server" Text="注册" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px" OnClick="Button1_Click" />
             &nbsp; &nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" Text="返回" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px" OnClick="Button2_Click" />
