@@ -10,7 +10,6 @@ public partial class Student_Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
         SqlDataReader reader = DAL.ManagerDAL.SelectJobS();
         int count = 0; 
         while (reader.Read())
@@ -23,7 +22,6 @@ public partial class Student_Default : System.Web.UI.Page
             if (count == 4)
                 break;
         }
-
-
+        
     }
 }

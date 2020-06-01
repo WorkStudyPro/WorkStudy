@@ -15,5 +15,7 @@ namespace Model
         public string W_Description { get; set; }
         public int W_People { get; set; }
         public int W_Money { get; set; }
+        public DateTime W_ReleaseTime { get; set; }
+
     }
 }

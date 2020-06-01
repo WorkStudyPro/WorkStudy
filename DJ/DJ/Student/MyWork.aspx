@@ -32,7 +32,7 @@
          <br /> 
         <uc1:MyWorking runat="server" ID="MyWorking" />
 
-
+        <asp:Panel ID="Panel1" runat="server"></asp:Panel>
 
         </div>
 </asp:Content>

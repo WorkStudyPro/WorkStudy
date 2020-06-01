@@ -395,12 +395,30 @@ namespace DAL
             };
             return Convert.ToInt32(SQLHelper.ExecuteScalar("StudentLogin", CommandType.StoredProcedure, p)) > 0;
         }
-        
+
+        /// <summary>
+        /// 主页4个兼职
+        /// </summary>
+        /// <returns></returns>
         public static SqlDataReader SelectJobS()
         {
             SqlParameter[] p = new SqlParameter[] { };
             
             return SQLHelper.ExecuteReader("SelectJobS", CommandType.StoredProcedure, p);
+        }
+
+        /// <summary>
+        /// 学生历史兼职
+        /// </summary>
+        /// <param name="account"></param>
+        /// <returns></returns>
+        public static SqlDataReader SelectHistoryJob(string account)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account)
+            };
+            return SQLHelper.ExecuteReader("SelectHistoryJob", CommandType.StoredProcedure, p);
         }
     }
     
