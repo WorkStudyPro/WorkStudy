@@ -19,13 +19,21 @@
 </div>
 <div id="light"  runat="server" style="display: none; position: absolute; margin-top: -75px; width: 850px; height: 99%; border: 1px solid #1ecdb9; background-color: white; z-index: 1002; overflow: auto;">
     <table style="margin-left: 185px;">
-        <tr style="width: 854px; height: 45px;">
+        <tr style="width: 854px; height: 42px;">
             <td style="width:400px;">
                 <asp:Label ID="name1" runat="server" Style="margin-left: 198px;" Text="学生简历" Font-Bold="true" Font-Size="22px" ForeColor="#1ecdb9"></asp:Label>
             </td>
             
         </tr>
-        <tr style="width: 854px; height: 45px;">
+        <tr style="width: 854px; height: 42px;">
+            <td style="width:400px;">
+                <asp:Label ID="Label12" runat="server" Text="学生账号:" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
+            </td>
+            <td>
+                <asp:Label ID="StudentID" runat="server" Text="******"></asp:Label>
+            </td>
+        </tr>
+        <tr style="width: 854px; height: 42px;">
             <td style="width:400px;">
                 <asp:Label ID="Label5" runat="server" Text="姓名:" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
             </td>
@@ -33,7 +41,7 @@
                 <asp:Label ID="StudentName1" runat="server" Text="******"></asp:Label>
             </td>
         </tr>
-        <tr style="width: 854px;height: 45px;">
+        <tr style="width: 854px;height: 42px;">
             <td style="width:400px;">
                 <asp:Label ID="Label7" runat="server" Font-Size="18px" ForeColor="#1ecdb9" Text="性别:" />
             </td>
@@ -42,7 +50,7 @@
             </td>
         </tr>
 
-        <tr style="width: 854px; height: 45px;">
+        <tr style="width: 854px; height: 42px;">
             <td style="width:400px;">
                 <asp:Label ID="Label8" runat="server" Text="年龄:" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
             </td>
@@ -50,7 +58,7 @@
                 <asp:Label ID="StudentAge" runat="server" Text="**"></asp:Label>
             </td>
         </tr>
-        <tr style="width: 854px;height: 45px;">
+        <tr style="width: 854px;height: 42px;">
             <td style="width:400px;">
                 <asp:Label ID="Label9" runat="server" Text="电话号码:" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
             </td>
@@ -58,7 +66,7 @@
                 <asp:Label ID="StudentTel" runat="server" Text="***********"></asp:Label>
             </td>
         </tr>
-        <tr style="width: 854px;height: 45px;">
+        <tr style="width: 854px;height: 42px;">
             <td style="width:400px;">
                 <asp:Label ID="Label4" runat="server" Text="学生住址:" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
             </td>
@@ -66,7 +74,7 @@
                 <asp:Label ID="StudentAdress" runat="server" Text="******"></asp:Label>
             </td>
         </tr>
-        <tr style="width: 854px; height: 45px;">
+        <tr style="width: 854px; height: 42px;">
             <td style="width:400px;">
                 <asp:Label ID="Label2" runat="server" Text="民族:" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
             </td>
@@ -74,7 +82,7 @@
                 <asp:Label ID="StudentNation" runat="server" Text="****"></asp:Label>
             </td>
         </tr>
-        <tr style="width: 854px; height: 45px;">
+        <tr style="width: 854px; height: 42px;">
             <td style="width:400px;">
                 <asp:Label ID="Label3" runat="server" Text="政治面貌:" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
             </td>
@@ -82,7 +90,7 @@
                 <asp:Label ID="StudentPolitical" runat="server" Text="****"></asp:Label>
             </td>
         </tr>
-        <tr style="width: 854px;height: 45px;">
+        <tr style="width: 854px;height: 42px;">
             <td style="width:400px;">
                 <asp:Label ID="Label10" runat="server" Text="专业:" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
             </td>
