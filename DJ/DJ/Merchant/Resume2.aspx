@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Resume2.aspx.cs" Inherits="Resume2" %>
 
+<%@ Register Src="~/Merchant/StudentResumeEnd.ascx" TagPrefix="uc1" TagName="StudentResumeEnd" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -46,8 +49,15 @@
             <hr style="border:0;height:1px;width:880px;margin-left:508px;background-color:aquamarine;"/>
             <br />
             <%--中间菜单--%>
-            <div id="divs">
-             <asp:Image ID="Image发布兼职" runat="server" ImageUrl="~/Merchant/image/发布兼职logo.png" />        
+            <div id="divs" style="width: 900px; height: 680px; margin-left: 26%; background: white; border-radius: 5px;">
+                <div style="width: 870px; margin-left: 25px; position: absolute; margin-top: 15px; overflow-y: auto; overflow-x: hidden; height: 650px;">
+                    
+                    <asp:Panel ID="Panel3" runat="server">
+                        <uc1:StudentResumeEnd runat="server" ID="StudentResumeEnd" />
+                        <uc1:StudentResumeEnd runat="server" ID="StudentResumeEnd1" />
+                        <uc1:StudentResumeEnd runat="server" ID="StudentResumeEnd2" />
+                    </asp:Panel>
+                </div>
             </div>
           </div>
     </form>

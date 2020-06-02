@@ -38,7 +38,7 @@
         </tr>
         <tr style="width: 854px; height: 60px;">
             <td>
-                <asp:Label ID="Label5" runat="server" Text="工作时间" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
+                <asp:Label ID="Label5" runat="server" Text="工作时间:" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
             </td>
         </tr>
         <tr style="width: 854px;">
@@ -60,7 +60,7 @@
         </tr>
         <tr style="width: 854px; height: 60px;">
             <td>
-                <asp:Label ID="jieshao" runat="server" Text="岗位介绍" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
+                <asp:Label ID="jieshao" runat="server" Text="岗位介绍:" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
             </td>
         </tr>
         <tr style="width: 854px;">
@@ -71,7 +71,7 @@
 
         <tr style="width: 854px; height: 60px;">
             <td>
-                <asp:Label ID="gongzidaiyu" runat="server" Text="工资待遇" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
+                <asp:Label ID="gongzidaiyu" runat="server" Text="工资待遇:" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
             </td>
         </tr>
         <tr style="width: 854px;">
@@ -83,7 +83,7 @@
         </tr>
         <tr style="width: 854px; height: 60px;">
             <td>
-                <asp:Label ID="Label4" runat="server" Text="工作地点" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
+                <asp:Label ID="Label4" runat="server" Text="工作地点:" Font-Size="18px" ForeColor="#1ecdb9"></asp:Label>
             </td>
         </tr>
         <tr style="width: 854px;">
