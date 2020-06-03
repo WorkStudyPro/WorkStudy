@@ -255,7 +255,7 @@ namespace DAL
             };
             return SQLHelper.ExecuteReader("SelectJob", CommandType.StoredProcedure, p);
         }
-
+        
         public static SqlDataReader SelectNewJob(string account)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -405,6 +405,27 @@ namespace DAL
             SqlParameter[] p = new SqlParameter[] { };
             
             return SQLHelper.ExecuteReader("SelectJobS", CommandType.StoredProcedure, p);
+        }
+
+        public static SqlDataReader SelectAllJob()
+        {
+            SqlParameter[] p = new SqlParameter[]
+            { };
+            return SQLHelper.ExecuteReader("SelectAllJob", CommandType.StoredProcedure, p);
+        }
+
+        /// <summary>
+        /// 学生正在进行的兼职
+        /// </summary>
+        /// <param name="account">账号</param>
+        /// <returns></returns>
+        public static SqlDataReader SelectStuWorking(string account)
+        {
+            SqlParameter[] p = new SqlParameter[] {
+                new SqlParameter("@ID",account)
+            };
+
+            return SQLHelper.ExecuteReader("SelectStuWorking", CommandType.StoredProcedure, p);
         }
 
         /// <summary>

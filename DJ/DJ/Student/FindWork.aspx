@@ -17,7 +17,7 @@
         <asp:Label ID="Label11" runat="server" ForeColor="#1ecdb9" Style="line-height: 23px;" Text="(文本框为空则查询全部)"></asp:Label>
                 <asp:HyperLink ID="historyWork" ForeColor="#1ecdb9" NavigateUrl="~/Student/History.aspx" Font-Underline="false" Style="float: right;margin-right: 70px;font-size: 18px;" runat="server">历史兼职</asp:HyperLink>
             </div>
-                    <uc1:Work runat="server" id="Work" />
+            <asp:Panel ID="Panel1" runat="server"></asp:Panel>
         </div>
     </div>
 </asp:Content>

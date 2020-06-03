@@ -32,7 +32,7 @@
         <a style="text-align: center; font-size: 25px; color: #00b4aa; margin-left: 910px">热门兼职</a>
         <div style="background-color: #F2F2F2;margin-left:25px;height:247.5px;">
             <div class="layui-row layui-col-space15">
-                <%--动态加数据--%>
+                <%--动态加数据,添加兼职--%>
                 
                 <asp:Panel ID="Panel1" runat="server"></asp:Panel>
             </div>

@@ -30,8 +30,6 @@
     <br />
         <hr style="border: 0; height: 1px; background-color: #00b4aa;" />
          <br /> 
-        <uc1:MyWorking runat="server" ID="MyWorking" />
-
         <asp:Panel ID="Panel1" runat="server"></asp:Panel>
 
         </div>

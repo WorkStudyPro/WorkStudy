@@ -11,7 +11,6 @@ public partial class management : System.Web.UI.Page
         while (reader.Read())
             if (reader.GetString(8).Trim() == "2")
             {
-
                 work work = (work)LoadControl("work.ascx");
                 work.User(work, reader);
 

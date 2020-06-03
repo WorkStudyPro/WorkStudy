@@ -12,7 +12,7 @@
             <asp:Label ID="Label8" runat="server" Text="历史兼职" Font-Bold="true" ForeColor="#1ecdb9" Style="margin-left: 100px;" Font-Size="25px"></asp:Label>
                 <br />
         <hr style="border: 0; height: 1px; background-color: #00b4aa;width: 847px;" />
-     <%--       <uc1:HistoryWork runat="server" id="HistoryWork" />--%>
+    
 
             <asp:Panel ID="Panel1" runat="server"></asp:Panel>
 
