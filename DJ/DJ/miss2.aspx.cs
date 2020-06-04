@@ -12,7 +12,7 @@ public partial class miss2 : System.Web.UI.Page
     {
         if (DAL.ManagerDAL.ManagerChangePwd(Session["account"].ToString(), TextBox2.Text))
         {
-            Utility.JavaScript.FormAndRedirect("提示", "修改成功，点击确定跳转至登录页", "http://localhost:56935/index.aspx", this);
+            Utility.JavaScript.FormAndRedirect("提示", "修改成功，点击确定跳转至登录页", "login.aspx", this);
         }
         else
         {

@@ -22,7 +22,7 @@ public partial class Job : System.Web.UI.Page
         if (DAL.ManagerDAL.AddJob(job))
         {
             if(DAL.ManagerDAL.UpRealTime(Session["account"].ToString(), job.W_Name))
-                Utility.JavaScript.FormAndRedirect("提示", "兼职发布成功", "http://localhost:56935/Merchant/index.aspx", this);
+                Utility.JavaScript.FormAndRedirect("提示", "兼职发布成功,请稍等管理员审核通过", "http://localhost:56935/Merchant/index.aspx", this);
         }
             
         

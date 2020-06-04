@@ -9,6 +9,8 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <script src="js/sweetalert-dev.js"></script>
+    <link href="CSS/sweetalert.css" rel="stylesheet" />
     <link href="CSS/cssc.css" rel="stylesheet" />
     <link href="CSS/index.css" rel="stylesheet" />
 </head>

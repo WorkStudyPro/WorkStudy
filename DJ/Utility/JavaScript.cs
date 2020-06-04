@@ -34,6 +34,7 @@ namespace Utility
         {
             string scriptstrs = "";
             scriptstrs += "{swal({title:'" + v1 + "',text: '" + v2 + "',confirmButtonText: '确认',confirmButtonColor: '#00b4aa',closeOnConfirm: false,});}";
+            
         }
 
         /// <summary>
