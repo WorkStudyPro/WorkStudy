@@ -5,11 +5,12 @@ public partial class Master : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        // Label4.Text = 登录ID;
-        SqlDataReader reader = DAL.ManagerDAL.SelectAdminInfo("156545");
+       
+        SqlDataReader reader = DAL.ManagerDAL.SelectAdminInfo(Session["account"].ToString());
         while (reader.Read())
         {
             Label2.Text = reader.GetString(0);
+            Label4.Text = Session["account"].ToString() ;
             Label6.Text = reader.GetString(1);
             Label8.Text = DateTime.Now.ToString();
         }
