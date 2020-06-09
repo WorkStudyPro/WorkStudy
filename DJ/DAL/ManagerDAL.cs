@@ -10,7 +10,6 @@ namespace DAL
     /// </summary>
     public class ManagerDAL
     {
-
         //商家
         /// <summary>
         /// 商家登录
@@ -27,6 +26,7 @@ namespace DAL
             };
             return Convert.ToInt32(SQLHelper.ExecuteScalar("ManagerLogin", CommandType.StoredProcedure, p)) > 0;
         }
+
         /// <summary>
         /// 增，注册商家账号，传递实参
         /// </summary>
@@ -442,6 +442,12 @@ namespace DAL
 
 
         //学生
+        /// <summary>
+        /// 学生登录
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="pwd"></param>
+        /// <returns></returns>
         public static bool StudentLogin(string account, string pwd)
         {
             SqlParameter[] p = new SqlParameter[]
