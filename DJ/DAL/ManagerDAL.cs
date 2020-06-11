@@ -459,6 +459,22 @@ namespace DAL
         }
 
         /// <summary>
+        /// 学生修改密码
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="pwd"></param>
+        /// <returns></returns>
+        public static bool StuChangePwd(string account, string pwd)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account),
+                new SqlParameter("@Pwd",pwd)
+            };
+            return Convert.ToInt32(SQLHelper.ExecuteNonQuery("StudentChangePWD", CommandType.StoredProcedure, p)) > 0;
+        }
+
+        /// <summary>
         /// 主页4个兼职
         /// </summary>
         /// <returns></returns>
