@@ -10,7 +10,6 @@ namespace DAL
     /// </summary>
     public class ManagerDAL
     {
-
         //商家
         /// <summary>
         /// 商家登录
@@ -27,6 +26,7 @@ namespace DAL
             };
             return Convert.ToInt32(SQLHelper.ExecuteScalar("ManagerLogin", CommandType.StoredProcedure, p)) > 0;
         }
+
         /// <summary>
         /// 增，注册商家账号，传递实参
         /// </summary>
@@ -255,7 +255,12 @@ namespace DAL
             };
             return SQLHelper.ExecuteReader("SelectJob", CommandType.StoredProcedure, p);
         }
-        
+
+        /// <summary>
+        /// 查询最新发布的兼职
+        /// </summary>
+        /// <param name="account"></param>
+        /// <returns></returns>
         public static SqlDataReader SelectNewJob(string account)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -265,6 +270,11 @@ namespace DAL
             return SQLHelper.ExecuteReader("SelectNewWork", CommandType.StoredProcedure, p);
         }
 
+        /// <summary>
+        /// 查询正在招聘的兼职的数量
+        /// </summary>
+        /// <param name="account"></param>
+        /// <returns></returns>
         public static int SelectJobCount(string account)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -278,6 +288,12 @@ namespace DAL
             return 0;
         }
 
+        /// <summary>
+        /// 关闭兼职
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public static bool CloseJob(string account,string name)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -289,6 +305,12 @@ namespace DAL
             return Convert.ToInt32(SQLHelper.ExecuteNonQuery("CloseJob", CommandType.StoredProcedure, p)) > 0;
         }
 
+        /// <summary>
+        /// 更新兼职的发布时间
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public static bool UpRealTime(string account,string name)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -303,6 +325,12 @@ namespace DAL
 
         //管理员
 
+        /// <summary>
+        /// 管理员登录
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="pwd"></param>
+        /// <returns></returns>
         public static bool AdminLogin(int account,string pwd)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -313,6 +341,11 @@ namespace DAL
             return Convert.ToInt32(SQLHelper.ExecuteScalar("AdminLogin", CommandType.StoredProcedure, p)) > 0;
         }
 
+        /// <summary>
+        /// 管理员注册
+        /// </summary>
+        /// <param name="admin"></param>
+        /// <returns></returns>
         public static bool AddAdmin(Admin admin)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -324,6 +357,12 @@ namespace DAL
             return Convert.ToInt32(SQLHelper.ExecuteNonQuery("AdminRegister", CommandType.StoredProcedure, p)) > 0;
         }
 
+        /// <summary>
+        /// 兼职审核通过
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public static bool AceptJob(string account, string name)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -334,6 +373,12 @@ namespace DAL
             return Convert.ToInt32(SQLHelper.ExecuteNonQuery("AceptJob", CommandType.StoredProcedure, p)) > 0;
         }
 
+        /// <summary>
+        /// 兼职申请审核驳回
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public static bool RefuseJob(string account, string name)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -344,6 +389,11 @@ namespace DAL
             return Convert.ToInt32(SQLHelper.ExecuteNonQuery("RefuseJob", CommandType.StoredProcedure, p)) > 0;
         }
 
+        /// <summary>
+        /// 查询管理员信息
+        /// </summary>
+        /// <param name="account"></param>
+        /// <returns></returns>
         public static SqlDataReader SelectAdminInfo(string account)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -353,6 +403,12 @@ namespace DAL
             return SQLHelper.ExecuteReader("SelectAdminInfo", CommandType.StoredProcedure, p);
         }
 
+        /// <summary>
+        /// 管理员修改密码
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="pwd"></param>
+        /// <returns></returns>
         public static bool AdminChangePwd(string account, string pwd)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -362,7 +418,7 @@ namespace DAL
             };
             return Convert.ToInt32(SQLHelper.ExecuteNonQuery("AdminChangePwd", CommandType.StoredProcedure, p)) > 0;
         }
-
+        
         public static bool SelectATel(string a_Tele)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -386,6 +442,12 @@ namespace DAL
 
 
         //学生
+        /// <summary>
+        /// 学生登录
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="pwd"></param>
+        /// <returns></returns>
         public static bool StudentLogin(string account, string pwd)
         {
             SqlParameter[] p = new SqlParameter[]
@@ -394,6 +456,22 @@ namespace DAL
                 new SqlParameter("@PWD",int.Parse(pwd))
             };
             return Convert.ToInt32(SQLHelper.ExecuteScalar("StudentLogin", CommandType.StoredProcedure, p)) > 0;
+        }
+
+        /// <summary>
+        /// 学生修改密码
+        /// </summary>
+        /// <param name="account"></param>
+        /// <param name="pwd"></param>
+        /// <returns></returns>
+        public static bool StuChangePwd(string account, string pwd)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID",account),
+                new SqlParameter("@Pwd",pwd)
+            };
+            return Convert.ToInt32(SQLHelper.ExecuteNonQuery("StudentChangePWD", CommandType.StoredProcedure, p)) > 0;
         }
 
         /// <summary>
@@ -407,6 +485,10 @@ namespace DAL
             return SQLHelper.ExecuteReader("SelectJobS", CommandType.StoredProcedure, p);
         }
 
+        /// <summary>
+        /// 查询所有兼职
+        /// </summary>
+        /// <returns></returns>
         public static SqlDataReader SelectAllJob()
         {
             SqlParameter[] p = new SqlParameter[]
