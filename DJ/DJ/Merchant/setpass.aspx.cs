@@ -17,7 +17,7 @@ public partial class setpass : System.Web.UI.Page
     {
         if(BLL.ManagerBusiness.ManagerLogin(Session["account"].ToString(), TextBox1.Text))
             if (DAL.ManagerDAL.ManagerChangePwd(Session["account"].ToString(), TextBox3.Text))
-                Utility.JavaScript.FormAndRedirect("提示", "修改成功，是否重新登录？", "http://localhost:56935/login.aspx", this);
+                Utility.JavaScript.FormAndRedirect("提示", "修改成功，是否重新登录？", "../login.aspx", this);
             else
                 Utility.JavaScript.ErrorAlert("错误提示", "修改失败，请重试", this);
     }
