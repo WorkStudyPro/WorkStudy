@@ -24,7 +24,7 @@
         <asp:Label ID="gongzi1" runat="server" ForeColor="#1ECDB9" Text="2500"></asp:Label>
     </div>
     <div id="workright">
-        <asp:Button ID="Button应聘兼职" runat="server" Text="应聘兼职" Style="width: 132px; border:none;height: 40px; line-height: 40px; float: right; background-color: #1ecdb9; border-radius: 6px; color: #fff; cursor: pointer; margin-top: -7%; margin-right: 4%;"  />
+        <asp:Button ID="Button应聘兼职" runat="server" Text="应聘兼职" Style="width: 132px; height: 40px; line-height: 40px; float: right; background-color: #1ecdb9; border-radius: 6px; color: #fff; cursor: pointer; margin-top: -7%; margin-right: 4%;"  />
     </div>
 </div>
 <div id="light"  runat="server" style="display: none; position: absolute; margin-top: -160px; width: 850px; height: 90%; border: 1px solid #1ecdb9; background-color: white; z-index: 1002; overflow: auto;">
@@ -95,5 +95,5 @@
     <br />
     <br />
 <%--    <asp:Label ID="Label1" useHandCursor="true" runat="server" onclick="closeDialog();" Style="margin-left: 383px; margin-bottom: 30px; display: block; width: 100px; height: 40px; line-height: 40px; text-align: center; border-radius: 6px; border: 1px solid #1ecdb9; font-size: 14px; color: #1ecdb9; cursor: pointer;" Text="关闭"></asp:Label>--%>
-    <asp:Button ID="Button2" runat="server" useHandCursor="true"   Text="关闭" OnClick="Button2_Click" Style="margin-left: 383px;border:none; background-color: Transparent; border-style: none; outline: none;  margin-bottom: 30px; display: block; width: 100px; height: 40px;line-height: 40px; text-align: center; border-radius: 6px; border: 1px solid #1ecdb9; font-size: 14px; color: #1ecdb9; cursor: pointer;" />
+    <asp:Button ID="Button2" runat="server" useHandCursor="true"   Text="关闭" OnClick="Button2_Click" Style="margin-left: 383px; background-color: Transparent; border-style: none; outline: none;  margin-bottom: 30px; display: block; width: 100px; height: 40px;line-height: 40px; text-align: center; border-radius: 6px; border: 1px solid #1ecdb9; font-size: 14px; color: #1ecdb9; cursor: pointer;" />
 </div>

@@ -358,6 +358,24 @@ namespace DAL
         }
 
         /// <summary>
+        /// Id匹配tel，若匹配，返回tel，不匹配返回null
+        /// </summary>
+        /// <param name="account">账号</param>
+        /// <returns>电话号码</returns>
+        public static string AIdMatchTel(string account)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID" ,account)
+            };
+            SqlDataReader reader = SQLHelper.ExecuteReader("IdMatch", CommandType.StoredProcedure, p);
+            if (reader.Read())
+                return reader.GetString(0);
+
+            return null;
+        }
+
+        /// <summary>
         /// 兼职审核通过
         /// </summary>
         /// <param name="account"></param>
@@ -483,6 +501,24 @@ namespace DAL
             SqlParameter[] p = new SqlParameter[] { };
             
             return SQLHelper.ExecuteReader("SelectJobS", CommandType.StoredProcedure, p);
+        }
+
+        /// <summary>
+        /// Id匹配tel，若匹配，返回tel，不匹配返回null
+        /// </summary>
+        /// <param name="account">账号</param>
+        /// <returns>电话号码</returns>
+        public static string SIdMatchTel(string account)
+        {
+            SqlParameter[] p = new SqlParameter[]
+            {
+                new SqlParameter("@ID" ,account)
+            };
+            SqlDataReader reader = SQLHelper.ExecuteReader("IdMatchT", CommandType.StoredProcedure, p);
+            if (reader.Read())
+                return reader.GetString(0);
+
+            return null;
         }
 
         /// <summary>
