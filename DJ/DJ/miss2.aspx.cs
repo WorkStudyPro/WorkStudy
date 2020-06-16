@@ -10,7 +10,7 @@ public partial class miss2 : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        if (DAL.ManagerDAL.ManagerChangePwd(Session["account"].ToString(), TextBox2.Text))
+        if (DAL.ManagerDAL.ManagerChangePwd(Session["account"].ToString(), TextBox2.Text)||DAL.ManagerDAL.AdminChangePwd(Session["account"].ToString(),TextBox2.Text) || DAL.ManagerDAL.StuChangePwd(Session["account"].ToString(), TextBox2.Text))
         {
             Utility.JavaScript.FormAndRedirect("提示", "修改成功，点击确定跳转至登录页", "login.aspx", this);
         }
