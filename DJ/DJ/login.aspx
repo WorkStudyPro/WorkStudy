@@ -37,7 +37,7 @@
                     <asp:CheckBox ID="CheckBox1" ForeColor="White" runat="server" Text="记住密码" OnCheckedChanged="CheckBox1_CheckedChanged" />
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/miss.aspx" Font-Underline="false" ForeColor="#00b4aa">忘记密码？</asp:HyperLink>
             <br />
-            <asp:Button ID="Button1" runat="server" Text="登录" Style="cursor: pointer;border:none;" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px" OnClick="Button1_Click" />
+            <asp:Button ID="Button1" runat="server" Text="登录" Style="cursor: pointer;" BackColor="#00b4aa" ForeColor="White" Height="40px" Width="109px" OnClick="Button1_Click" />
             <br />
             <br />
             <asp:HyperLink ID="HyperLink2" Font-Underline="false" NavigateUrl="~/register.aspx" runat="server" ForeColor="#00b4aa">注册账号</asp:HyperLink>
